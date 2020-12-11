@@ -1,0 +1,1065 @@
+<generated>
+
+<table>
+   <theme>Markets</theme>
+   <name>Trade Positions</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Production</itemName>
+     <key>QP</key>
+     <unit>1000 t</unit>
+     <longtext>quantity produced</longtext>
+  </item>
+  <item>
+     <itemName>Consumption</itemName>
+     <key>QC</key>
+     <unit>1000 t</unit>
+     <longtext>quantity consumed</longtext>
+  </item>
+  <item>
+     <itemName>Net trade (trade balance)</itemName>
+     <key>NT</key>
+     <unit>1000 t</unit>
+     <longtext>exports minus imports</longtext>
+  </item>
+  <item>
+     <itemName>Imports</itemName>
+     <key>IM</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Exports</itemName>
+     <key>EX</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>residual (only for BT and SMP)</itemName>
+     <key>RES</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Difference in balance items</itemName>
+     <key>diff_balance</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Markets</theme>
+   <name>Consumption breakdown</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Consumption</itemName>
+     <key>QC</key>
+     <unit>1000 t</unit>
+     <longtext>quantity consumed</longtext>
+  </item>
+  <item>
+     <itemName>Food Use</itemName>
+     <key>FO</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Feed Use</itemName>
+     <key>FE</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <key>FU</key>
+     <itemName>On-farm use (for milk)</itemName>
+     <unit>1000 t</unit>
+ </item>
+  <item>
+     <itemName>Other Use (including processing)</itemName>
+     <key>OU</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Biofuel Use</itemName>
+     <key>BF</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Hight fructose corn syrup Use</itemName>
+     <key>HFCS</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Markets</theme>
+   <name>Milk domestic use (FU=FE+OU+QP..DS)</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>milkSel</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <key>FU</key>
+     <itemName>On-farm use (for milk)</itemName>
+     <unit>1000 t</unit>
+ </item>
+  <item>
+     <itemName>Food Use</itemName>
+     <key>FO</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Feed Use</itemName>
+     <key>FE</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Other Use (including processing)</itemName>
+     <key>OU</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Markets</theme>
+   <name>Stocks</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Ending stocks</itemName>
+     <key>ST</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Intervention stocks (ending)</itemName>
+     <key>IST</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Private storage, ending stocks</itemName>
+     <key>PRST</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <key>VST</key>
+     <itemName>Variation in stocks (VST+STch)</itemName>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Markets</theme>
+   <name>Subsidised and un-subsidised export</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Exports</itemName>
+     <key>EX</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Subsidised Exports</itemName>
+     <key>EX..SUB</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Unsubsidised Exports</itemName>
+     <key>EX..UNS</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Markets</theme>
+   <name>Refined (White) sugar export SUW</name>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Exports</itemName>
+     <key>EX</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Subsidised Exports</itemName>
+     <key>EX..SUB</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>WTO Subsidised exports limit</itemName>
+     <key>EX..SUB..LIM</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Subsidised exports limit determined by value</itemName>
+     <key>EX..SUB..LIMADJ</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Subsidised sugar exports balance for EU27</itemName>
+     <key>suw_export</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+<table>
+   <theme>Prices</theme>
+   <name>Commodity Prices</name>
+   <activityText>Price</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Producer Price in national currencies</itemName>
+     <key>PP</key>
+     <unit></unit>
+     <longtext>weighted average or producer prices in national currencies per unit of m.</longtext>
+  </item>
+  <item>
+     <itemName>Producer Price in EUR</itemName>
+     <key>eur_PP</key>
+     <unit></unit>
+     <longtext>weighted average or producer prices in EUR per unit of m.</longtext>
+  </item>
+  <item>
+     <itemName>Market Price</itemName>
+     <key>MP</key>
+     <unit></unit>
+     <longtext>Specific market or product price</longtext>
+  </item>
+  <item>
+     <itemName>Milk price</itemName>
+     <key>FP</key>
+     <unit></unit>
+     <longtext>Fluid milk price</longtext>
+  </item>
+  <item>
+     <itemName>Consumer price</itemName>
+     <key>CP</key>
+     <unit></unit>
+     <longtext>Consumer price</longtext>
+  </item>
+  <item>
+     <itemName>Support Price</itemName>
+     <key>SP</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Prices</theme>
+   <name>Other Prices</name>
+   <activityText>Price</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>World Price</itemName>
+     <key>XP</key>
+     <unit></unit>
+     <longtext>world price</longtext>
+  </item>
+  <item>
+     <itemName>Target Price</itemName>
+     <key>TP</key>
+     <unit></unit>
+     <longtext>target price</longtext>
+  </item>
+  <item>
+     <itemName>Support Price</itemName>
+     <key>SP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Standard Import Price</itemName>
+     <key>SIP</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Production</theme>
+   <name>Cost Items</name>
+   <activityText>Costs</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Transport costs</itemName>
+     <key>TRC</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Margin</itemName>
+     <key>MAR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Crush margin</itemName>
+     <key>CRMAR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Commodity production cost index</itemName>
+     <key>CPCI</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Food expenditure</itemName>
+     <key>FOE</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Feed cost index</itemName>
+     <key>FECI</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Feed expenditure</itemName>
+     <key>FEEXP</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Production</theme>
+   <name>Crop production</name>
+   <activityText>Production related vars</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Area harvested</itemName>
+     <key>AH</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Yield</itemName>
+     <key>YLD</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Production</itemName>
+     <key>QP</key>
+     <unit></unit>
+  </item>
+</table>
+
+
+<table>
+   <theme>Trade</theme>
+   <name>Tariffs</name>
+   <activityText>Tariff items</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Specific tariff</itemName>
+     <key>TAS</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Ad valorem tariff</itemName>
+     <key>TAV</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Export tariffs</itemName>
+     <key>TAVE</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Import tariffs {new name for TARB}</itemName>
+     <key>TAVI</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Tax</itemName>
+     <key>TAX</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Tariff rate quota</itemName>
+     <key>TRQ</key>
+     <unit></unit>
+ </item>
+  <item>
+     <itemName>Imports</itemName>
+     <key>IM</key>
+     <unit>1000 t</unit>
+ </item>
+  <item>
+     <itemName>Quota fill rate</itemName>
+     <key>IM</key>
+     <eval>VAL / VAL[*,TRQ,*,*,*,*]</eval>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Specific tariff</itemName>
+     <key>TSP</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Macroeconomic</theme>
+   <name>Macroeconomic indicies</name>
+   <activityText>Macro index</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>macro</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Consumer price index</itemName>
+     <key>CPI</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>GDP deflator</itemName>
+     <key>GDPD</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>GDP index</itemName>
+     <key>GDPI</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Population</itemName>
+     <key>POP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Returns per hectare</itemName>
+     <key>RH</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Exchange rate</itemName>
+     <key>XR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Food Cost Index</itemName>
+     <key>FOCI</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Sugar</theme>
+   <name>EU Sugar beet prices and margins</name>
+   <activityText>Activity</activityText>
+   <regionText>Region</regionText>
+   <regionSel>EU</regionSel>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>SugarBeet</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Producer Price</itemName>
+     <key>PP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Producer Price for non-quota beet</itemName>
+     <key>PP..NQT</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Producer Price for ethanol uses</itemName>
+     <key>PP..ET</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Margin of sugar beet production</itemName>
+     <key>MAR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Margin of sugar beet production for ethanol</itemName>
+     <key>MAR..ET</key>
+     <longtext>Plays a role in calculating the producer price PP..ET</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Expected Returns</itemName>
+     <key>RH</key>
+     <longtext>Plays a role in sugar beet farmers' decisions (area)</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Cost Index</itemName>
+     <key>CPCI</key>
+     <longtext>Plays a role in sugar beet farmers' decisions (area)</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Area Payment</itemName>
+     <key>EPA</key>
+     <longtext>Plays a role in sugar beet farmers' decisions (area)</longtext>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Sugar</theme>
+   <name>Sugar market -- prices</name>
+   <activityText>Activity</activityText>
+   <regionText>Region</regionText>
+   <regionSel>sugarmarket</regionSel>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>sugar</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Market Price (in USD)</itemName>
+     <key>XP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Producer Price</itemName>
+     <key>PP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Retail (consumer) Price</itemName>
+     <key>CP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Export Price</itemName>
+     <key>EXP</key>
+     <longtext>Export price for EU sugar (SUW) is the world market price times the exchange rate</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Import Price</itemName>
+     <key>IMP</key>
+     <longtext>Import price for EU sugar (SUW) is the world market price times the exchange rate</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Procurement Price</itemName>
+     <key>SP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Levy</itemName>
+     <key>LEVY</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Sugar</theme>
+   <name>Sugar market -- balances</name>
+   <activityText>Activity</activityText>
+   <regionText>Region</regionText>
+   <regionSel>sugarmarket</regionSel>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>sugar</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Production</itemName>
+     <key>QP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Consumption</itemName>
+     <key>QC</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Export</itemName>
+     <key>EX</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Import</itemName>
+     <key>IM</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Net trade</itemName>
+     <key>NT</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Stocks</itemName>
+     <key>ST</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Theoretical Export potential without constraints</itemName>
+     <key>EX..T</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Sugar</theme>
+   <name>Sugar stocks</name>
+   <activityText>Activity</activityText>
+   <regionText>Region</regionText>
+   <regionSel>sugarmarket</regionSel>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>sugar</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Stocks</itemName>
+     <key>ST</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Intervention stocks</itemName>
+     <key>IST</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Private storage</itemName>
+     <key>PRST</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Carry-forward stock of non-quota sugar</itemName>
+     <key>ST..CF</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Sugar</theme>
+   <name>EU Sugar beet balance with quotas and yields</name>
+   <activityText>Activity</activityText>
+   <regionText>Region</regionText>
+   <regionSel>EU</regionSel>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>SugarBeet</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Production</itemName>
+     <key>QP</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Biofuel use</itemName>
+     <key>BF</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Share of sugar beet for ethanol in total production</itemName>
+     <key>BF..SHR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Sugar beet quota</itemName>
+     <key>QT</key>
+     <longtext>Calculated from sugar quotas by dividing with the yields</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Area Harvested</itemName>
+     <key>AH</key>
+     <longtext>Harvested area is function of expected returns, cost index, producer price (average and non-quota)</longtext>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Yield</itemName>
+     <key>YLD</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>Ethanol conversion rate</itemName>
+     <key>BF..ET..CONV</key>
+     <unit></unit>
+  </item>
+</table>
+<table>
+   <theme>Biofuels</theme>
+   <name>Bioethanol sources</name>
+   <activityText>Raw material</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>bioethanolSel</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Ethanol from biomass</itemName>
+     <key>QP..BME</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from coarse grains</itemName>
+     <key>QP..CG</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from molasse</itemName>
+     <key>QP..MOL</key>
+     <unit></unit>
+ </item>
+
+ <item>
+     <itemName>from non-agricultural sources</itemName>
+     <key>QP..NAGR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from other sources</itemName>
+     <key>QP..OTH</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from other sources (2.)</itemName>
+     <key>QP..OTHER</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from residues</itemName>
+     <key>QP..RES</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from roots and tubers</itemName>
+     <key>QP..RT</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from sugar beet</itemName>
+     <key>QP..SBE</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from sugar cane</itemName>
+     <key>QP..SCA</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from sugar (directly)</itemName>
+     <key>QP..SU</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from wheat</itemName>
+     <key>QP..WT</key>
+     <unit></unit>
+  </item>
+</table>
+
+<table>
+   <theme>Biofuels</theme>
+   <name>Bioethanol capacity use</name>
+   <activityText>Raw material</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>bioethanolSel</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+
+  <item>
+      <key>QPC..SBE    </key>
+      <itemName>Production capacity for sugar beet</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+  <item>
+       <key>QPR..SBE    </key>
+       <itemName>Capacity use rate for sugar beet</itemName>
+       <unit></unit>
+       <longtext></longtext>
+  </item>  
+  <item>
+      <key>QPC..MOL    </key>
+      <itemName>Production capacity for molasse</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>  
+  <item>
+      <key>QPR..MOL    </key>
+      <itemName>Capacity use rate for molasse</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+
+  <item>
+      <key>QPC..WT     </key>
+      <itemName>Production capacity for wheat</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+  <item>
+      <key>QPR..WT</key>
+      <itemName>Capacity use rate for wheat</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+  <item>
+      <key>QPC..CG</key>
+      <itemName>Production capacity for coarse grains</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+  <item>
+      <key>QPR..CG     </key>
+      <itemName>Capacity use rate for coarse grains</itemName>
+      <unit></unit>
+      <longtext></longtext>
+  </item>
+
+
+
+</table>
+
+<table>
+   <theme>Biofuels</theme>
+   <name>Biodiesel sources</name>
+   <activityText>Raw material</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>biodieselSel</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+  <item>
+     <itemName>Diesel from biomass</itemName>
+     <key>QP..BMD</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from jathropha</itemName>
+     <key>QP..JA</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from non-agricultural sources</itemName>
+     <key>QP..NAGR</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from other sources</itemName>
+     <key>QP..OTH</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from other sources (2.)</itemName>
+     <key>QP..OTHER</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from roots and tubers</itemName>
+     <key>QP..RT</key>
+     <unit></unit>
+  </item>
+  <item>
+     <itemName>from vegetable oil</itemName>
+     <key>QP..VL</key>
+     <unit></unit>
+  </item>
+
+</table>
+
+
+<table>
+   <theme>Biofuels</theme>
+   <name>Biodiesel capacity usage</name>
+   <activityText>Raw material</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>biodieselSel</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+
+  <item>
+     <key>QPC..VL     </key>
+     <itemName>Production capacity for vegetable oil</itemName>
+     <unit></unit>
+     <longtext></longtext>
+  </item>
+  <item>
+     <key>QPR..VL     </key>
+     <itemName>Capacity use rate for vegetable oil</itemName>
+     <unit></unit>
+     <longtext></longtext>
+  </item>
+
+
+
+
+</table>
+
+
+
+
+<table>
+   <theme>Biofuels</theme>
+   <name>Biofuel mandates and co.</name>
+   <activityText>Raw material</activityText>
+   <regionText>Region</regionText>
+   <yearText>Year</yearText>
+   <productText>Product</productText>
+   <productSel>biofuels</productSel>
+   <dim5Text>hide</dim5Text>
+   <scenText>Scenario</scenText>
+   <defpivot>0RSI</defpivot>
+   <defview>Table</defview>
+   <isActivity>NO</isActivity>
+
+<item>
+<key>TOT..ADJ    </key>
+<itemName>total biofuel mandate (adjusted for anticipated reduction</itemName>
+<unit></unit>
+<longtext></longtext>
+</item>
+
+<item>
+<key>BD..ADJ     </key>
+<itemName>biodiesel biofuel mandate</itemName>
+<unit></unit>
+<longtext></longtext>
+</item>
+
+<item>
+<key>CG          </key>
+<itemName>first generation biofuel mandate</itemName>
+<unit></unit>
+<longtext></longtext>
+</item>
+
+
+<item>
+<key>BF..ET      </key>
+<itemName>Biofuel use</itemName>
+<unit></unit>
+<longtext></longtext>
+</item>
+
+<item>
+<key>QP..SEC     </key>
+<itemName>Second generation biofuel production</itemName>
+<unit></unit>
+<longtext></longtext>
+</item>
+
+  <item>
+        <key>BF..SHR     </key>
+        <itemName>Biofuel use</itemName>
+        <unit></unit>
+        <longtext></longtext>
+  </item>
+
+   <item>
+        <key>MBD         </key>
+        <itemName>Blending quotas absolute {COSIMO countries}</itemName>
+        <unit></unit>
+        <longtext></longtext>
+   </item>
+  <item>
+        <key>QCS..LIMIT  </key>
+        <itemName>Blending wall relative to total fuel use </itemName>
+        <unit></unit>
+        <longtext></longtext>
+  </item>
+  <item>
+        <key>QCS..OBL    </key>
+        <itemName>Blending quotas relative to total fuel use</itemName>
+        <unit></unit>
+        <longtext></longtext>
+  </item>
+
+
+
+</table>
+
+
+</generated>

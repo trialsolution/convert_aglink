@@ -1,0 +1,1971 @@
+<generated>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Model solution overview</name>
+  <productSel>model</productSel>
+  <productText>hide</productText>
+  <regionSel>Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName># of infeasibilities in NLP</itemName>
+       <key>NumInfesN</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Maximum single infeasibility</itemName>
+       <key>MaxInfesN</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName># of infeasibilities in MCP</itemName>
+       <key>NumInfes</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Sum of infeasibilities in NLP</itemName>
+       <key>SumInfesN</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Sum of infeasibilities in MCP</itemName>
+       <key>SumInfes</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName># of iterations NLP</itemName>
+       <key>iterN</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName># of iterations MCP</itemName>
+       <key>iter</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Total solution time</itemName>
+       <key>secs</key>
+       <unit>Seconds</unit>
+  </item>
+  <item>
+       <itemName>Sum of iterations MCP</itemName>
+       <key>iter</key>
+       <unit></unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Model schemer</name>
+  <productSel>schemer</productSel>
+  <productText>Sector</productText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0IS0</defpivot>
+  <dim5Sel>schemer</dim5Sel>
+  <dim5Text>Effects</dim5Text>
+  <itemDim>Activity</itemDim>
+  <activityText>act</activityText>
+  <defview>Map</defview>
+  <showRegionLabels>YES</showRegionLabels>
+  <shrinkByValue>YES</shrinkByValue>
+  <showNumbers>YES</showNumbers>
+  <zerosAsMissingValues>YES</zerosAsMissingValues>
+
+  <COO>coo\cge.zip</COO>
+  <item>
+       <itemName>Households</itemName>
+       <key>Households</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Households, factor income</itemName>
+       <key>PRIMFAC-HOU</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Regional income tax</itemName>
+       <key>HOU-RGOV</key>
+       <sel>[Hou,Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Government transfers</itemName>
+       <key>GOV-HOU</key>
+       <sel>[Hou,Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>National income tax</itemName>
+       <key>HOU-NGOV</key>
+       <sel>[Hou,Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Regional government</itemName>
+       <key>Regional government</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>National government</itemName>
+       <key>National government</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Transfer national regional budget</itemName>
+       <key>N-RGOV</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Net borrowing state</itemName>
+       <key>NEBR-G</key>
+       <sel>[Gov,Row]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Savings</itemName>
+       <key>Savings</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Savings to investments</itemName>
+       <key>SAV-INV</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Savings government</itemName>
+       <key>GSAV</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Savings households</itemName>
+       <key>HSAV</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Net borrowing households</itemName>
+       <key>NEBR-HOU</key>
+       <sel>[Hou,Row]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investments</itemName>
+       <key>Investments</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investment taxes</itemName>
+       <key>INV-G</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Production value</itemName>
+       <key>Production value</key>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Rest-of-nation balance</itemName>
+       <key>Rest of nation</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Rest-of-world balance</itemName>
+       <key>ROW</key>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Demand for regional output</itemName>
+       <key>Demand for regional output</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Demand for rest-of-nation</itemName>
+       <key>Demand for rest-of-nation</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Demand for rest-of-world</itemName>
+       <key>Demand for rest-of-world</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Regional sales</itemName>
+       <key>REG-IND</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Rest-of-nation sales</itemName>
+       <key>RON-IND</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Exports</itemName>
+       <key>ROW-IND</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Regional sales tax</itemName>
+       <key>REG-G</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Rest-of-nation sales tax</itemName>
+       <key>RON-G</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Imports sales tax</itemName>
+       <key>ROW-G</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Intermediate input cost</itemName>
+       <key>IND-N</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Labor cost</itemName>
+       <key>IND-LAB</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Capital cost</itemName>
+       <key>IND-CAP</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Land cost</itemName>
+       <key>IND-LAND</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Production taxes</itemName>
+       <key>IND-G</key>
+       <sel>[Gov,PrimFac]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Factor renumeration</itemName>
+       <key>PRIMFAC</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Capital renumeration</itemName>
+       <key>CAP-P</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Labour renumeration</itemName>
+       <key>LAB-P</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Land renumeration</itemName>
+       <key>LAND-P</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Labour taxes</itemName>
+       <key>LAB-G</key>
+       <sel>[Gov,PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Land taxes</itemName>
+       <key>LAND-G</key>
+       <sel>[Gov,PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Capital taxes</itemName>
+       <key>CAP-G</key>
+       <sel>[Gov,PrimFac]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Capital</itemName>
+       <key>Capital</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Labour</itemName>
+       <key>Labor</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Land</itemName>
+       <key>Land</key>
+       <sel>[PrimFac]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Intermediate demand</itemName>
+       <key>Intermediates</key>
+       <unit></unit>
+  </item>
+
+
+  <item>
+       <itemName>Imports Rest-Of-Nation</itemName>
+       <key>RONMRK-RON</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Imports Rest-Of-World</itemName>
+       <key>ROWMRK-ROW</key>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Household demand regional</itemName>
+       <key>H-REG</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Government demand regional</itemName>
+       <key>G-REG</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investment demand regional</itemName>
+       <key>INV-REG</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Intermediate demand regional</itemName>
+       <key>N-REG</key>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Household demand national</itemName>
+       <key>H-RON</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Government demand national</itemName>
+       <key>G-RON</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investment demand national</itemName>
+       <key>INV-RON</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Intermediate demand national</itemName>
+       <key>N-RON</key>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Household demand imports</itemName>
+       <key>H-ROW</key>
+       <sel>[Hou]</sel>
+       <unit></unit>
+  </item>
+
+  <item>
+       <itemName>Government demand imports</itemName>
+       <key>G-ROW</key>
+       <sel>[Gov]</sel>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investment demand imports</itemName>
+       <key>INV-ROW</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Intermediate demand imports</itemName>
+       <key>N-ROW</key>
+       <unit></unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Model schemer, qpv</name>
+  <clone>Model schemer</clone>
+  <defpivot>0ID0</defpivot>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Model closure</name>
+  <productSel>model</productSel>
+  <productText>hide</productText>
+  <regionSel>Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Net migration</itemName>
+       <key>NET_MIGR</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fix budget for factor subsidies</itemName>
+       <key>FIX_BUDGET_FAC_SUBS</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>DPSV rule</itemName>
+       <key>DPSV rule</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Sector specific capital stock</itemName>
+       <key>Sector specific capital stock</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fully mobile capital with fixed stock</itemName>
+       <key>Fully mobile capital with fixed stock</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fully mobile capital updated with investments</itemName>
+       <key>Fully mobile capital updated with investments</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Wage curve</itemName>
+       <key>Wage curve</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fully mobile labor with full employment</itemName>
+       <key>Fully mobile labor with full employment</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fully mobile labor with fixed employment rate</itemName>
+       <key>Fully mobile labor with fixed employment rate</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fixed sectoral labor</itemName>
+      <key>Fixed sectoral labor</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fixed sectoral land</itemName>
+      <key>Fixed sectoral land</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fully mobile land</itemName>
+      <key>Fully mobile land</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Exchange rate closes current account balance</itemName>
+      <key>Exchange rate closes current account balance</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Fixed exchange rate</itemName>
+       <key>Fixed exchange rate</key>
+       <unit></unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Behavioural parameters, per product/industry</name>
+  <productSel>products</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>RPSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Substitution elasticity, VA against intermediates</itemName>
+       <key>subsElas</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>TFP multiplier in production function</itemName>
+       <key>shiftPar</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Substitution elasticity, VA nest</itemName>
+       <key>subsElasVA</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Substitution elasticity, intermediates from different markets</itemName>
+       <key>subsElasINT</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>CET transformation elasticity</itemName>
+       <key>CETElas</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Armington substitution elasticity</itemName>
+       <key>ArmElas</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Marginal budget share households</itemName>
+       <key>margBudShareHou</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Marginal budget share government</itemName>
+       <key>margBudShareGov</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Investment shares</itemName>
+       <key>invShare</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Depreciation rate</itemName>
+       <key>deprRate</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Export demand elasticity</itemName>
+       <key>expDemandElas</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Import supply elasticity</itemName>
+       <key>impSupplyElas</key>
+       <unit></unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>Behavioural parameters, others</name>
+  <productSel>hou</productSel>
+  <regionSel>All NUTS2</regionSel>
+  <defpivot>R0SI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Saving rate households</itemName>
+       <key>savRate</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Saving rate government</itemName>
+       <key>savRateGov</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Wage curve elasticity</itemName>
+       <key>wageCurveElas</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Net migration, slope income per capita</itemName>
+       <key>slopeIncPerCap</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>Net migration, slope employment rate</itemName>
+       <key>slopeEmplRate</key>
+       <unit></unit>
+  </item>
+  <item>
+       <itemName>DPSV prudency factor</itemName>
+       <key>prudFactor</key>
+       <unit></unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Meta</theme>
+  <name>General shocks</name>
+  <productSel>products+</productSel>
+  <productText>sectors</productText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>R0SI</defpivot>
+  <dim5Text>dim5</dim5Text>
+  <dim5Sel>shock</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Subsidies to local households</itemName>
+       <key>subsHouGovLoc</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Government demand</itemName>
+       <key>demGov</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Government investments</itemName>
+       <key>invGov</key>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD indicators, countries</name>
+  <productSel>hou</productSel>
+  <productText>hide</productText>
+  <regionSel>Countries</regionSel>
+  <defpivot>R0SI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Employment in secondary and tertiary sector</itemName>
+       <key>wageCurveElas</key>
+       <unit>Mio persons</unit>
+       <eval>(VAL[*,Empl,FOP,*,*,*]+VAL[*,Empl,MAN,*,*,*]+VAL[*,Empl,CNS,*,*,*]+VAL[*,Empl,ENE,*,*,*]+VAL[*,Empl,TTR,*,*,*]+VAL[*,Empl,HOT,*,*,*]+VAL[*,Empl,EDU,*,*,*]+VAL[*,Empl,OSE,*,*,*])</eval>
+  </item>
+  <item>
+       <itemName>Share of employment in secondary and tertiary sector</itemName>
+       <key>empl</key>
+       <unit>%</unit>
+       <eval>(VAL[*,Empl,FOP,*,*,*]+VAL[*,Empl,MAN,*,*,*]+VAL[*,Empl,CNS,*,*,*]+VAL[*,Empl,ENE,*,*,*]+VAL[*,Empl,TTR,*,*,*]+VAL[*,Empl,HOT,*,*,*]+VAL[*,Empl,EDU,*,*,*]+VAL[*,Empl,OSE,*,*,*])/VAL*100</eval>
+  </item>
+  <item>
+       <itemName>Net migration</itemName>
+       <key>netMigr</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Share of hotels and restaurants on GVA</itemName>
+       <key>GVA</key>
+       <unit>%</unit>
+       <eval>VAL[*,GVA,HOT,*,*,*]/VAL*100</eval>
+  </item>
+  <item>
+       <itemName>Share of services on GVA</itemName>
+       <key>GVA</key>
+       <unit>%</unit>
+       <eval>(VAL[*,GVA,TTR,*,*,*]+VAL[*,GVA,HOT,*,*,*]+VAL[*,GVA,EDU,*,*,*]+VAL[*,GVA,OSE,*,*,*])/VAL*100</eval>
+  </item>
+</table>
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD indicators, countries and regions</name>
+  <clone>RD indicators, countries</clone>
+  <regionSel>All NUTS2</regionSel>
+</table>
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD indicators, map</name>
+  <clone>RD indicators, countries</clone>
+  <regionSel>All NUTS2</regionSel>
+  <defpivot>R0S0</defpivot>
+  <defview>Map</defview>
+  <COO>coo\NUTSII.zip</COO>
+</table>
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD shocks</name>
+  <productSel>bud</productSel>
+  <productText>hide</productText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>RPSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Total</itemName>
+       <key>rdTotal</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Investment in human capital in agriculture</itemName>
+       <key>humCapAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Investments in human capital in other sectors</itemName>
+       <key>humCapRest</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Increase capital stock in agriculture</itemName>
+       <key>InvAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Increase government demand for construction</itemName>
+       <key>demGovCns</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Capital subsidies to agriculture and forestry</itemName>
+       <key>capAgrFor</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Capital subsidies to food processing</itemName>
+       <key>capFop</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income transfers to households</itemName>
+       <key>incSub</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Agri-Env: subsidy to land with lower TFP</itemName>
+       <key>agriEnv</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land subsidies to agriculture</itemName>
+       <key>landSubAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land subsidies to forestry</itemName>
+       <key>landSubFor</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Production subsidies to services</itemName>
+       <key>SubsServ</key>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD measures</name>
+  <productSel>bud</productSel>
+  <productText>hide</productText>
+  <regionSel>regions and countries</regionSel>
+  <defpivot>RPSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+
+  <item>
+     <key>111</key>
+     <itemName>Vocational training, information actions</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>112</key>
+     <itemName>Setting up young farmers</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>113</key>
+     <itemName>Early retirement of farmers and farm workers</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>114</key>
+     <itemName>Use by farmers and forest holders of advisory services</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>115</key>
+     <itemName>Setting up farm management, farm relief and farm/forestry advisory services</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>121</key>
+     <itemName>Farm modernisation</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>123</key>
+     <itemName>Adding value to agricultural and forestry products</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>125</key>
+     <itemName>Improving and developing infrastructure related to the development and adaptation of agriculture and forestry</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>126</key>
+     <itemName>Restoring agr. production potential damaged by natural disasters and introducing appropriate prevention actions</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>131</key>
+     <itemName>Helping farmers to adapt to demanding standards based on Community legislation</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>132</key>
+     <itemName>Supporting farmers who participate in food quality schemes</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>133</key>
+     <itemName>Supporting producer groups for information and promotion activities for products under food quality schemes</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>141</key>
+     <itemName>Supporting semi-subsistence farms undergoing restructuring</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>142</key>
+     <itemName>Setting up of producer groups</itemName>
+     <unit>Mio Euro</unit></item>
+  <item>
+      <key>143</key>
+     <itemName>Provision of farm advisory and extension services in Bulgaria and Romania</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>211-213</key>
+     <itemName>LFA, Natura 2000</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>214</key>
+     <itemName>Agri-environment payments</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>215-6</key>
+     <itemName>Animal welfare payments, Non-productive investments</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>216</key>
+     <itemName>Non-productive investments</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>220</key>
+     <itemName></itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>221</key>
+     <itemName>First afforestration of agricultural land</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>222</key>
+     <itemName>First establishment of agroforestry systems on agricultural land</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+      <key>223</key>
+      <itemName>First afforestration of non-agricultural land</itemName>
+      <unit>Mio Euro</unit>
+  </item>
+  <item>
+      <key>225</key>
+      <itemName>Forest environment payments</itemName>
+      <unit>Mio Euro</unit>
+  </item>
+  <item>
+      <key>226</key>
+      <itemName>Restoring forestry potential and introducing prevention actions</itemName>
+      <unit>Mio Euro</unit>
+  </item>
+  <item>
+      <key>227</key>
+      <itemName>Support for non-productive investments</itemName>
+      <unit>Mio Euro</unit>
+  </item>
+
+  <item>
+     <key>311</key>
+     <itemName>Diversification into non-agricultural activities</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>312</key>
+     <itemName>Support for the creation and development of micro-enterprises</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>313</key>
+     <itemName>Encouragement of tourism activities</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>321</key>
+     <itemName>Basic services for the economy and rural population</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>322/323</key>
+     <itemName>Village renewal</itemName>
+     <unit>Mio Euro</unit>
+     </item>
+  <item>
+     <key>323</key>
+     <itemName>Conservation and upgrading of the rural heritage</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>331</key>
+     <itemName>Training and information for economic actors operating in the field covered by Axis 3</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>341</key>
+     <itemName>Skills acquisition and animation with a view to preparing and implementing a local development strategy</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>411</key>
+     <itemName>Local development strategies. Competitiveness.</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>412</key>
+     <itemName>Local development strategies. Environment/land management.</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>413</key>
+     <itemName>Local development strategies. Quality of life/diversification.</itemName>
+     <unit>Mio Euro</unit></item>
+  <item>
+     <key>421</key>
+     <itemName>Transnational and inter-regional cooperation</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+     <item>
+     <key>431</key>
+     <itemName>Running the local action group, skills acquisition, animation</itemName>
+  <unit>Mio Euro</unit>
+  </item>
+  <item>
+  <key>511</key>
+     <itemName>Technical assistance</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>122/123/225</key>
+     <itemName>Improving the economic value of the forest</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>321/125</key>
+     <itemName>Improving and developing infrastructure related to the development and adaptation of agriculture and forestry</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>511?</key>
+     <itemName></itemName>
+     <unit>Mio Euro</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD priorities</name>
+  <productSel>bud</productSel>
+  <productText>hide</productText>
+  <regionSel>All NUTS2</regionSel>
+  <defpivot>RPSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+
+  <item>
+     <key>comp</key>
+     <itemName>Improving the competitiveness of the agricultural and forestry sectors</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>envi</key>
+     <itemName>Improving the environment and countryside</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>qolr</key>
+     <itemName>Improving the quality of life in rural areas and encouraging diversification of the rural economy</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+  <item>
+     <key>locc</key>
+     <itemName>Building local capacity for employment and diversification</itemName>
+     <unit>Mio Euro</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Policy</theme>
+  <name>RD logic</name>
+  <productSel>products</productSel>
+  <productText>Sectors</productText>
+  <regionSel>regions and countries</regionSel>
+  <defpivot>D0SP</defpivot>
+  <dim5Text>Shock logic</dim5Text>
+  <dim5Sel>shocks</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Total RD measure group</itemName>
+       <key>all_shocks</key>
+       <unit>Mio Euro / average shift</unit>
+  </item>
+  <item>
+       <itemName>Investment in human capital in agriculture</itemName>
+       <key>humCapAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Investments in human capital in other sectors</itemName>
+       <key>humCapRest</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Increase capital stock in agriculture</itemName>
+       <key>InvAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Increase government demand for construction</itemName>
+       <key>demGovCns</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Capital subsidies to agriculture and forestry</itemName>
+       <key>capAgrFor</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Capital subsidies to food processing</itemName>
+       <key>capFop</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income transfers to households</itemName>
+       <key>incSub</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Agri-Env: subsidy to land with lower TFP</itemName>
+       <key>agriEnv</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land subsidies to agriculture</itemName>
+       <key>landSubAgr</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land subsidies to forestry</itemName>
+       <key>landSubFor</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Production subsidies to services</itemName>
+       <key>SubsServ</key>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Welfare</theme>
+  <name>Welfare overview, countries</name>
+  <productSel>hou</productSel>
+  <productText>hide</productText>
+  <regionSel>Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Population</itemName>
+       <key>pop</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Net migration</itemName>
+       <key>netMigr</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Real primary factor income per capita</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/(VAL[*,Pop,*,*,*,*]*VAL[*,cpi,*,*,*,*])</eval>
+  </item>
+  <item>
+       <itemName>Consumer price index</itemName>
+       <key>cpi</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Equivalent variation per capita, household and government</itemName>
+       <key>EV</key>
+       <unit>Euro per cap</unit>
+       <link>EV decomposition</link>
+       <eval>VAL+VAL[*,*,gov,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Equivalent variation total</itemName>
+       <key>EV</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>(VAL+VAL[*,*,gov,*,*])*VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+</table>
+<table>
+  <theme>CGE Welfare</theme>
+  <name>Welfare overview, regions</name>
+  <productSel>hou</productSel>
+  <productText>hide</productText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Population</itemName>
+       <key>pop</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Net migration</itemName>
+       <key>netMigr</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Real primary factor income per capita</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/(VAL[*,Pop,*,*,*,*]*VAL[*,cpi,*,*,*,*])</eval>
+  </item>
+  <item>
+       <itemName>Consumer price index</itemName>
+       <key>cpi</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Equivalent variation per capita, household and government</itemName>
+       <key>EV</key>
+       <eval>VAL+VAL[*,*,gov,*,*]</eval>
+       <unit>Euro per cap</unit>
+       <link>EV decomposition</link>
+  </item>
+  <item>
+       <itemName>Equivalent variation total</itemName>
+       <key>EV</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>(VAL+VAL[*,*,gov,*,*])*VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+</table>
+<table>
+  <theme>CGE Welfare</theme>
+  <name>Welfare overview, map</name>
+  <productSel>hou</productSel>
+  <productText>hide</productText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0RS0</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <defview>Map</defview>
+  <COO>coo\NUTSII.zip</COO>
+  <item>
+       <itemName>Population</itemName>
+       <key>pop</key>
+       <unit>Mio persons</unit>
+  </item>
+   <item>
+       <itemName>Net migration</itemName>
+       <key>netMigr</key>
+       <unit>Mio persons</unit>
+  </item>
+  <item>
+       <itemName>Equivalent variation per capita</itemName>
+       <key>EV</key>
+       <unit>Euro per cap</unit>
+       <link>EV decomposition</link>
+  </item>
+  <item>
+       <itemName>Real primary factor income per capita</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/(VAL[*,Pop,*,*,*,*]*VAL[*,cpi,*,*,*,*])</eval>
+  </item>
+  <item>
+       <itemName>Equivalent variation total</itemName>
+       <key>EV</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>VAL*VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+</table>
+<table>
+  <theme>CGE Welfare</theme>
+  <name>EV decomposition</name>
+  <productSel>EV</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSD</defpivot>
+  <dim5Sel>eff</dim5Sel>
+  <dim5Text>effects</dim5Text>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Household and government, equivalent variation per capita</itemName>
+       <link>Welfare overview</link>
+       <key>EVHou</key>
+       <eval>VAL+VAL[*,EVgov,*,*,*,*]</eval>
+       <unit>Euro per cap</unit>
+  </item>
+  <item>
+       <itemName>Household, equivalent variation per capita</itemName>
+       <link>Welfare overview</link>
+       <key>EVHou</key>
+       <unit>Euro per cap</unit>
+  </item>
+  <item>
+       <itemName>Government, equivalent variation per capita</itemName>
+       <link>Welfare overview</link>
+       <key>EVGov</key>
+       <unit>Euro per cap</unit>
+  </item>
+  <item>
+       <itemName>Household and government, equivalent variation total</itemName>
+       <key>EVHou</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>(VAL+VAL[*,EvGov,*,*,*,*])*VAL[*,Pop,hou,*,*, ]</eval>
+  </item>
+  <item>
+       <itemName>Household, equivalent variation total</itemName>
+       <key>EVHou</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>VAL*VAL[*,Pop,hou,*,*, ]</eval>
+  </item>
+  <item>
+       <itemName>Government, equivalent variation total</itemName>
+       <key>EVGov</key>
+       <unit>Mio Euro 2005</unit>
+       <eval>VAL*VAL[*,Pop,hou,*,*, ]</eval>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>Balance of trade, total</name>
+  <activitySel>value</activitySel>
+  <activityText>hide</activityText>
+  <regionSel>Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Balance of trade</itemName>
+       <key>bot</key>
+       <unit>Mio Euro in int currency</unit>
+  </item>
+  <item>
+       <itemName>Exchange rate</itemName>
+       <key>exchr</key>
+       <unit>Int currency/EU</unit>
+  </item>
+  <item>
+       <itemName>Current account balance</itemName>
+       <key>curAccBal</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Net borrowing goverment</itemName>
+       <key>nebrGov</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Net borrowing household</itemName>
+       <key>nebrHou</key>
+       <unit>Mio Eurp</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>Household account</name>
+  <productSel>hou</productSel>
+  <activityText>hide</activityText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Primary factor income</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income taxes minus income subsidies</itemName>
+       <key>IncTaxes</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Net borrowing</itemName>
+       <key>nebrHou</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income</itemName>
+       <key>Income</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Savings</itemName>
+       <key>Sav</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Consumption</itemName>
+       <key>Cons</key>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>Accounts</name>
+  <productSel>hou</productSel>
+  <activityText>hide</activityText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0ISY</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Primary factor income</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income taxes minus income subsidies</itemName>
+       <key>IncTaxes</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Net borrowing Households</itemName>
+       <key>nebrHou</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Income</itemName>
+       <key>Income</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Savings Households</itemName>
+       <key>Sav</key>
+       <eval>(VAL[*,sav,hou,*,*, ])</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Savings Government</itemName>
+       <key>gva</key>
+       <eval>(VAL[*,sav,gov,*,*, ])</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Savings</itemName>
+       <key>cpi</key>
+       <eval>(VAL[*,sav,hou,*,*, ]+VAL[*,sav,gov,*,*, ]</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Consumption Households</itemName>
+       <key>Cons</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land, Households</itemName>
+       <key>Land</key>
+       <eval>(VAL*VAL[*,*Price,*,*, ]*(1+VAL[*,*Price,*,*, ]))</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Labor, Households</itemName>
+       <key>Labor</key>
+       <eval>(VAL*VAL[*,*Price,*,*, ])</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Capital, Households</itemName>
+       <key>Capital</key>
+       <eval>(VAL*VAL[*,*Price,*,*, ])</eval>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Consumption Government</itemName>
+       <key>empl</key>
+       <eval>(VAL[*,cons,Gov,*,*, ])</eval>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>Household account, per capita</name>
+  <productSel>hou</productSel>
+  <activityText>hide</activityText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Primary factor income</itemName>
+       <key>PrimFacIncome</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Income taxes minus income subsidies</itemName>
+       <key>IncTaxes</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Net borrowing</itemName>
+       <key>nebrHou</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Income</itemName>
+       <key>Income</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Savings</itemName>
+       <key>Sav</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+  <item>
+       <itemName>Consumption</itemName>
+       <key>Cons</key>
+       <unit>Euro/capita</unit>
+       <eval>VAL/VAL[*,Pop,*,*,*,*]</eval>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>National government account</name>
+  <productSel>gov</productSel>
+  <activityText>hide</activityText>
+  <regionSel>Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Capital taxes</itemName>
+       <key>Capital</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>Labor taxes</itemName>
+       <key>Labor</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Land taxes</itemName>
+       <key>Land</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>National income tax</itemName>
+       <key>TaxIncSta</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Regional income tax</itemName>
+       <key>TaxIncLoc</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Production taxes</itemName>
+       <key>TaxProd</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Sales taxes</itemName>
+       <key>TaxSales</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Investment taxes</itemName>
+       <key>TaxInv</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Net borrowing</itemName>
+       <key>NebrGov</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Subsidies to regional goverments</itemName>
+       <key>subsSta</key>
+       <unit>Mio Euro</unit>
+  </item>
+  <item>
+       <itemName>Tax Income</itemName>
+       <key>Income</key>
+       <unit>Mio Euro</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Accounts</theme>
+  <name>Local government account</name>
+  <productSel>gov</productSel>
+  <activityText>hide</activityText>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0RSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Subsidies from national government</itemName>
+       <key>subsSta</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>EU budget transfer for RD measures</itemName>
+       <key>EUTrans</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>Local income tax</itemName>
+       <key>TaxIncLoc</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>Subsidies to local households</itemName>
+       <key>incSubs</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>Savings</itemName>
+       <key>sav</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+  <item>
+       <itemName>Final consumption</itemName>
+       <key>cons</key>
+       <unit>Mio EU 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Prices</theme>
+  <name>Product prices</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Producer price</itemName>
+       <key>priceProd</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Producer tax</itemName>
+       <key>taxProd</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Value-Added price</itemName>
+       <key>priceVA</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Regional price</itemName>
+       <key>priceReg</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>National price</itemName>
+       <key>priceNat</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Export price</itemName>
+       <key>priceExp</key>
+       <unit>index, in Euro</unit>
+  </item>
+  <item>
+       <itemName>Import price</itemName>
+       <key>priceImp</key>
+       <unit>index, ine Euro</unit>
+  </item>
+  <item>
+       <itemName>Armington price</itemName>
+       <key>priceArm</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Sales Tax</itemName>
+       <key>taxSales</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Consumer Price</itemName>
+       <key>priceArm</key>
+       <eval>VAL+VAL[*,*,taxSales,*,*,*]</eval>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Investment Tax</itemName>
+       <key>taxInv</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Investment Price</itemName>
+       <key>priceArm</key>
+       <eval>VAL+VAL[*,*,taxInv,*,*,*]</eval>
+       <unit>index</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Prices</theme>
+  <name>Factor prices, averages</name>
+  <activitySel>primfac</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>R0SP</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Price</itemName>
+       <key>Price</key>
+       <unit>index</unit>
+       <link>Factor prices, per industry</link>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Prices</theme>
+  <name>Factor prices, per industry</name>
+  <productSel>products</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>price</dim5Sel>
+  <isActivity>NOS</isActivity>
+  <item>
+       <itemName>Capital</itemName>
+       <key>Capital</key>
+       <unit>index</unit>
+       <link>Factor prices, averages</link>
+  </item>
+  <item>
+       <itemName>Labor</itemName>
+       <key>Labor</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Land</itemName>
+       <key>Land</key>
+       <unit>index</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Prices</theme>
+  <name>Factor taxes, per industry</name>
+  <productSel>products</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>taxrate</dim5Sel>
+  <isActivity>NOS</isActivity>
+  <item>
+       <itemName>Capital</itemName>
+       <key>Capital</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Labor</itemName>
+       <key>Labor</key>
+       <unit>index</unit>
+  </item>
+  <item>
+       <itemName>Land</itemName>
+       <key>Land</key>
+       <unit>index</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Markets</theme>
+  <name>Production, quantities</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Production</itemName>
+       <key>prod</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Intermediate demand</itemName>
+       <key>intReg</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Regional sales</itemName>
+       <key>reg</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>National sales</itemName>
+       <key>natExp</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Exports</itemName>
+       <key>intExp</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Markets</theme>
+  <name>Production, values</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Production</itemName>
+       <key>prod</key>
+       <unit>Mio cur Euro</unit>
+       <eval>VAL*VAL[*,*,PriceProd,*,*, ]</eval>
+  </item>
+  <item>
+       <itemName>Intermediate demand</itemName>
+       <key>intReg</key>
+       <unit>Mio cur Euro</unit>
+       <eval>VAL*VAL[*,*,PriceProd,*,*, ]</eval>
+  </item>
+  <item>
+       <itemName>Regional sales</itemName>
+       <key>reg</key>
+  </item>
+  <item>
+       <itemName>National sales</itemName>
+       <key>natExp</key>
+       <unit>Mio cur Euro</unit>
+       <eval>VAL*VAL[*,*,PriceNat,*,*, ]</eval>
+  </item>
+  <item>
+       <itemName>Exports</itemName>
+       <key>intExp</key>
+       <unit>Mio cur Euro</unit>
+       <eval>VAL*VAL[*,*,PriceExp,*,*, ]</eval>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Markets</theme>
+  <name>Final demand</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Final demand</itemName>
+       <key>arm</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Household demand</itemName>
+       <key>hou</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Government demand</itemName>
+       <key>gov</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Investment demand</itemName>
+       <key>inv</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Markets</theme>
+  <name>Armington</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Final demand</itemName>
+       <key>arm</key>
+       <unit>Utilty, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Regional purchases</itemName>
+       <key>reg</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>National purchases</itemName>
+       <key>natImp</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Imports</itemName>
+       <key>intImp</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Markets</theme>
+  <name>Primary factors</name>
+  <activitySel>primfac</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Use</itemName>
+       <key>hou</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Stock</itemName>
+       <key>Stock</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Utilization rate</itemName>
+       <key>emplR</key>
+       <unit>%</unit>
+       <eval>VAL[*,*,hou,*,*,*]/VAL[*,*,Stock,*,*,*]*100</eval>
+  </item>
+</table>
+
+
+<table>
+  <theme>CGE Production</theme>
+  <name>Pimary factor use by industry</name>
+  <productSel>products</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Capital</itemName>
+       <key>Capital</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Labor</itemName>
+       <key>Labor</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Land</itemName>
+       <key>Land</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Production</theme>
+  <name>Capital stock</name>
+  <activitySel>products</activitySel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>0PSI</defpivot>
+  <dim5Sel>quant</dim5Sel>
+  <itemDim>Product</itemDim>
+  <item>
+       <itemName>Capital</itemName>
+       <key>Capital</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Depreciation</itemName>
+       <key>depr</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Private investment</itemName>
+       <key>grossInv</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Public investment</itemName>
+       <key>stateinv</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+
+<table>
+  <theme>CGE Production</theme>
+  <name>Intermediate input by industry</name>
+  <productSel>products</productSel>
+  <regionSel>Regions and Countries</regionSel>
+  <defpivot>PISD</defpivot>
+  <dim5Sel>products</dim5Sel>
+  <itemDim>Activity</itemDim>
+  <item>
+       <itemName>Regional</itemName>
+       <key>intReg</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>National</itemName>
+       <key>intNat</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+  <item>
+       <itemName>Imported</itemName>
+       <key>intInt</key>
+       <unit>Quantity, Mio Euro 2005</unit>
+  </item>
+</table>
+</generated>

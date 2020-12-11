@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tables  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<themes>Prices,Markets,Production,Trade,Macroeconomic,Sugar,
+	Biofuels</themes>
+
+<xi:include href="views/aglink_tables.xml"/>
+<xi:include href="views/dimdefs_aglink.xml"/>
+
+</tables>

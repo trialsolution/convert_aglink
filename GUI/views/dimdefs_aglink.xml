@@ -1,0 +1,1303 @@
+<generated>
+
+<product>
+<key>SU </key>
+<itemName>Sugar (in raw sugar equivalent)</itemName>
+<sel>[all, sugar]</sel>
+</product>
+<product>
+<key>BD </key>
+<itemName>Biodiesel</itemName>
+<sel>[all, biofuels, biodieselSel]</sel>
+</product>
+<product>
+<key>RP </key>
+<itemName>Rapeseed</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CG </key>
+<itemName>Coarse grains</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>HFC</key>
+<itemName>High fructose corn syrup</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>NFS</key>
+<itemName>Non-fat solids in milk {only CAN}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>RFS</key>
+<itemName>renewable fuel standard</itemName>
+<sel>[all, biofuels]</sel>
+</product>
+<product>
+<key>SWG</key>
+<itemName>Other sweetener {only USA and CHN}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>FO </key>
+<itemName>Forage</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CE </key>
+<itemName>Cereals</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SET</key>
+<itemName>Set aside</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>AG </key>
+<itemName>Agriculture</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>BA </key>
+<itemName>Barley</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>BT </key>
+<itemName>Butter</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>BV </key>
+<itemName>Beef and veal  {beef}</itemName>
+<sel>[all, meats]</sel>
+</product>
+<product>
+<key>CA </key>
+<itemName>Casein</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CF </key>
+<itemName>Corn gluten feed  (DDGS=CGF+DDG)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CGF</key>
+<itemName>Corn gluten feed  (DDGS=CGF+DDG)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CH </key>
+<itemName>Cheese</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CL </key>
+<itemName>Coconut oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CM </key>
+<itemName>Coconut meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CN </key>
+<itemName>Copra</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CSE</key>
+<itemName>Cottonseed</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CSL</key>
+<itemName>Cottonseed oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>CSM</key>
+<itemName>Cottonseed meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>DDG</key>
+<itemName>Dried Distillers Grains  (DDGS=CGF+DDG)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>DIE</key>
+<itemName>Diesel</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>EG </key>
+<itemName>Eggs</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>ET </key>
+<itemName>Ethanol</itemName>
+<sel>[all, biofuels, bioethanolSel]</sel>
+</product>
+<product>
+<key>FDP</key>
+<itemName>Fresh dairy product  (fresh milk products)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>FH </key>
+<itemName>Fish</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>GAS</key>
+<itemName>Gasoline</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>GL </key>
+<itemName>Groundnut oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>GM </key>
+<itemName>Groundnut meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>GN </key>
+<itemName>Groundnuts</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>KL </key>
+<itemName>Palmkernel oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>KM </key>
+<itemName>Palmkernel meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>MA </key>
+<itemName>Maize</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>ME </key>
+<itemName>Macroeconomic</itemName>
+<sel>[all, macro]</sel>
+</product>
+<product>
+<key>MK </key>
+<itemName>Milk</itemName>
+<sel>[all, milkSel]</sel>
+</product>
+<product>
+<key>MOL</key>
+<itemName>Molasse</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OC </key>
+<itemName>Other cereals</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>ODP</key>
+<itemName>Other dairy product</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OFP</key>
+<itemName>Milk other fat products {new definition}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OIL</key>
+<itemName>Crude oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OL </key>
+<itemName>Oilseed oils  (OL=RL+SFL+SL+CSL+GL)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OM </key>
+<itemName>Oilseed meals</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>ONP</key>
+<itemName>Milk other non-fat products {new}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OS </key>
+<itemName>Oilseeds</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OT </key>
+<itemName>Oats</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>OX </key>
+<itemName>Other land use {new only EU}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>PA </key>
+<itemName>Pasture</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>PK </key>
+<itemName>Pork meat</itemName>
+<sel>[all, meats]</sel>
+</product>
+<product>
+<key>PKL</key>
+<itemName>Palm kernels</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>PL </key>
+<itemName>Palm oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>PO </key>
+<itemName>Potatoes</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>PT </key>
+<itemName>Poultry meat</itemName>
+<sel>[all, meats]</sel>
+</product>
+<product>
+<key>RI </key>
+<itemName>Rice</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>RL </key>
+<itemName>Rapeseed oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>RM </key>
+<itemName>Rapeseed meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>RY </key>
+<itemName>Rye</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SB </key>
+<itemName>Soybeans</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SBE</key>
+<itemName>Sugar beet</itemName>
+<sel>[all, SugarBeet]</sel>
+</product>
+<product>
+<key>SCA</key>
+<itemName>Sugar Cane</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SF </key>
+<itemName>Sunflower seed</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SFL</key>
+<itemName>Sunflower oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SFM</key>
+<itemName>Sunflower meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SH </key>
+<itemName>Sheep meat (sheep and goat meat)</itemName>
+<sel>[all, meats]</sel>
+</product>
+<product>
+<key>SL </key>
+<itemName>Soybean oil</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SM </key>
+<itemName>Soybean meal</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SMP</key>
+<itemName>Skimmed milk powder</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>SUR</key>
+<itemName>Raw Sugar (in raw sugar equivalent)</itemName>
+<sel>[all, sugar]</sel>
+</product>
+<product>
+<key>SUW</key>
+<itemName>Refined Sugar (in raw sugar equivalent) {new name}</itemName>
+<sel>[all, sugar]</sel>
+</product>
+<product>
+<key>SW </key>
+<itemName>Sweetener</itemName>
+<sel>[all, sugar]</sel>
+</product>
+<product>
+<key>VL </key>
+<itemName>Vegetable oils (VL=OL+PL+KL+CL)</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>WMP</key>
+<itemName>Wholemilk powder</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>WT </key>
+<itemName>Wheat</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>WTD</key>
+<itemName>Durum wheat {only EU}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>WTS</key>
+<itemName>Soft wheat {only EU}</itemName>
+<sel>[all]</sel>
+</product>
+<product>
+<key>WYP</key>
+<itemName>Whey powder</itemName>
+<sel>[all]</sel>
+</product>
+
+<region>
+<key>ARG</key>
+<itemName>Argentina</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>AUS</key>
+<itemName>Australia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>BRA</key>
+<itemName>Brazil</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CAN</key>
+<itemName>Canada</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CHL</key>
+<itemName>Chile</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CHN</key>
+<itemName>China</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>NMS</key>
+<itemName>EU New Member States</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>E15</key>
+<itemName>European Union 15</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>EUN</key>
+<itemName>European Union 28</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>JPN</key>
+<itemName>Japan</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MEX</key>
+<itemName>Mexico</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>NZL</key>
+<itemName>New Zealand</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>NOR</key>
+<itemName>Norway</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>RUS</key>
+<itemName>Russia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CHE</key>
+<itemName>Switzerland</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>USA</key>
+<itemName>United States of America</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>AGO</key>
+<itemName>Angola</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>BFA</key>
+<itemName>Burkina Faso</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>BGD</key>
+<itemName>Bangladesh</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CIV</key>
+<itemName>Côte d'Ivoire</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>CMR</key>
+<itemName>Cameroon</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>COD</key>
+<itemName>Democratic Republic of the Congo</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>COG</key>
+<itemName>Congo</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>COL</key>
+<itemName>Colombia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>DZA</key>
+<itemName>Algeria</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>EGY</key>
+<itemName>Egypt</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ETH</key>
+<itemName>Ethiopia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>GAB</key>
+<itemName>Gabon</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>GHA</key>
+<itemName>Ghana</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>HTI</key>
+<itemName>Haiti</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>IDN</key>
+<itemName>Indonesia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>IND</key>
+<itemName>India</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>IRN</key>
+<itemName>Iran (Islamic Republic of)</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>IRQ</key>
+<itemName>Iraq</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ISR</key>
+<itemName>Israel</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>KAZ</key>
+<itemName>Kazakhstan</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>KEN</key>
+<itemName>Kenya</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>KHM</key>
+<itemName>Cambodia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>KOR</key>
+<itemName>Korea-South</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>LAO</key>
+<itemName>Lao People's Democratic Republic</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>LBN</key>
+<itemName>Lebanon</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>LBY</key>
+<itemName>Libyan Arab Jamahiriya</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MAR</key>
+<itemName>Morocco</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MDG</key>
+<itemName>Madagascar</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MLI</key>
+<itemName>Mali</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MMR</key>
+<itemName>Myanmar</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MOZ</key>
+<itemName>Mozambique</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MRT</key>
+<itemName>Mauritania</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MWI</key>
+<itemName>Malawi</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>MYS</key>
+<itemName>Malaysia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>NGA</key>
+<itemName>Nigeria</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>PAK</key>
+<itemName>Pakistan</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>PER</key>
+<itemName>Peru</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>PHL</key>
+<itemName>Philippines</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>PRY</key>
+<itemName>Paraguay</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>RWA</key>
+<itemName>Rwanda</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>SAU</key>
+<itemName>Saudi Arabia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>SDN</key>
+<itemName>Sudan</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>SEN</key>
+<itemName>Senegal</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>SOM</key>
+<itemName>Somalia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>TCD</key>
+<itemName>Chad</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>THA</key>
+<itemName>Thailand</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>TUN</key>
+<itemName>Tunisia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>TUR</key>
+<itemName>Turkey</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>TZA</key>
+<itemName>United Republic of Tanzania</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>UGA</key>
+<itemName>Uganda</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>UKR</key>
+<itemName>Ukraine</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>URY</key>
+<itemName>Uruguay</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>VNM</key>
+<itemName>Viet Nam</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>YEM</key>
+<itemName>Yemen</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ZAF</key>
+<itemName>South Africa</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ZMB</key>
+<itemName>Zambia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ZWE</key>
+<itemName>Zimbabwe</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>AF1</key>
+<itemName>Other Subsaharan Africa</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>AF2</key>
+<itemName>Other LDC Subsaharan Africa</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>AS2</key>
+<itemName>Other LDC Asia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ASA</key>
+<itemName>Other Asia</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ASD</key>
+<itemName>Other Asia Developed</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>EUE</key>
+<itemName>Other Eastern Europe</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>EUW</key>
+<itemName>Other Western Europe</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>NRE</key>
+<itemName>Other Middle East</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>OCE</key>
+<itemName>Other Oceania</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>OCL</key>
+<itemName>LDC Oceania</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>SAC</key>
+<itemName>Other South America and Caribbean</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>WLD</key>
+<itemName>WLD</itemName>
+<sel>[all]</sel>
+</region>
+<region>
+<key>ACP</key>
+<itemName>ACP</itemName>
+<sel>[all]</sel>
+</region>
+
+
+
+
+  <dim5>
+     <itemName>all</itemName>
+     <sel>[all]</sel>
+  </dim5>
+
+
+<activity>
+<key>MAR         </key>
+<itemName>Margin</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-SEC      </key>
+<itemName>Second generation biofuel production</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BD-ADJ      </key>
+<itemName>biodiesel biofuel mandate</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TOT..ADJ    </key>
+<itemName>total biofuel mandate (adjusted for anticipated reduction</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FO..SHR     </key>
+<itemName>Share in total sweetener conumption (only HFCS)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BF          </key>
+<itemName>Biofuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CG          </key>
+<itemName>first generation biofuel mandate</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CR          </key>
+<itemName>Crush   (industrial use)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FE          </key>
+<itemName>Feed</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>HFCS        </key>
+<itemName>High fructose corn sirup  (part of INDM)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>RES         </key>
+<itemName>residual (only for BT and SMP)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>AH          </key>
+<itemName>Area harvested</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BF..BD..CONV</key>
+<itemName>Biofuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BF..ET      </key>
+<itemName>Biofuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BF..ET..CONV</key>
+<itemName>Biofuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>BF..SHR     </key>
+<itemName>Biofuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CI          </key>
+<itemName>Cow inventory</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CP          </key>
+<itemName>Consumer price</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CPCI        </key>
+<itemName>Commodity production cost index</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CPI         </key>
+<itemName>Consumer price index</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>CRMAR       </key>
+<itemName>Crush margin</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>DEL         </key>
+<itemName>Deliveries milk (milk processing)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>EX          </key>
+<itemName>Exports</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>EXL         </key>
+<itemName>Exports live</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>EXM         </key>
+<itemName>Exports meat</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>EXP         </key>
+<itemName>Export price (border price in domestic currency)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FECI        </key>
+<itemName>Feed cost index</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FEEXP       </key>
+<itemName>Feed expenditure</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FO          </key>
+<itemName>Food; waste and seed {mostly HCOM}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FOCI        </key>
+<itemName>Food cost index</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FOE         </key>
+<itemName>Food expenditure</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>FU          </key>
+<itemName>On-farm use (for milk)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>GDPD        </key>
+<itemName>GDP deflator</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>GDPI        </key>
+<itemName>GDP index</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>IM          </key>
+<itemName>Imports</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>IML         </key>
+<itemName>Imports live</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>IMM         </key>
+<itemName>Imports meat</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>IMP         </key>
+<itemName>Import price (border price in domestic currency)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>MBD         </key>
+<itemName>Blending quotas absolute {COSIMO countries}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>NT          </key>
+<itemName>Trade balance</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>OU          </key>
+<itemName>Other use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>POP         </key>
+<itemName>Population</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>PP          </key>
+<itemName>Weighted average or Producer price</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QC          </key>
+<itemName>Consumption</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QCS..LIMIT  </key>
+<itemName>Blending wall relative to total fuel use </itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QCS..OBL    </key>
+<itemName>Blending quotas relative to total fuel use</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP          </key>
+<itemName>Production</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-BME      </key>
+<itemName>Production from biomass for ethanol</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-CG       </key>
+<itemName>Production from coarse grain</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-DS       </key>
+<itemName>Direct sales from farm (part of farm use, only milk)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-JA       </key>
+<itemName>Production from jatropha</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-MOL      </key>
+<itemName>Production from molasse</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-NAGR     </key>
+<itemName>Production from Non-agricultural sources</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-OTH      </key>
+<itemName>Production from others</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-OTHER    </key>
+<itemName>Production from others</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-RES      </key>
+<itemName>Production from residual</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-RT       </key>
+<itemName>Production from roots and tubers</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-SBE      </key>
+<itemName>Production from sugar beet</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-SCA      </key>
+<itemName>Production from Sugar cane</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-SU       </key>
+<itemName>Production from sugar</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-VL       </key>
+<itemName>Production from vegetable oil</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QP-WT       </key>
+<itemName>Production from wheat</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPC..MOL    </key>
+<itemName>Production capacity for molasse</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPC..SBE    </key>
+<itemName>Production capacity for sugar beet</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPC..VL     </key>
+<itemName>Production capacity for vegetable oil</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPC..WT     </key>
+<itemName>Production capacity for wheat</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPR..CG     </key>
+<itemName>Capacity use rate for coarse grains</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPR..MOL    </key>
+<itemName>Capacity use rate for molasse</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPR..SBE    </key>
+<itemName>Capacity use rate for sugar beet</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPR..VL     </key>
+<itemName>Capacity use rate for vegetable oil</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>QPR..WT     </key>
+<itemName>Capacity use rate for wheat</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>RH          </key>
+<itemName>Returns per hectare</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>SP          </key>
+<itemName>Support price</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TAS         </key>
+<itemName>Specific tariff {only used in CAN}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TAV         </key>
+<itemName>Ad valorem tariff</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TAVE        </key>
+<itemName>Export tariffs {new}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TAVI        </key>
+<itemName>Import tariffs {new name for TARB}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TAX         </key>
+<itemName>Tax</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TRC         </key>
+<itemName>Transport costs</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TRQ         </key>
+<itemName>Tariff rate quota</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>TSP         </key>
+<itemName>Specific tariff {new}</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>VST         </key>
+<itemName>Variation in stocks (VST+STch)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>WAS         </key>
+<itemName>Waste or statistical difference (closes market balance)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>XR          </key>
+<itemName>Exchange rate</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>YLD         </key>
+<itemName>Yield</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>IST         </key>
+<itemName>Intervention stocks (ending)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>PRST        </key>
+<itemName>Stocks in private storage (ending)</itemName>
+<sel>[all]</sel>
+</activity>
+<activity>
+<key>ST          </key>
+<itemName>Ending stocks</itemName>
+<sel>[all]</sel>
+</activity>
+
+
+
+
+
+
+
+ <xLabel><key>LARG</key><pos>2</pos></xLabel>
+ <xLabel><key>SMAL</key><pos>0</pos></xLabel>
+ <xLabel><key>MEDI</key><pos>1</pos></xLabel>
+ <yLabel><key>MIXF</key><pos>6</pos></yLabel>
+ <yLabel><key>HORT</key><pos>9</pos></yLabel>
+ <yLabel><key>POLT</key><pos>0</pos></yLabel>
+ <yLabel><key>PERM</key><pos>8</pos></yLabel>
+ <yLabel><key>ARAB</key><pos>7</pos></yLabel>
+ <yLabel><key>PIGS</key><pos>1</pos></yLabel>
+ <yLabel><key>BEEF</key><pos>3</pos></yLabel>
+ <yLabel><key>MIXL</key><pos>5</pos></yLabel>
+ <yLabel><key>SHGM</key><pos>2</pos></yLabel>
+</generated>

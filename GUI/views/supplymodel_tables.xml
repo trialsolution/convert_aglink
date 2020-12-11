@@ -1,0 +1,1280 @@
+<generated>
+<table>
+  <theme>Scenario shifter</theme>
+  <name>Exogenous prices</name>
+  <dim5Sel>shifters</dim5Sel>
+  <activityText>Prices</activityText>
+  <yearText>Year</yearText>
+  <scenText>Scenario</scenText>
+  <defpivot>P0SD</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Prices[German:Preise]</itemName>
+    <key>UVAG</key>
+ </item>
+</table>
+<table>
+  <theme>CAP</theme>
+  <name>Greening measures</name>
+  <activityText>Measure</activityText>
+  <regionText>Region</regionText>
+  <regionSel>Regions and countries</regionSel>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <activitySel>Greening Measures</activitySel>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Minimum target</itemName>
+    <key>FLOOR</key>
+ </item>
+ <item>
+    <itemName>Non complying hectares</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+ </item>
+ <item>
+    <itemName>Overcomplying hectares</itemName>
+    <key>SLAK</key>
+    <unit>1000 ha</unit>
+ </item>
+ <item>
+    <itemName>Marginal compliance costs</itemName>
+    <key>TOIN</key>
+    <unit>Euro per ha</unit>
+ </item>
+</table>
+<table>
+  <theme>CAP</theme>
+  <name>Premium overview</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>Premiums</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Premium scheme</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defview>Table</defview>
+  <defpivot>0PSI</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Ceiling physical</itemName>
+    <key>CEILLEV</key>
+    <unit>1000 ha or head</unit>
+ </item>
+ <item>
+    <itemName>Actual level physical</itemName>
+    <key>CEILACL</key>
+    <unit>1000 ha or head</unit>
+ </item>
+ <item>
+    <itemName>Value ceiling</itemName>
+    <key>CEILVAL</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Actual value paid</itemName>
+    <key>CEILACV</key>
+    <unit>Mio Euro</unit>                                                                                                                                                                                                            /
+ </item>
+ <item>
+    <itemName>Financed by EU</itemName>
+    <key>budEU</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Financed by pillar I</itemName>
+    <key>budPil1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Financed by pillar II</itemName>
+    <key>budPil2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Financed by other EU program</itemName>
+    <key>budRestEU</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Financed by country</itemName>
+    <key>budNat</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Country contribution to EU budget</itemName>
+    <key>budNatEU</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Cut factor</itemName>
+    <key>CEILCUT</key>
+ </item>
+</table>
+<table>
+  <theme>CAP</theme>
+  <name>Premium scheme maps</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>Premiums</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Premium scheme</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Actual value paid</itemName>
+    <key>UAAR</key>
+    <unit>Euro / ha UAA</unit>                                                                                                                                                                                                            /
+ </item>
+</table>
+<table>
+  <theme>CAP</theme>
+  <name>Budget per ha UAA, mappping view</name>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <activityText>hide</activityText>
+  <regionText>Region</regionText>
+  <regionSel>Not farm types</regionSel>
+  <yearText>Year</yearText>
+  <productText>Budget position</productText>
+  <scenText>Scenario</scenText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <activitySel>UAA</activitySel>
+ <item>
+    <itemName>Financed by EU</itemName>
+    <key>budEU</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Financed by pillar I</itemName>
+    <key>budPil1</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Financed by pillar II</itemName>
+    <key>budPil2</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Financed by other EU program</itemName>
+    <key>budRestEU</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Financed by country</itemName>
+    <key>budNat</key>
+    <unit>Euro/ha</unit>
+ </item>
+</table>
+
+<table>
+  <theme>CAP</theme>
+  <name>Premium details, per ha</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>PremiumsPos</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Premium position</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0ISD</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Sum</itemName>
+    <key>DPTOTAL</key>
+ </item>
+ <item>
+    <itemName>Sum of pillar I payments</itemName>
+    <key>DPPIL1</key>
+ </item>
+ <item>
+    <itemName>Direct payment to grandes cultures</itemName>
+    <key>DPGRCU</key>
+ </item>
+ <item>
+    <itemName>Specific payment for pulses</itemName>
+    <key>DPPULS</key>
+ </item>
+ <item>
+    <itemName>Traditional durum wheat premium</itemName>
+    <key>DPDWHETR</key>
+ </item>
+ <item>
+    <itemName>Established payment to durum wheat</itemName>
+    <key>DPDWHEES</key>
+ </item>
+ <item>
+    <itemName>Specific rice premium remaining after MTR policy</itemName>
+    <key>DPPARI</key>
+ </item>
+ <item>
+    <itemName>Payments to starch potatoes</itemName>
+    <key>DPPOTA</key>
+ </item>
+ <item>
+    <itemName>Silage premiums for Sweden and Finland</itemName>
+    <key>DPSILA</key>
+ </item>
+ <item>
+    <itemName>Farm income rice premiums</itemName>
+    <key>DPPARI_fa</key>
+ </item>
+ <item>
+    <itemName>Energy crop payment</itemName>
+    <key>DPENERCRP</key>
+ </item>
+ <item>
+    <itemName>Payments to live and oilve oil sector</itemName>
+    <key>DPOLIV</key>
+ </item>
+ <item>
+    <itemName>Payments to fruits and vegetables</itemName>
+    <key>DPFRVG</key>
+ </item>
+ <item>
+    <itemName>Payments to wine sector</itemName>
+    <key>DPWINE</key>
+ </item>
+ <item>
+    <itemName>Paymanets to tobacco</itemName>
+    <key>DPTOBA</key>
+ </item>
+ <item>
+    <itemName>Payments to textile crops</itemName>
+    <key>DPTEXT</key>
+ </item>
+ <item>
+    <itemName>Payments derived from EAA (EU010)</itemName>
+    <key>DPEU010</key>
+ </item>
+ <item>
+    <itemName>Suckler cow premium</itemName>
+    <key>DPSCOW</key>
+ </item>
+ <item>
+    <itemName>Special premium to bulls and steers</itemName>
+    <key>DPBULF</key>
+ </item>
+ <item>
+    <itemName>Direct income support to dairy cows</itemName>
+    <key>DPDCOW</key>
+ </item>
+ <item>
+    <itemName>Direct payment for sheep and goat</itemName>
+    <key>DPSHGM</key>
+ </item>
+ <item>
+    <itemName>Suppl. payment for sheep and goat</itemName>
+    <key>DPSHGM_SUP</key>
+ </item>
+ <item>
+    <itemName>National envelope for sheep and goat</itemName>
+    <key>DPNE_SHGM</key>
+ </item>
+ <item>
+    <itemName>National envelope dairy cows</itemName>
+    <key>DPNE_DCOW</key>
+ </item>
+ <item>
+    <itemName>National envelope bovine meat cattle</itemName>
+    <key>DPNE_MEAT</key>
+ </item>
+ <item>
+    <itemName>Slaughter premium for adult cattle</itemName>
+    <key>DPSL_ADCT</key>
+ </item>
+ <item>
+    <itemName>Slaughter premium for calves</itemName>
+    <key>DPSL_CALV</key>
+ </item>
+ <item>
+    <itemName>Extensification premium</itemName>
+    <key>DPEXTENS</key>
+ </item>
+ <item>
+    <itemName>Single area payment scheme</itemName>
+    <key>DPSAPS</key>
+ </item>
+ <item>
+    <itemName>The MTR decoupled payment</itemName>
+    <key>DPDEC</key>
+ </item>
+ <item>
+    <itemName>Single farm premiums</itemName>
+    <key>DPSFP</key>
+ </item>
+ <item>
+    <itemName>Regional flat rate premium</itemName>
+    <key>DPREG</key>
+ </item>
+ <item>
+    <itemName>Farm specific payment</itemName>
+    <key>DPFRMS</key>
+ </item>
+ <item>
+    <itemName>Hybrid premium farm</itemName>
+    <key>DPFRMF</key>
+ </item>
+ <item>
+    <itemName>Greening top-up</itemName>
+    <key>DPGREEN</key>
+ </item>
+ <item>
+    <itemName>Sum of article 68 payments</itemName>
+    <key>DP68</key>
+ </item>
+ <item>
+    <key>dp68milk</key>
+    <itemName>Article 68 support to milk production</itemName>
+ </item>
+ <item>
+    <key>dp68graz</key>
+    <itemName>Article 68 support to grassland</itemName>
+ </item>
+ <item>
+    <key>dp68shgt</key>
+    <itemName>Article 68 support to sheep and goats, various animals</itemName>
+ </item>
+ <item>
+    <key>dp68oliv</key>
+    <itemName>Article 68 support to oliv production</itemName>
+ </item>
+ <item>
+    <key>dp68dwhe</key>
+    <itemName>Article 68 support to durum wheat</itemName>
+ </item>
+ <item>
+    <key>dp68sugb</key>
+    <itemName>Article 68 support to sugar production</itemName>
+ </item>
+ <item>
+    <key>dp68scow</key>
+    <itemName>Article 68 support to suckler cows</itemName>
+ </item>
+ <item>
+    <key>dp68lfa</key>
+    <itemName>Article 68 support to LFA land use</itemName>
+ </item>
+ <item>
+    <key>dp68toba</key>
+    <itemName>Article 68 support to tobacco</itemName>
+ </item>
+ <item>
+    <key>dp68proi</key>
+    <itemName>Article 68 support to protein crops and oil seeds</itemName>
+ </item>
+ <item>
+    <key>dp68beef</key>
+    <itemName>Article 68 support to beef and veal meat production</itemName>
+ </item>
+ <item>
+    <key>dp68hort</key>
+    <itemName>Article 68 support to horticultural sectors</itemName>
+ </item>
+
+ <item>
+    <key>dp63gras</key>
+    <itemName>Article 63 support to grassland farming and forage crops in France</itemName>
+ </item>
+
+ <item>
+    <key>dp63pota</key>
+    <itemName>Article 63 support to potatoes in France</itemName>
+ </item>
+
+ <item>
+    <key>dp63vege</key>
+    <itemName>Article 63 support to vegetables in France</itemName>
+ </item>
+
+ <item>
+    <key>dp63fodc</key>
+    <itemName>Article 63 support to fodder crops in France</itemName>
+ </item>
+ <item>
+    <itemName>Sum of pillar II payments</itemName>
+    <key>DPPIL2</key>
+ </item>
+ <item>
+    <itemName>Less favoured area payments</itemName>
+    <key>DPRD_LFA</key>
+ </item>
+ <item>
+    <itemName>Natura 2000 payments</itemName>
+    <key>DPRD_N2K</key>
+ </item>
+ <item>
+    <itemName>Sum of agri-environmental payments</itemName>
+    <key>DPAE</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for field crops</itemName>
+    <key>DPRD_AE1</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for horticulture</itemName>
+    <key>DPRD_AE2</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for wine</itemName>
+    <key>DPRD_AE3</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for permanent crops</itemName>
+    <key>DPRD_AE4</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for dairy farms</itemName>
+    <key>DPRD_AE5</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for grassland farms</itemName>
+    <key>DPRD_AE6</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for pig farms</itemName>
+    <key>DPRD_AE7</key>
+ </item>
+ <item>
+    <itemName>Agri-environmental payments for mixed farms</itemName>
+    <key>DPRD_AE8</key>
+ </item>
+ <item>
+    <itemName>National payments</itemName>
+    <key>DPNAT</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for arable crops</itemName>
+    <key>DPCN_ARAB</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for cattle</itemName>
+    <key>DPCN_CATT</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for ewes</itemName>
+    <key>DPCN_EWE</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for rice</itemName>
+    <key>DPCN_PARI</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for tobacco</itemName>
+    <key>DPCN_TOBA</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for beef</itemName>
+    <key>DPCN_BEEF</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for adult cattle</itemName>
+    <key>DPCN_ADCT</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for suckler cows</itemName>
+    <key>DPCN_SCOW</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for dairy cows</itemName>
+    <key>DPCN_DCOW</key>
+ </item>
+ <item>
+    <itemName>Complementary National Direct Payment for fodder area</itemName>
+    <key>DPCN_FODD</key>
+ </item>
+ <item>
+    <itemName>National premium to dairy cows in northern Sweden and Finland</itemName>
+    <key>DPNATMILK</key>
+ </item>
+ <item>
+    <itemName>Direct payments acreage and headage support (blue box) (Norway)</itemName>
+    <key>DPNOR1</key>
+ </item>
+ <item>
+    <itemName>Dairy farm payments (blue box)                         (Norway)</itemName>
+    <key>DPNOR2</key>
+ </item>
+ <item>
+    <itemName>Miscellaneous acreage payments (green box)             (Norway)</itemName>
+    <key>DPNOR3</key>
+ </item>
+ <item>
+    <itemName>Welfare payments animal sector (green box)             (Norway)</itemName>
+    <key>DPNOR4</key>
+ </item>
+ <item>
+    <itemName>Miscellaneous animal payments (green box)              (Norway)</itemName>
+    <key>DPNOR5</key>
+ </item>
+ <item>
+    <itemName>Deficiency payments (amber box)                        (Norway)</itemName>
+    <key>DPNOR6</key>
+ </item>
+ <item>
+    <itemName>Regional deficiency payments (blue box)                (Norway)</itemName>
+    <key>DPNOR7</key>
+ </item>
+</table>
+<table>
+  <theme>Policy indicators</theme>
+  <name>PSE classification for premium schemes</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>Premiums</productSel>
+  <activityText>PSE support category</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Premium scheme</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defview>Table</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Current output</itemName>
+    <key>PSE_A2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Variable inputs</itemName>
+    <key>PSE_B1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Fixed capital formation</itemName>
+    <key>PSE_B2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Farm services</itemName>
+    <key>PSE_B3</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current receipts/income</itemName>
+    <key>PSE_C1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current area/animal number (total)</itemName>
+    <key>PSE_C2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current area/animal number, with input constraints</itemName>
+    <key>PSE_C2_IC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production required</itemName>
+    <key>PSE_D</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production not required, variable</itemName>
+    <key>PSE_E1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production not required, fixed</itemName>
+    <key>PSE_E2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Long term resource retirement</itemName>
+    <key>PSE_F1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Non commodity output</itemName>
+    <key>PSE_F2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Miscellaneous</itemName>
+    <key>G</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Farm</theme>
+  <name>Land supply and use</name>
+  <activitySel>Land Types</activitySel>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Land type</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Land use[Swedish:Markanvaendning]</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+    <longtext>Sum of land used by all activities belonging to this category</longtext>
+ </item>
+ <item>
+    <itemName>Slack</itemName>
+    <key>SLAK</key>
+    <unit>1000 ha</unit>
+    <longtext>Unused land of this type, which has not left the sector (pure abandonment)</longtext>
+ </item>
+ <item>
+    <itemName>Land rent[Swedish:Markraenta]</itemName>
+    <key>D_AREA</key>
+    <unit>EUR/ha</unit>
+    <longtext>Dual value of land balance. Negative numbers indicate that land is a cost to the farmer.</longtext>
+ </item>
+</table>
+
+<table>
+  <theme>Farm</theme>
+  <name>Supply details, water</name>
+  <clone>Supply details</clone>
+  <dim5Text>Technology variants</dim5Text>
+  <dim5Sel>wateractivity</dim5Sel>
+  <defpivot>PDSI</defpivot>
+</table>
+
+
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Yield decomposition</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>decomp</dim5Sel>
+  <activityText>Production activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Yield decomposition</productText>
+  <dim5Text>Yield decomposition</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSD</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Yield[German:Ertrag]</itemName>
+    <key>YILD</key>
+    <unit>kg or 1/1000 head/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Market revenues</itemName>
+    <key>TOOU</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Intermediate inputs</itemName>
+    <key>TOIN</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Gross Value added at producer prices</itemName>
+    <key>GVAP</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Gross Value added at producer prices plus premiums</itemName>
+    <key>MGVA</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+</table>
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Sensitivity analysis for activity levels</name>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>hide</productText>
+  <dim5Text>Sensitivity experiments</dim5Text>
+  <dim5Sel>sens</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <defpivot>0PSD</defpivot>
+ <item>
+    <itemName>Hectares or herd size</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha or hds</unit>
+ </item>
+</table>
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Sensitivity analysis for sales and purchases</name>
+  <regionSel>Regions and countries</regionSel>
+  <productText>Products</productText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <activityText>hide</activityText>
+  <dim5Text>Sensitivity experiments</dim5Text>
+  <dim5Sel>sens</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSD</defpivot>
+ <item>
+    <itemName>Sales or purchases</itemName>
+    <key>NETF</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Decomposition yield and income indicators</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>decomp</dim5Sel>
+  <activityText>Production activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Yield decomposition</productText>
+  <dim5Text>Yield decomposition</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>PISD</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Yield[German:Ertrag]</itemName>
+    <key>YILD</key>
+    <unit>kg or 1/1000 head/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Market revenues</itemName>
+    <key>TOOU</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Intermediate inputs</itemName>
+    <key>TOIN</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Gross Value added at producer prices</itemName>
+    <key>GVAP</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Gross Value added at producer prices plus premiums</itemName>
+    <key>MGVA</key>
+    <unit>Euro/ha or head</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Dual values</name>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSI</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>All outputs</itemName>
+    <key>D_O</key>
+    <unit>Euro/ha or hd</unit>
+    <link>Revenues</link>
+ </item>
+ <item>
+    <itemName>Premiums</itemName>
+    <key>D_PREM</key>
+    <unit>Euro/ha or hd</unit>
+    <link>Premiums</link>
+ </item>
+ <item>
+    <itemName>Variable inputs</itemName>
+    <key>D_OBJC</key>
+    <unit>Euro/ha or hd</unit>
+    <link>Further cost breakdown</link>
+ </item>
+ <item>
+    <itemName>Value of feed</itemName>
+    <key>D_FEED</key>
+    <unit>Euro/ha or hd</unit>
+    <link>Dual values feed restrictions</link>
+ </item>
+ <item>
+    <itemName>Young animals</itemName>
+    <key>D_YANI</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>N,P,K</itemName>
+    <key>D_NUT</key>
+    <unit>Euro/ha or hd</unit>
+    <link>Fertiliser input</link>
+ </item>
+ <item>
+    <itemName>Land balance</itemName>
+    <key>D_AREA</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Set aside</itemName>
+    <key>D_SETA</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>PMP levels</itemName>
+    <key>D_PMPL</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>PMP feed</itemName>
+    <key>D_PMPF</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Quota rents</itemName>
+    <key>D_QP</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Energy limit</itemName>
+    <key>D_ENER</key>
+    <unit>Euro/ 1000MJ</unit>
+ </item>
+ <item>
+    <itemName>Premium entitlements</itemName>
+    <key>D_sumEntl</key>
+    <unit>Euro/ ha or hd</unit>
+ </item>
+<item>
+    <itemName>Greening permanent grassland</itemName>
+    <key>D_permGrasGreening</key>
+    <unit>Euro/ ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Greening crop diversity</itemName>
+    <key>D_cropDivGreening</key>
+    <unit>Euro/ ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Greening ecological set aside</itemName>
+    <key>D_ecoSetAside</key>
+    <unit>Euro/ ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Winter cover</itemName>
+    <key>D_winterCover</key>
+    <unit>Euro/ ha or hd</unit>
+ </item>
+ <item>
+    <itemName>Unexplained rest</itemName>
+    <key>D_PROV</key>
+    <unit>Euro/ha or hd</unit>
+ </item>
+</table>
+<table>
+  <theme>Supply model analysis</theme>
+  <name>Dual values feed restrictions</name>
+  <activitySel>Animals</activitySel>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Animal activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSI</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Value of feed</itemName>
+    <key>D_FEED</key>
+    <unit>Euro/hd</unit>
+    <link>Dual values</link>
+ </item>
+ <item>
+    <itemName>PMP  feed</itemName>
+    <key>D_FPMP</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Energy</itemName>
+    <key>D_ENNE</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Crude protein</itemName>
+    <key>D_CRPR</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Lysine</itemName>
+    <key>D_LISI</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Minimum dry matter</itemName>
+    <key>D_DRMN</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Maximum dry matter</itemName>
+    <key>D_DRMX</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Fibre</itemName>
+    <key>D_FIBR</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Minimum shares</itemName>
+    <key>D_MINS</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Maximum shares</itemName>
+    <key>D_MAXS</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Bounds on feed</itemName>
+    <key>D_FEDL</key>
+    <unit>Euro/hd</unit>
+ </item>
+ <item>
+    <itemName>Unexplained rest</itemName>
+    <key>D_PROF</key>
+    <unit>Euro/hd</unit>
+ </item>
+</table>
+<table>
+ <theme>Environment</theme>
+ <name>Mitigation efforts</name>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <activitySel>Activities_and_aggregmiti</activitySel>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Accounting cost of mitigation efforts</itemName>
+    <key>mitiCost</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Sum of accounting cost over all mitigation options</longtext>
+ </item>
+ <item>
+    <itemName>(Secondary) revenues from mitigation efforts</itemName>
+    <key>mitiRev</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Sum of revenues over all mitigation options</longtext>
+ </item>
+ <item>
+    <itemName>Pmp cost or revenue (negative) of mitigation</itemName>
+    <key>mitiPMP</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Unobserved mitigation cost or revenue summed over all options </longtext>
+ </item>
+ <item>
+    <itemName>Mitigation subsidies</itemName>
+    <key>mitiSubs</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Subsidies for mitigation</longtext>
+ </item>
+<!--
+ <item>
+    <itemName>Observed effort for mitigation (quantity measure for input)</itemName>
+    <key>mitiI</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Accounting cost for mitigation efforts deflated by the mitigation price index </longtext>
+ </item>
+ <item>
+    <itemName>Observed secondary revenues from mitigation in constant prices (quantity measure)</itemName>
+    <key>mitiO</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Observed secondary revenues from mitigation deflated by the mitigation price index </longtext>
+ </item>
+-->
+ <item>
+    <itemName>Community AD</itemName>
+    <key>COMM_AD</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Community anaerobic digestion plant</longtext>
+ </item>
+ <item>
+    <itemName>Farm level AD</itemName>
+    <key>FARM_AD</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Farm-scale anaerobic digestion plants</longtext>
+ </item>
+ <item>
+    <itemName>Farm level AD  (100-500 LSU/farm)</itemName>
+    <key>FARM_AD_L</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Farm-scale anaerobic digestion (100-500 LSU/farm)</longtext>
+ </item>
+ <item>
+    <itemName>Farm level AD  (>500 LSU/farm)</itemName>
+    <key>FARM_AD_XL</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Farm-scale anaerobic digestion (>500 LSU/farm)</longtext>
+ </item>
+ <item>
+    <itemName>Breeding for cow longevity</itemName>
+    <key>GENET_REP</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Breeding for lower cow replacement rate</longtext>
+ </item>
+ <item>
+    <itemName>Breeding for milk yield</itemName>
+    <key>GENET_YLD</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Breeding for higher milk yields</longtext>
+ </item>
+ <item>
+    <itemName>Breeding for ruminant feed efficiency</itemName>
+    <key>GENET_EFF</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Breeding for ruminant feed efficiency</longtext>
+ </item>
+ <item>
+    <itemName>Low methane rice strains</itemName>
+    <key>ALT_RICE</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Selecting rice strains with low propensity to generate methane</longtext>
+ </item>
+ <item>
+    <itemName>Rice: ALT and SULF</itemName>
+    <key>COMB1_RICE</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Combining ALT_RICE and SULF_RICE</longtext>
+ </item>
+ <item>
+    <itemName>Rice: ALT and SULF and INTER</itemName>
+    <key>COMB2_RICE</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Combining ALT_RICE and SULF_RICE and INTER_RICE</longtext>
+ </item>
+ <item>
+     <itemName>Aeration of continuously flooded rice</itemName>
+     <key>INTER_RICE</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Aeration of continuously flooded rice fields</longtext>
+ </item>
+ <item>
+    <itemName>Rice: Sulfate amendments</itemName>
+    <key>SULF_RICE</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Sulfate-containing amendments (Van der Gon et al. 2001)</longtext>
+ </item>
+ <item>
+    <itemName>Propionate precursors</itemName>
+    <key>PROPPREC</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Propionate precursors</longtext>
+ </item>
+ <item>
+     <itemName>Antimethagon vaccination</itemName>
+     <key>VACCIN</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Antimethagon Vaccination</longtext>
+ </item>
+ <item>
+    <itemName>Reduced fertiliser as good practice</itemName>
+    <key>FERT_RED</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Reduced application of fertilizer from cheap good practise measures</longtext>
+ </item>
+ <item>
+    <itemName>Optimised fertiliser timing</itemName>
+    <key>FERTTIME</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Optimised timing of fertilizer application</longtext>
+ </item>
+ <item>
+    <itemName>Precision farming</itemName>
+    <key>PRECFARM</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Precision Farming</longtext>
+ </item>
+ <item>
+    <itemName>Nitrification inhibitors</itemName>
+    <key>NITR_INH</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Nitrification Inhibitors</longtext>
+ </item>
+ <item>
+    <itemName>Variable rate technology unique version</itemName>
+    <key>VarRTech_X</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Variable rate technology unique version</longtext>
+ </item>
+ <item>
+    <itemName>Variable rate technology low cost</itemName>
+    <key>VRT_L</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Variable rate technology low cost</longtext>
+ </item>
+ <item>
+    <itemName>Variable rate technology medium cost</itemName>
+    <key>VRT_M</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Variable rate technology medium cost</longtext>
+ </item>
+ <item>
+    <itemName>Variable rate technology high cost</itemName>
+    <key>VRT_H</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Variable rate technology high cost</longtext>
+ </item>
+ <item>
+    <itemName>Fertiliser combination: Timing and nitrification inhibitors</itemName>
+    <key>GComTN</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Combining timing and nitrification inhibitors</longtext>
+ </item>
+ <item>
+    <itemName>Fertiliser combination: VRT and nitrification inhibitors</itemName>
+    <key>GComVN</key>
+    <unit>Share</unit>
+         <longtext>Implementation share: Combining variable rate technology and nitrification inhibitors</longtext>
+ </item>
+ <item>
+     <itemName>Abandon use of histosol land</itemName>
+     <key>FALLOW</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Fallow of histosol land</longtext>
+ </item>
+ <item>
+     <itemName>Low protein feeding</itemName>
+     <key>lowNFeed</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: crude protein reduced feed ratios</longtext>
+ </item>
+ <item>
+     <itemname>Reduced fertilizer on grassland</itemname>
+     <key>Fert_Red_GL</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Reduced fertilizer on grassland</longtext>
+ </item>
+ <item>
+     <itemname>Line seed as a feed additive</itemname>
+     <key>LINE_Tot</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Line seed as a feed additive</longtext>
+ </item>
+ <item>
+     <itemname>Nitrate as a feed additive</itemname>
+     <key>Nitr_Tot</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Nitrate as a feed additive</longtext>
+ </item>
+ <item>
+     <itemname>Anaerobic digestion based on size effects on cost</itemname>
+     <key>AD_AnCh</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Anaerobic digestion with cost data</longtext>
+ </item>
+ <item>
+     <itemname>Increase legume share in temp grassland (OFAR)</itemname>
+     <key>LegSh</key>
+     <unit>Share</unit>
+         <longtext>Implementation share: Increased legume share (OFAR)</longtext>
+ </item>
+</table>
+<table>
+ <theme>Environment</theme>
+ <name>Mitigation efforts: Details</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>mitioption</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <scenText>Scenario</scenText>
+  <itemDim>dim5</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Implementation share of mitigation option</itemName>
+    <key>share</key>
+     <unit>Share</unit>
+         <longtext>Implementation share of mitigation option</longtext>
+ </item>
+ <item>
+    <itemName>Upper bound for implementation share of mitigation option</itemName>
+    <key>maxShare</key>
+     <unit>Share</unit>
+         <longtext>Upper bound for implementation share of mitigation option</longtext>
+ </item>
+ <item>
+    <itemName>Accounting cost for mitigation efforts</itemName>
+    <key>cost</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Accounting cost of mitigation option</longtext>
+ </item>
+ <item>
+    <itemName>(Secondary) revenue from mitigation efforts</itemName>
+    <key>revenue</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>(Secondary) revenue from mitigation option</longtext>
+ </item>
+ <item>
+    <itemName>Pmp cost or revenue (negative) of mitigation</itemName>
+    <key>pmpCost</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Unobserved pmp style costs or revenues (negative) of mitigation option</longtext>
+ </item>
+ <item>
+    <itemName>Mitigation subsidies</itemName>
+    <key>subsidy</key>
+    <unit>Euro /ha or head</unit>
+         <longtext>Subsidies for mitigation</longtext>
+ </item>
+</table>
+<table>
+ <theme>Environment</theme>
+ <name>Water use: irrigation</name>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Irrigation</dim5Text>
+  <dim5Sel>irrigation</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <defpivot>PDSI</defpivot>
+ <item>
+    <itemName>Total land</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha </unit>
+         <longtext>Total land</longtext>
+ </item>
+ <item>
+    <itemName>Irrigated land</itemName>
+    <key>LEVi</key>
+    <unit>1000 ha </unit>
+         <longtext>Irrigated land</longtext>
+ </item>
+ <item>
+    <itemName>Irrigation water use</itemName>
+    <key>WIRR</key>
+    <unit>1000 m3</unit>
+         <longtext>Irrigation water use </longtext>
+ </item>
+</table>
+</generated>

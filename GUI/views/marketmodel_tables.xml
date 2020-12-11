@@ -1,0 +1,1983 @@
+<generated>
+
+<table>
+  <theme>Scenario shifter</theme>
+  <name>Macro changes</name>
+  <activitySel>macro</activitySel>
+  <!-- <regionSel>Regions in market model</regionSel> -->
+  <dim5Sel>shifters</dim5Sel>
+  <activityText>Macro variables</activityText>
+  <yearText>Year</yearText>
+  <productText>hide</productText>
+  <scenText>Scenario</scenText>
+  <defpivot>RPSD</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>LEVL[German:Umfang]</itemName>
+    <key>LEVL</key>
+ </item>
+</table>
+<table>
+  <theme>Welfare</theme>
+  <name>Money metric</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>hide</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0P0S</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Money metric</itemName>
+    <key>CSSP</key>
+    <unit>Mio Euro</unit>
+    <longtext>Consumer welfare measurement: expenditures necessary to reach utility in current simulation under prices of reference scenario</longtext>
+    <link>Prices</link>
+ </item>
+</table>
+<table>
+  <theme>Welfare</theme>
+  <name>Welfare market model</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Welfare position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Money metric</itemName>
+    <key>CSSP</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Agricultural profits</itemName>
+    <key>PROFITAGR</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of non-agricultural land use</itemName>
+    <key>ProfitLandUse</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of the feed industry</itemName>
+    <key>PROFITFEED</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profits of processing industry</itemName>
+    <key>PROFITPROC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profits of dairy industry</itemName>
+    <key>PROFITDAIRY</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff revenues</itemName>
+    <key>TARIFFREV</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Domestic support outlays</itemName>
+    <key>PSES</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff rate quota rents</itemName>
+    <key>TRQRents</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Welfare</itemName>
+    <key>WELFARE</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+<table>
+  <theme>CAP</theme>
+  <name>Intervention stocks and their costs</name>
+  <regionSel>Countries</regionSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Intervention stocks</itemName>
+    <key>INTS</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Intervention stock change</itemName>
+    <key>ISCH</key>
+    <unit>1000 t</unit>
+    <link>Product Balances</link>
+ </item>
+ <item>
+    <itemName>Intervention purchases</itemName>
+    <key>INTP</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Intervention releases</itemName>
+    <key>INTD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Total costs</itemName>
+    <key>FEOS</key>
+    <unit>Mio Euro</unit>
+    <link>Tax payers cost</link>
+ </item>
+ <item>
+    <itemName>Technical costs</itemName>
+    <key>FEOS_T</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Financial costs</itemName>
+    <key>FEOS_F</key>
+    <unit>Mio euro</unit>
+ </item>
+ <item>
+    <itemName>Depreciation</itemName>
+    <key>FEOS_D</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Other costs</itemName>
+    <key>FEOS_O</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Policy indicators</theme>
+  <name>WTO Boxes for premium schems</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>Premiums</productSel>
+  <activityText>WTO box/position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Premium scheme</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defview>Table</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Amber Box</itemName>
+    <key>AmberBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Green Box</itemName>
+    <key>GreenBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Blue Box</itemName>
+    <key>BlueBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Policy indicators</theme>
+  <name>AMS</name>
+  <regionSel>Countries</regionSel>
+  <activityText>WTO box/position</activityText>
+  <regionText>Member State</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>ODTS</itemName>
+    <longtext>Overall trade-distorting total domestic support: AMS (Market price support + Other non-exempt measures) + Blue Box + De Minimis</longtext>
+    <key>AmberBox</key>
+    <eval>VAL +  VAL[*,BlueBox,*,*,*,*] + VAL[*,DeMinimis,*,*,*,*]</eval>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current total AMS</itemName>
+    <longtext>Current total Aggregate Measurement of Support: Market price support + Other non-exempt measures</longtext>
+    <key>AmberBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Market Price support</itemName>
+    <key>MarketPriceSup</key>
+    <longtext>Production quantities times difference between adminstrative price and reference prices from 1986-1988</longtext>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Other non-exempt measures</itemName>
+    <key>AmberBoxOther</key>
+    <longtext>Other trade distorting measures</longtext>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Blue Box</itemName>
+    <longtext>Trade distorting measures under supply control</longtext>
+    <key>BlueBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Green Box</itemName>
+    <longtext>Not or at most cause minimal trade distorting measures</longtext>
+    <key>GreenBox</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>De Minimis</itemName>
+    <longtext>Trade distorting measures with less than 5% of production value</longtext>
+    <key>DeMinimis</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Demand Balances</name>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Total Demand[German:Gesamtnachfrage]</itemName>
+    <key>DEMD</key>
+    <unit>1000 t</unit>
+    <link>Product Balances</link>
+ </item>
+ <item>
+    <itemName>Human Consumption[German:Nahrungsmittelnachfrage]</itemName>
+    <key>FOOD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Feed[German:Futternachfrage]</itemName>
+    <key>FEDM</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Internal Use and Seed[German:Saatgut und ander interne Verwendung]</itemName>
+    <key>FARM</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Processing[German:Industrielle Weiterverarbeitung]</itemName>
+    <key>PRCC</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Biofuels processing[German:Weiterverabeitung zu Biokraftstoffen]</itemName>
+    <key>BIOF</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Losses and Stock Changes[German:Verluste und Bestandsaenderung]</itemName>
+    <key>LOSC</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+
+
+<table>
+  <theme>Markets</theme>
+  <name>Product balances market model</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>coo\RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Net production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Human consumption plus losses</itemName>
+    <key>HCON</key>
+    <unit>1000 t</unit>
+    <link>Human consumption</link>
+ </item>
+ <item>
+    <itemName>Human consumption plus losses, quality corrected</itemName>
+    <key>HCON</key>
+    <unit>Utility (=1000 t at utility of calibration point))</unit>
+    <link>Human consumption</link>
+    <eval>VAL/VAL[*,CORR,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Biofuels processing</itemName>
+    <key>BIOF</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Armington quality corrector</itemName>
+    <longtext>If below unity, average quality has increased</longtext>
+    <key>CORR</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Intervention stock change</itemName>
+    <key>ISCH</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Imports</itemName>
+    <key>IMPORTS</key>
+    <unit>1000 t</unit>
+    <link>Import flows market model</link>
+ </item>
+ <item>
+    <itemName>Exports</itemName>
+    <key>EXPORTS</key>
+    <unit>1000 t</unit>
+    <link>Export flows market model</link>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Market balances without intra trade</name>
+  <regionSel>RMFTA</regionSel>
+  <productSel>market</productSel>
+  <activityText>Balance Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Net production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Human consumption plus losses</itemName>
+    <key>HCON</key>
+    <unit>1000 t</unit>
+    <link>Human consumption</link>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Biofuels processing</itemName>
+    <key>BIOF</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Intervention stock change</itemName>
+    <key>ISCH</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Imports without intra trade</itemName>
+    <key>Imports_noIntra</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Exports without intra trade</itemName>
+    <key>Exports_noIntra</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Net Trade without intra trade</itemName>
+    <key>Exports_noIntra</key>
+    <unit>1000 t</unit>
+    <eval>VAL-VAL[*,Imports_noIntra,*,*,*,*]</eval>
+ </item>
+ <item>
+ 		<itemName>Bilateral TRQ fill rate</itemName>
+ 		<key>Imports_noIntra</key>
+ 		<unit>Percentage</unit>
+ 	  <eval>VAL[*,TrqNT,*,*,*,*]/VAL*100</eval>
+ 	</item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Yields, levels and production</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>coo\RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Net production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+    <link>Product balances market model</link>
+ </item>
+ <item>
+    <itemName>Cropped area resp. fodder area</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+ </item>
+ <item>
+    <itemName>Yield resp. 1/stocking rate</itemName>
+    <key>YILD</key>
+    <unit>t/ha</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Multi-Functionality</theme>
+  <name>Self sufficiency per product</name>
+  <regionSel>Regions and countries</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Self sufficiency human consumption</itemName>
+    <key>S1COM</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency total demand</itemName>
+    <key>S2COM</key>
+    <unit>%</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Self sufficiency per nutrient</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>levl</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0RSI</defpivot>
+ <item>
+    <itemName>Self sufficiency human consumption calories</itemName>
+    <key>S1CAL</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency human consumption fat</itemName>
+    <key>S1FAT</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency human consumption protein</itemName>
+    <key>S1PRO</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency total demand calories</itemName>
+    <key>S2CAL</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency total demand fat</itemName>
+    <key>S2FAT</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Self sufficiency total demand protein</itemName>
+    <key>S2PRO</key>
+    <unit>%</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Markets</theme>
+  <name>Product Balances</name>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Supply</itemName>
+    <key>GROF</key>
+    <unit>1000 t</unit>
+    <longtext>quantity produced or used by the agricultural sector</longtext>
+    <link>Supply details</link>
+ </item>
+ <item>
+    <itemName>Intervention stock change</itemName>
+    <key>ISCH</key>
+    <unit>1000 t</unit>
+    <link>Tax payers cost</link>
+ </item>
+ <item>
+    <itemName>Net trade</itemName>
+    <key>TRAD</key>
+    <unit>1000 t</unit>
+    <longtext>exports minus imports</longtext>
+    <link>Product balances market model</link>
+ </item>
+ <item>
+    <itemName>Demand</itemName>
+    <key>DEMD</key>
+    <unit>1000 t</unit>
+    <link>Demand Balances</link>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Human consumption</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Per capita consumption</itemName>
+    <key>INHA</key>
+    <unit>kg/capita and year</unit>
+ </item>
+ <item>
+    <itemName>Calorie intake</itemName>
+    <key>N_CAL</key>
+    <unit>kcal/capita and day</unit>
+ </item>
+ <item>
+    <itemName>Protein intake</itemName>
+    <key>N_PRO</key>
+    <unit>gr/capita and day</unit>
+ </item>
+ <item>
+    <itemName>Fat intake</itemName>
+    <key>N_FAT</key>
+    <unit>gr/capita and day</unit>
+ </item>
+ <item>
+    <itemName>Expenditures</itemName>
+    <key>EXPE</key>
+    <unit>Euro/capita and year</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Trade block infeasibilities - quantities</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <activityText>Market model position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>mrkInfes</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <hideEmptyRows>YES</hideEmptyRows>
+  <hideEmptyCols>YES</hideEmptyCols>
+  <defpivot>SRM0</defpivot>
+ <item>
+    <itemName>Supply balance</itemName>
+    <key>Grof</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Demand balance</itemName>
+    <key>Arm1</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Arm1 value</itemName>
+    <key>Arm1V</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Arm2 value</itemName>
+    <key>Arm2V</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Arm2 aggregator</itemName>
+    <key>Arm2P</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Arm2 share equations</itemName>
+    <key>imports</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>TRQ imports</itemName>
+    <key>trqImports</key>
+    <unit>Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Trade block infeasibilities - prices</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <activityText>Market model position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>mrkInfes</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <hideEmptyRows>YES</hideEmptyRows>
+  <hideEmptyCols>YES</hideEmptyCols>
+  <defpivot>SRM0</defpivot>
+ <item>
+    <itemName>Import price definitions</itemName>
+    <key>uvai</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>Specific tariff definitions</itemName>
+    <key>tars</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>Ad valorem tariff definitions</itemName>
+    <key>tarv</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>Minimum border prices</itemName>
+    <key>minbordP</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>EU entry prices</itemName>
+    <key>triggerP</key>
+    <unit>Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Infeasibilities in regions - quantities</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Market model position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>mrkInfes</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <hideEmptyRows>YES</hideEmptyRows>
+  <hideEmptyCols>YES</hideEmptyCols>
+  <defpivot>SRM0</defpivot>
+ <item>
+    <itemName>Production</itemName>
+    <key>Prod</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Feed</itemName>
+    <key>Feed</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>Proc</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Processing to Biofuels</itemName>
+    <key>Biof</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Infeasibilities in regions - prices</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Market model position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>mrkInfes</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <hideEmptyRows>YES</hideEmptyRows>
+  <hideEmptyCols>YES</hideEmptyCols>
+  <defpivot>SRM0</defpivot>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>Consumer price</itemName>
+    <key>CPRI</key>
+    <unit>Euro</unit>
+ </item>
+ <item>
+    <itemName>Processing margin</itemName>
+    <key>ProcMarg</key>
+    <unit>Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Market model balances - decomposition</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>Effects</dim5Sel>
+  <dim5Text>Effects</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+   <defpivot>0PSD</defpivot>
+ <item>
+    <itemName>Net trade</itemName>
+    <key>NTRD</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Production</itemName>
+    <key>PROD</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Human consumption</itemName>
+    <key>HCON</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Biofuel input</itemName>
+    <key>BIOF</key>
+    <unit>% against calibration point</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Markets</theme>
+  <name>Milk fat and protein</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>FatsProt</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Balance</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Price</itemName>
+    <key>PPRI</key>
+    <unit>Euro /  t</unit>
+ </item>
+
+</table>
+<table>
+  <theme>Markets</theme>
+  <name>Milk products</name>
+  <regionSel>Countries</regionSel>
+  <productSel>dairy products</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Milk fat protein</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Milk fat content</itemName>
+    <key>FATS</key>
+    <unit>t / t</unit>
+ </item>
+ <item>
+    <itemName>Milk fat value</itemName>
+    <key>FATSVAL</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Milk protein content</itemName>
+    <key>PROT</key>
+    <unit>t / t</unit>
+ </item>
+ <item>
+    <itemName>Milk protein value</itemName>
+    <key>PROTVAL</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing margin</itemName>
+    <key>PROCMARG</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Product price at dairy</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+</table>
+<table>
+   <theme>BioFuels</theme>
+   <name>Biofuel markets</name>
+   <regionSel>Regions in market model</regionSel>
+   <productSel>Biofuel</productSel>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+   <defpivot>0ISP</defpivot>
+   <COO>coo\RMS.zip</COO>
+   <defview>Table</defview>
+   <itemDim>Activity</itemDim>
+  <item>
+     <itemName>Total Biofuel production</itemName>
+     <key>PROD</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>First Generation Biofuels (from Agriculture)</itemName>
+     <key>FSTG</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Second Generation Biofuels</itemName>
+     <key>SECG</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Biofuels from non-agricultural sources</itemName>
+     <key>NAGR</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Biofuel-use by transport sector</itemName>
+     <key>BIOF</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Biofuel-use by industry</itemName>
+     <key>INDM</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Energy share in total fuel use</itemName>
+     <key>HCOS</key>
+     <unit>%</unit>
+  </item>
+  <item>
+     <itemName>Energy share in total fuel use of Quota obligation</itemName>
+     <key>QUTS</key>
+     <unit>%</unit>
+  </item>
+  <item>
+     <itemName>Imports</itemName>
+     <key>IMPORTS</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Exports</itemName>
+     <key>EXPORTS</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>consumer prices</itemName>
+     <key>CPRI</key>
+     <unit>Euro/ton</unit>
+  </item>
+  <item>
+     <itemName>consumer taxes</itemName>
+     <key>CTAX</key>
+     <unit>Euro/Ton</unit>
+  </item>
+  <item>
+     <itemName>processing margin</itemName>
+     <key>BIOPROCMARG</key>
+     <unit>Euro/EURO</unit>
+  </item>
+</table>
+<table>
+   <theme>BioFuels</theme>
+   <name>Biofuel Substitutes</name>
+   <regionSel>Regions in market model</regionSel>
+   <productSel>fossil</productSel>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+   <defpivot>0ISP</defpivot>
+   <COO>coo\RMS.zip</COO>
+   <defview>Table</defview>
+   <itemDim>Activity</itemDim>
+  <item>
+     <itemName>Use in the transport sector</itemName>
+     <key>HCOM</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Energy share in total fuel use</itemName>
+     <key>HCOS</key>
+     <unit>%</unit>
+  </item>
+  <item>
+     <itemName>Consumer price</itemName>
+     <key>CPRI</key>
+     <unit>Euro/ton</unit>
+  </item>
+  <item>
+     <itemName>consumer taxes</itemName>
+     <key>CTAX</key>
+     <unit>Euro/Ton</unit>
+  </item>
+</table>
+<table>
+   <theme>BioFuels</theme>
+   <name>Biofuel production by feedstock</name>
+   <regionSel>Regions in market model</regionSel>
+   <productSel>Biofuel</productSel>
+   <activityText>Balance item</activityText>
+   <regionText>Region</regionText>
+   <productText>Product</productText>
+   <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+   <defpivot>0ISP</defpivot>
+   <COO>coo\RMS.zip</COO>
+   <defview>Table</defview>
+   <itemDim>Activity</itemDim>
+  <item>
+     <itemName>First generation biofuels (from Agriculture)</itemName>
+     <key>FSTG</key>
+     <aggreg>yes</aggreg>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from cereals</itemName>
+     <key>bioECere</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from wheat</itemName>
+     <key>bioEWhea</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from barley</itemName>
+     <key>bioEBarl</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from rye</itemName>
+     <key>bioERyem</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from oats</itemName>
+     <key>bioEOats</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from maize</itemName>
+     <key>bioEMaiz</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from other cereals</itemName>
+     <key>bioEOcer</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from sugar</itemName>
+     <key>bioESuga</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from oils</itemName>
+     <key>bioDOilP</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from rapeoil</itemName>
+     <key>bioDRapo</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from sunfloweroil</itemName>
+     <key>bioDSuno</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from soyoil</itemName>
+     <key>bioDSoyo</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from palmoil</itemName>
+     <key>bioDPlmo</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from exogenous crops</itemName>
+     <key>EXOG</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>Second generation biofuels (from Agriculture)</itemName>
+     <aggreg>yes</aggreg>
+     <key>SECG</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced from new energy crops</itemName>
+     <key>bioNECR</key>
+     <unit>1000 t</unit>
+  </item>
+  <item>
+     <itemName>   - produced residuals</itemName>
+     <key>bioARES</key>
+     <unit>1000 t</unit>
+  </item>
+</table>
+
+<table>
+  <theme>Prices</theme>
+  <name>Prices market model</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Prices</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>coo\RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <pdf>docs\docu.pdf#Price linkages</pdf>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Market price</itemName>
+    <key>PMRK</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Price Armington 2</itemName>
+    <key>ARM2P</key>
+    <unit>Euro / t</unit>
+    <longtext>Price index of Armington aggregator of imports from different destinations, may be interpreted as average price of imports</longtext>
+ </item>
+ <item>
+    <itemName>Price Armington 1</itemName>
+    <key>ARM1P</key>
+    <unit>Euro / t</unit>
+    <longtext>Price index of Armington aggregator for domestic sales and import aggregate[Armington 2], may be interpreted as average price of quantities consumed at market prices</longtext>
+ </item>
+ <item>
+    <itemName>Consumer price</itemName>
+    <key>CPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing margin</itemName>
+    <key>PROCMARG</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing margin Biofuels (relative)</itemName>
+    <key>BIOPROCMARG</key>
+    <unit>Euro/Euro</unit>
+ </item>
+
+</table>
+<table>
+  <theme>Prices</theme>
+  <name>Average trade prices and protection</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>market</productSel>
+  <activityText>Prices</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>coo\RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Price Armington 2</itemName>
+    <key>ARM2P</key>
+    <unit>Euro / t</unit>
+    <longtext>Price index of Armington aggregator of imports from different destinations, may be interpreted as average price of imports</longtext>
+ </item>
+ <item>
+    <itemName>Specific bound rates</itemName>
+    <key>TARS</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Ad valorem bound</itemName>
+    <key>TARV</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Free on board</itemName>
+    <key>fob</key>
+    <unit>Euro / t</unit>
+ </item>
+</table>
+
+
+<table>
+  <theme>Trade</theme>
+  <name>Trade Indicators</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <activityText>Indicator</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>coo\RM.zip</COO>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Net Trade</itemName>
+    <key>Exports</key>
+    <unit>1000 t</unit>
+    <eval>VAL-VAL[*,Imports,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Net Trade relative to average market volume</itemName>
+    <key>Exports</key>
+    <unit>%</unit>
+    <eval>(200*(VAL-VAL[*,Imports,*,*,*,*]))/(VAL[*,Exports,*,*,*,*] +VAL[*,Imports,*,*,*,*] +VAL[*,PROD,*,*,*,*]+VAL[*,HCON,*,*,*,*] + VAL[*,PROC,*,*,*,*] + VAL[*,BIOF,*,*,*,*] + VAL[*,FEED,*,*,*,*] + VAL[*,ISCH,*,*,*,*])</eval>
+ </item>
+ <item>
+    <itemName>World Export share</itemName>
+    <key>Exports</key>
+    <unit>%</unit>
+    <eval>VAL/VAL[World,Exports,*,*,*,*]*100</eval>
+ </item>
+ <item>
+    <itemName>World Import share</itemName>
+    <key>Imports</key>
+    <unit>%</unit>
+    <eval>VAL/VAL[World,Imports,*,*,*,*]*100</eval>
+ </item>
+ </table>
+
+
+
+
+<table>
+  <theme>Trade</theme>
+  <subTheme>Imports</subTheme>
+  <name>Import flows, price and tariffs market model, by geograhic aggregates</name>
+  <regionSel>Trade blocks</regionSel>
+  <regionText>Importer</regionText>
+  <productSel>market</productSel>
+  <dim5Sel>Trade blocks geographic</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Importer</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Exporter</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSD</defpivot>
+  <COO>coo\RM.zip</COO>
+   <defview>Table</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Value</itemName>
+    <key>ImportQ</key>
+    <eval>VAL*VAL[*,ImportP,*,*,*,*]*0.001</eval>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Quantities</itemName>
+    <key>ImportQ</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Demand share</itemName>
+    <key>ImportQ</key>
+    <eval>VAL/VAL[*,*,*,*,*,World]</eval>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Specific tariff applied</itemName>
+    <key>TsAppl</key>
+    <pdf>docs\docu.pdf#Tariff computation in the model</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Ad valorem tariff applied</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>TRQ rent per unit</itemName>
+    <key>rent_per_unit</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>TRQ</itemName>
+    <key>TrqNT</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Import flows, price and tariffs market model, by socio-economic aggregates</name>
+  <clone>Import flows, price and tariffs market model, by geograhic aggregates</clone>
+  <dim5Sel>Trade blocks politic</dim5Sel>
+  <regionSel>Trade blocks</regionSel>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Import flows, price and tariffs market model detailed</name>
+  <clone>Import flows, price and tariffs market model, by geograhic aggregates</clone>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <regionSel>Trade blocks</regionSel>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Export flows market model, by geographic aggregates</name>
+  <clone>Import flows, price and tariffs market model, by geograhic aggregates</clone>
+  <subTheme>Exports</subTheme>
+  <regionSel>Trade blocks geographic</regionSel>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <defpivot>P0SR</defpivot>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Export flows market model, by soico-economic aggregates</name>
+  <clone>Import flows, price and tariffs market model, by geograpic aggregates</clone>
+  <subTheme>Exports</subTheme>
+  <regionSel>Trade blocks politic</regionSel>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <COO>coo\RM.zip</COO>
+   <defpivot>P0SR</defpivot>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Export flows market model detailed</name>
+  <clone>Import flows, price and tariffs market model, by geograhic aggregates</clone>
+  <subTheme>Exports</subTheme>
+  <regionSel>Trade blocks detailed</regionSel>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <COO>coo\RM.zip</COO>
+  <defpivot>P0SR</defpivot>
+</table>
+<table>
+  <theme>Trade</theme>
+  <subTheme>Exports</subTheme>
+  <name>Export flows map</name>
+  <regionSel>Trade blocks detailed</regionSel>
+  <productSel>market</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Importer</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Exporter</dim5Text>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0DSR</defpivot>
+  <COO>coo\RM.zip</COO>
+  <defview>Flowmap</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Exported quantities</itemName>
+    <key>ImportQ</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>TRQ</itemName>
+    <key>TrqNT</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <subTheme>Imports</subTheme>
+  <name>Import flows map</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Importer</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Exporter</dim5Text>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSD</defpivot>
+  <COO>coo\RM.zip</COO>
+  <defview>Flowmap</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Imported quantities</itemName>
+    <key>ImportQ</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Applied tariff</itemName>
+    <key>Tar</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>TRQ</itemName>
+    <key>TrqNT</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <subTheme>Import prices, tariffs and transport costs</subTheme>
+  <name>Tariff Information, bilateral</name>
+  <regionSel>Trade blocks</regionSel>
+  <regionText>Importer</regionText>
+  <productSel>market</productSel>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <dim5Text>Exporter</dim5Text>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>TRQ open to</itemName>
+    <key>importer</key>
+    <longtext>which importers have the right to benefit from lower tariffs under that tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Bilateral quota</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from lower tariffs for that tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Imports (under pref.)</itemName>
+    <key>ImportsR</key>
+    <unit>1000t</unit>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Ad val. pref</itemName>
+    <key>TAPREF</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities inside of the tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. MFN</itemName>
+    <key>TAMFN</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities imported once the tariff rate quota is filled</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied (*SSG)</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Spec. pref</itemName>
+    <key>TSPREF</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Spec. MFN</itemName>
+    <key>TSMFN</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Quota rents</itemName>
+    <key>RENTB</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Rent per in quota imports</itemName>
+    <key>Rent_per_unit</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <subTheme>Import prices, tariffs and transport costs</subTheme>
+  <name>Tariff and transport costs, averages over importers and domestic sales</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>World</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied</itemName>
+    <key>TaAppl</key>
+    <link>Detailed tariff Information, averages over importers and domestic sales</link>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Tansport costs</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <subTheme>Import prices, tariffs and transport costs</subTheme>
+  <name>Detailed tariff Information, averages over importers and domestic sales</name>
+  <regionSel>Trade blocks</regionSel>
+  <productSel>market</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>World</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Total imports</itemName>
+    <key>Imports</key>
+    <unit>1000t</unit>
+ </item>
+ <item>
+    <itemName>Total Tariff Rate Quotas (bi- and multilateral)</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <eval>VAL[*,TrqNT,*,*,*,*]+VAL[*,TrqNTB,*,*,*,*]</eval>
+    <longtext>Quantities benefitting from lower tariffs for that tariff rate quota (sum of multilateral and bilateral quotas)</longtext>
+ </item>
+ <item>
+    <itemName>Multilateral Quota</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from multilateral tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Imports under multilateral tariff rate quotas</itemName>
+    <key>ImportsR</key>
+         <unit>1000t</unit>
+         <longtext>Imports under multilateral quotas = trade flows overfilling bilateral quotas if they exist, i.e. potentially traded under multilateral trq</longtext>
+ </item>
+ <item>
+    <itemName>Bilateral Quotas</itemName>
+    <key>TrqNTB</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from lower tariffs from bilateral tariff rate quotas</longtext>
+ </item>
+ <item>
+    <itemName>Imports under bilateral quotas</itemName>
+    <key>ImportsRB</key>
+    <unit>1000t</unit>
+         <longtext>Imports under bilateral quotas = full trade flows if bilateral quotas exist, i.e. potentially traded under bilateral trqs (bi is filled up first)</longtext>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <unit>Euro/t</unit>
+         <longtext>calculated as internal market price plus tariffs minus export subsidies</longtext>
+</item>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Applied specific equivalent</itemName>
+    <key>ImportP</key>
+    <unit>Euro/t</unit>
+    <eval>VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*]</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Entry prices</itemName>
+    <key>MinBordP</key>
+    <unit>Euro/t</unit>
+     <eval>(VAL[*,MinBordP,*,*,*, ])</eval>
+ </item>
+ <item>
+    <itemName>Ad val. MFN</itemName>
+    <key>TAMFN</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities imported once the tariff rate quotas are filled</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+    <longtext>Applied ad-valorem tariff rates</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. pref.</itemName>
+    <key>TaPref</key>
+    <unit>%</unit>
+    <longtext>Preferential rate for ad-valorem tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. MFN</itemName>
+    <key>TSMFN</key>
+    <unit>Euro/t</unit>
+    <longtext>MFN-rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+    <longtext>Applied rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. pref.</itemName>
+    <key>TsPref</key>
+    <unit>Euro/t</unit>
+    <longtext>Preferential rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>TRQ rent per unit</itemName>
+    <key>RENT</key>
+    <unit>Euro/t</unit>
+    <eval>(VAL[*,RENT,*,*,*,*]+VAL[*,RENTB,*,*,*,*])/(VAL[*,Imports,*,*,*,*])*1000</eval>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight (CIF price)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Tansport costs</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.) price</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Quota rents (under multilateral quotas)</itemName>
+    <key>RENT</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Quota rents (under bilateral quotas)</itemName>
+    <key>RENTB</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Tariff and transport costs, averages over importers w/o domestic sales</name>
+  <clone>Tariff and transport costs, averages over importers and domestic sales</clone>
+  <dim5Sel>All importers</dim5Sel>
+</table>
+<table>
+  <theme>Trade</theme>
+  <name>Tariff and transport costs, averages over importers w/o intra block trade</name>
+  <clone>Tariff and transport costs, averages over importers and domestic sales</clone>
+  <dim5Sel>Out of block</dim5Sel>
+</table>
+
+
+<table>
+  <theme>Trade</theme>
+  <subTheme>Advanced tariff aggregators</subTheme>
+  <name>Bach and Martin combination</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>Market</productSel>
+  <activityText>Tariff aggregators</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Expenditure func. aggregator (B-M)</itemName>
+    <key>T_exp</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>Tariff revenue func. aggregator (B-M)</itemName>
+    <key>T_Rev</key>
+    <unit>AVE perc.</unit>
+ </item>
+</table>
+
+
+
+<table>
+  <theme>Trade</theme>
+  <subTheme>Advanced tariff aggregators</subTheme>
+  <name>Anderson optimal combination</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>Market</productSel>
+  <activityText>Tariff aggregators</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+
+ <item>
+    <itemName>World-price aggregator (Anderson)</itemName>
+    <key>Phi_world</key>
+    <unit>eur per tonnes</unit>
+ </item>
+ <item>
+    <itemName>Import-price aggregator (Anderson)</itemName>
+    <key>Phi_impp</key>
+    <unit>eur per tonnes</unit>
+ </item>
+ <item>
+    <itemName>True AVE perc.rage Tariff (Anderson)</itemName>
+    <key>T_delta</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>Trade-weighted AVE perc.rage Tariff</itemName>
+    <key>T_a</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>T_a_cap correction factor (Himics-Britz)</itemName>
+    <key>T_a_cap</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>T_R rent-retaining part (Himics-Britz)</itemName>
+    <key>T_R</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>T_a_out out-of-quota correction factor (Himics-Britz)</itemName>
+    <key>T_a_out</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>T_R_out out-of-quota rent-retaining part (Himics-Britz)</itemName>
+    <key>T_R</key>
+    <unit>AVE perc.</unit>
+ </item>
+ <item>
+    <itemName>T_Q quota rent part (Himics-Britz)</itemName>
+    <key>T_q</key>
+    <unit>AVE perc.</unit>
+ </item>
+</table>
+
+
+
+<table>
+  <theme>Trade</theme>
+  <subTheme>Advanced tariff aggregators</subTheme>
+  <name>Trade Restrictiveness Index</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>Market</productSel>
+  <activityText>Tariff aggregators</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+
+ <item>
+    <itemName>Trade Restrictiveness Index (Anderson-Neary)</itemName>
+    <key>TRI</key>
+    <unit>AVE perc.</unit>
+ </item>
+</table>
+
+
+
+
+
+<table>
+  <theme>Trade</theme>
+  <subTheme>Advanced tariff aggregators</subTheme>
+  <name>MacMap-type tariff aggregator</name>
+  <regionSel>Regions in market model</regionSel>
+  <productSel>Market</productSel>
+  <activityText>Tariff aggregators</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>Trade blocks</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+
+ <item>
+    <itemName>MacMAP-type aggregator</itemName>
+    <key>macmap</key>
+    <unit>AVE perc.</unit>
+ </item>
+</table>
+
+
+<table>
+ <theme>Environment</theme>
+ <name>Emissions by commodity</name>
+ <regionSel>Regions in market model</regionSel>
+ <productSel>anyThing</productSel>
+ <dim5Sel>gascolst</dim5Sel>
+ <activityText>Balance position</activityText>
+ <regionText>Region</regionText>
+ <yearText>Year</yearText>
+ <productText>Product</productText>
+ <dim5Text>Inventory position</dim5Text>
+ <scenText>Scenario</scenText>
+ <defpivot>0PSI</defpivot>
+ <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Emission coefficient lower bound[Swedish:Utslaeppskoefficient nedre graens]</itemName>
+    <key>YILD_LO</key>
+    <unit>kg/t</unit>
+ </item>
+ <item>
+    <itemName>Emission coefficient[Swedish:Utslaeppskoefficient]</itemName>
+    <key>YILD</key>
+    <unit>kg/t</unit>
+ </item>
+ <item>
+    <itemName>Emission coefficient upper bound[Swedish:Utslaeppskoefficient oevre graens]</itemName>
+    <key>YILD_UP</key>
+    <unit>kg/t</unit>
+ </item>
+ <item>
+    <itemName>Net emission lower bound [Swedish:Nettoemission nedre graens]</itemName>
+    <key>PROD_LO</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Net emission[Swedish:Nettoemission]</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Net emission upper bound [Swedish:Nettoemission oevre graens]</itemName>
+    <key>PROD_UP</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+</generated>

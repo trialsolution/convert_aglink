@@ -1,0 +1,2886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GGIG>
+         <AgpSpread.viewSize><attr>1193,782</attr></AgpSpread.viewSize>
+         <BaseYearsSel><attr>Type=multilist;Title=Base year selection;Value=04;Options=04,08,12,17;range=-1;tasks=none</attr></BaseYearsSel>
+         <regionLevelsSel><attr>Type=multilist;Title=Regional level;Value=2;Options=0,2,9;range=-1;tasks=none;</attr></regionLevelsSel>
+         <CountriesSel><attr>Type=multilist;Title=Country selection;Options=EU "EU27",BL "Belgium and Luxembourg",DK "Denmark",
+                                            DE "Germany",EL "Greece",ES "Spain",FR "France",IR "Irland",IT "Italy",NL "The Netherlands",
+                                            AT "Austria",PT "Portugal",SE  "Sweden",FI  "Finland",UK  "United Kingdom",CZ  "Czech Republic",
+                                            HU  "Hungary",PL  "Poland",SI  "Slovenia",SK  "Slovak Republic",EE  "Estonia",LT  "Lithuania",
+                                            LV  "Latvia",CY   "Cyprus",MT   "Malta",BG   "Bulgaria",RO   "Romania",NO "Norway",
+                                            TUR      "Turkey",AL "Albania",MK "Macedonia",CS "Serbia",MO "Montenegro",HR "Croatia",
+                                            BA "Bosnia and Herzegovina",KO "Kosovo";tasks=none;range=-10;style=width:150</attr></CountriesSel>
+         <SimYearsSel><attr>Type=multilist;Title=Simulation year selection;Value=20;Options=00*50;range=-10;tasks=none</attr></SimYearsSel>
+         <YearsSel><attr>Type=multilist;Title=Year selection;Value=2000;Options=1985*2050;range=10;tasks=none</attr></YearsSel>
+
+         <icon><attr>capri.gif</attr></icon>
+         <datDir><attr>..\dat</attr></datDir>
+         <modelDir><attr>..\gams</attr></modelDir>
+         <resDir><attr>..\results</attr></resDir>
+         <restartDir><attr>..\restart</attr></restartDir>
+         <scenarioDir><attr>scen</attr></scenarioDir>
+         <generateFstLst><attr>true</attr></generateFstLst>
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>General settings</Title>
+                  <tasks>all</tasks>
+         </control>
+
+
+         <control>
+                  <Type>fileselDir</Type>
+                  <Title>Scenario description</Title>
+                  <Value>mtr_RD</Value>
+                  <Options>%modeldir%\pol_input\*.gms</Options>
+                  <range>0</range>
+                  <gamsName>result_type</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         HSMU baseline,
+                         Run scenario with market model, Run scenario only with market model,Generate expost results
+                         Run scenario without market model,
+                         Run scenario only with market model
+                         Downscale scenario results
+                  </tasks>
+                  <tooltip>Name of the scenario file to run. The results will be stored under the name as well.</tooltip>
+         </control>
+
+
+         <control>
+                  <Type>fileselDir</Type>
+                  <Title>Scenario description CGE</Title>
+                  <Value>cge_rd_noChg</Value>
+                  <Options>%modeldir%\pol_input\cge_*.gms</Options>
+                  <range>0</range>
+                  <gamsName>regcge_scenario</gamsName>
+                  <tasks>Run policy experiment with CGE,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario without market model,
+                         Generate expost results
+                  </tasks>
+                  <tooltip>Name of the scenario file to run. The results will be stored under the name as well.</tooltip>
+                  <dependsOn>Regional CGEs:true</dependsOn>
+         </control>
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Generate GAMS child processes on different threads</Title>
+                  <Value>true</Value>
+                  <gamsName>threads</gamsName>
+                  <tasks>
+                         Build HSMU database,
+                         Generate farm type trends,
+                         Run scenario with market model, Run scenario only with market model,Generate expost results
+                         Run scenario without market model,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         HSMU baseline,
+                         Downscale scenario results,
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Downscale farm type results</Title>
+                  <Value>false</Value>
+                  <gamsName>useFarmTypes</gamsName>
+                  <tasks>
+                       HSMU baseline,
+                       Downscale scenario results
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Use new global version</Title>
+                  <Value>false</Value>
+                  <gamsName>NewGlobal</gamsName>
+                  <tasks>
+                  Build global database,
+                  Baseline calibration market model,
+                  Run scenario with market model, Run scenario only with market model,
+                  Run scenario only with market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>EU28</Title>
+                  <Value>false</Value>
+                  <gamsName>EU28</gamsName>
+                  <tasks>
+                  Build global database,
+                  Generate trend projection,
+                  Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Run scenario with market model, Run scenario only with market model,
+                  Run scenario without market model, Generate farm type trends, Compile RDP data,
+                                      Prepare FAOSTAT database
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Trace data flow</Title>
+                  <Value>true</Value>
+                  <gamsName>debug_market</gamsName>
+                  <tasks>Baseline calibration market model</tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>GHG abatement technology</Title>
+                  <Value>off</Value>
+                  <Options>off,endog,exog,comb</Options>
+                  <gamsName>ghgTech</gamsName>
+                  <tasks>Run scenario with market model,
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Algorithm</Title>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Bilateral model</Title>
+                  <Value>false</Value>
+                  <gamsName>bilat</gamsName>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Only ad valorem equivalents</Title>
+                  <Value>true</Value>
+                  <gamsName>adValEqu</gamsName>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Use profit functions for countries with programming models</Title>
+                  <Value>false</Value>
+                  <gamsName>useDualFuncsForRMSSUP</gamsName>
+                  <tasks>Test alternative market model</tasks>
+                  <userLevls>developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Income fixed</Title>
+                  <Value>true</Value>
+                  <gamsName>fixedIncome</gamsName>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <title>Fixed price of non-agricultural sector</title>
+                  <Value>true</Value>
+                  <gamsName>fixRest</gamsName>
+                  <tasks>Test alternative market model
+                  </tasks>
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Use pre-steps</Title>
+                  <Value>false</Value>
+                  <gamsName>usePresteps</gamsName>
+                  <tasks>Test alternative market model</tasks>
+                  <userLevls>developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Solution algorithm</Title>
+                  <Value>MCP</Value>
+                  <Options>NLP,MCP</Options>
+                  <gamsName>SolutionMethod</gamsName>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Years</Title>
+                  <tasks>
+                  Prepare national database,
+                  Finish national database,
+                  Build regional time series,
+                  Build regional database,
+                  Build global database,
+                  Estimate GHG emission coefficients,
+                  Build HSMU database,
+                  Generate trend projection,
+                  Generate farm type trends,
+                  Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Baseline calibration farm types,
+                  HSMU baseline,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model,
+                  Run scenario only with market model,
+                  Downscale scenario results
+                  Test alternative market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>First ex post year</Title>
+                  <Value>1984</Value>
+                  <Options>1984*1996</Options>
+                  <gamsName>FirstYear</gamsName>
+                  <tasks>Prepare national database,
+                  Finish national database,
+                  Define fts from FSS,
+                  Build regional time series,
+                  Build regional database,
+                  Build global database,
+                  Generate trend projection,
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Base year</Title>
+                  <Value>2004</Value>
+                  <Options>2004,2006,2008</Options>
+                  <gamsName>BaseYear</gamsName>
+                  <style>vAlignment:left</style>
+                  <!-- The following style setting produces the _fst2 and _lst2 gams elements -->
+                  <style>output:  fstlst set globals</style>
+                  <!-- The folloging version by Mihaly seems to be equivalent -->
+                  <!-- <style>output:fstlst</style> -->
+                  <tasks>Define fts from FSS,
+                  Build regional time series,
+                  Build regional database,
+                  Build HSMU database,
+                  HSMU baseline,
+                  Downscale scenario results,
+                  Build global database,
+                  Estimate GHG emission coefficients,
+                  Generate trend projection,
+                  Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model,
+                  Test alternative market model,
+                  Run scenario only with market model,
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Base year farm types</Title>
+                  <Value>2008</Value>
+                  <Options>2004,2008</Options>
+                  <gamsName>BaseYear</gamsName>
+                  <style>vAlignment:left</style>
+                  <tasks>
+                  Generate farm type trends,
+                  Baseline calibration farm types
+                  </tasks>
+         </control>
+
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Last ex post year</Title>
+                  <Value>2010</Value>
+                  <Options>2004*2015</Options>
+                  <gamsName>LastYear</gamsName>
+                  <tasks>Prepare national database,
+                  Finish national database,
+                  Define fts from FSS,
+                  Build regional time series,
+                  Build regional database,
+                  Build global database,
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Simulation years</Title>
+                  <Value>2020</Value>
+                  <Options>2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2015,2020,2025,2030,2035,2040,2045,2050</Options>
+                  <range>-5</range>
+                  <gamsName>SimulationYear</gamsName>
+                  <!-- The following style setting produces the _fst2 and _lst2 gams elements -->
+                  <style>output:  fstlst set globals</style>
+                  <tasks>
+                  Generate trend projection,
+                  Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Baseline calibration farm types,
+                  HSMU baseline,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model,
+                  Run scenario only with market model,
+                  Test alternative market model,
+                  Downscale scenario results
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Last simulation year</Title>
+                  <Value>2020</Value>
+                  <Options>2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2015,2020,2025,2030,2035,2040,2045,2050</Options>
+                  <range>10</range>
+                  <gamsName>lastSimulationYear</gamsName>
+                  <style>output:set FstLst</style>
+                  <tasks>
+                  Generate trend projection
+                  Generate farm type trends
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Last year of NUTS2 trends for FTs</Title>
+                  <Value>2020</Value>
+                  <Options>2004,2005,2006,2007,2008,2009,2010,2011,2012,2015,2020,2025,2030,2035,2040,2045,2050</Options>
+                  <range>10</range>
+                  <gamsName>lastYearNUTS2Trends</gamsName>
+                  <tasks>
+                  Generate trend projection
+                  Generate farm type trends
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Time series</Title>
+                  <Value>true</Value>
+                  <gamsName>TIMESERIES</gamsName>
+                  <tasks>Build regional time series,Define fts from FSS</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Yields/Input Costs per farm from FADN</Title>
+                  <Value>false</Value>
+                  <gamsName>FADN_CAL</gamsName>
+                  <tasks>Build regional database</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Automatic check for selection of years</Title>
+                  <Value>true</Value>
+                  <gamsName>checkYears</gamsName>
+                  <tasks>
+                  Prepare national database
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Only integrate results for single MS</Title>
+                  <Value>false</Value>
+                  <gamsName>onlyIntegrateCoco1</gamsName>
+                  <tasks>
+                  Finish national database
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Regions</Title>
+                  <tasks>
+                  Prepare national database,
+                  Finish national database,
+                  Define fts from FSS,
+                  Build regional time series,
+                  Build regional database,
+                  Build global database,
+                  Build HSMU database,
+                  HSMU baseline,
+                  Downscale scenario results,
+                  Generate trend projection,
+                  Generate farm type trends,
+                  Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Baseline calibration farm types,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model,
+                  Run scenario only with market model,
+                  Test alternative market model
+                  Calibrate CGE,
+                  Run policy experiment with CGE,
+                  Run test shocks with CGE
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Run for selected regions</Title>
+                  <Value>false</Value>
+                  <gamsName>UseSelectedRegions</gamsName>
+                  <tasks>
+                  Test alternative market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Countries</Title>
+                  <Options>
+                  BL000000 "Belgium and Luxembourg",
+                  DK000000 "Denmark",
+                  DE000000 "Germany",
+                  EL000000 "Greece",
+                  ES000000 "Spain",
+                  FR000000 "France",
+                  IR000000 "Irland",
+                  IT000000 "Italy",
+                  NL000000 "The Netherlands",
+                  AT000000 "Austria",
+                  PT000000 "Portugal",
+                  SE000000 "Sweden",
+                  FI000000 "Finland",
+                  UK000000 "United Kingdom",
+                  CZ000000 "Czech Republic",
+                  HU000000 "Hungary",
+                  PL000000 "Poland",
+                  SI000000 "Slovenia",
+                  SK000000 "Slovak Republic",
+                  EE000000 "Estonia",
+                  LT000000 "Lithuania",
+                  LV000000 "Latvia",
+                  CY000000 "Cyprus",
+                  MT000000 "Malta",
+                  BG000000 "Bulgaria",
+                  RO000000 "Romania",
+                  NO000000 "Norway",
+                  TUR      "Turkey",
+                  AL000000 "Albania",
+                  MK000000 "Macedonia",
+                  CS000000 "Serbia",
+                  MO000000 "Montenegro",
+                  HR000000 "Croatia",
+                  BA000000 "Bosnia and Herzegovina",
+                  KO000000 "Kosovo"
+                  </Options>
+                  <range>10</range>
+                  <gamsName>Countries</gamsName>
+                  <!-- The following style setting produces the _fst2 and _lst2 gams elements -->
+                  <style>output:  fstlst set globals</style>
+                  <tasks>
+                     Prepare national database,
+                     Define fts from FSS,
+                     Build regional time series,
+                     Build regional database,
+                     Build HSMU database,
+                     HSMU baseline,
+                     Downscale scenario results,
+                     Generate trend projection,
+                     Generate farm type trends,
+                     Baseline calibration supply models,
+                     Baseline calibration farm types,
+                     Run scenario without market model,
+                     Test alternative market model
+                     Generate expost results
+                  </tasks>
+
+                  <selGroups>
+                       /EU15
+                           BL000000 "Belgium and Luxembourg",
+                           DK000000 "Denmark",
+                           DE000000 "Germany",
+                           EL000000 "Greece"
+                           ES000000 "Spain"
+                           FR000000 "France"
+                           IR000000 "Irland"
+                           IT000000 "Italy"
+                           NL000000 "The Netherlands"
+                           AT000000 "Austria"
+                           PT000000 "Portugal"
+                           SE000000 "Sweden"
+                           FI000000 "Finland"
+                           UK000000 "United Kingdom"
+                       /EU12
+                           CZ000000 "Czech Republic"
+                           HU000000 "Hungary"
+                           PL000000 "Poland"
+                           SI000000 "Slovenia"
+                           SK000000 "Slovak Republic"
+                           EE000000 "Estonia"
+                           LT000000 "Lithuania"
+                           LV000000 "Latvia"
+                           CY000000 "Cyprus"
+                           MT000000 "Malta"
+                           BG000000 "Bulgaria"
+                           RO000000 "Romania"
+                       /Non EU
+                           NO000000 "Norway"
+                           TUR      "Turkey"
+                           AL000000 "Albania"
+                           MK000000 "Macedonia"
+                           CS000000 "Serbia"
+                           MO000000 "Montenegro"
+                           HR000000 "Croatia"
+                           BA000000 "Bosnia and Herzegovina"
+                           KO000000 "Kosovo"
+                    </selGroups>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Consolidation_steps</Title>
+                  <Options>
+                  CountryData     "Market balances - Yields - activity levels - prices - population",
+                  TradeFlows      "bilateral trade flows",
+                  </Options>
+                  <range>2</range>
+                  <gamsName>ConsolidationSteps</gamsName>
+                  <tasks>
+                     Prepare FAOSTAT database
+                  </tasks>
+
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Countries</Title>
+                  <Options>BL000000 "Belgium and Luxembourg",
+                           DK000000 "Denmark",
+                           DE000000 "Germany",
+                           EL000000 "Greece",
+                           ES000000 "Spain",
+                           FR000000 "France",
+                           IR000000 "Irland",
+                           IT000000 "Italy",
+                           NL000000 "The Netherlands",
+                           AT000000 "Austria",
+                           PT000000 "Portugal",
+                           SE000000 "Sweden",
+                           FI000000 "Finland",
+                           UK000000 "United Kingdom",
+                           CZ000000 "Czech Republic",
+                           HU000000 "Hungary",
+                           PL000000 "Poland",
+                           SI000000 "Slovenia",
+                           SK000000 "Slovak Republic",
+                           EE000000 "Estonia",
+                           LT000000 "Lithuania",
+                           LV000000 "Latvia",
+                           BG000000 "Bulgaria",
+                           RO000000 "Romania",
+                           CY000000 "Cyprus",
+                           MT000000 "Malta",
+                           TUR      "Turkey"</Options>
+                  <range>10</range>
+                  <gamsName>msSel</gamsName>
+                  <tasks>Run policy experiment with CGE,Run test shocks with CGE
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>multilist</Type>
+                  <Title>Countries</Title>
+                  <Options>BL000000 "Belgium and Luxembourg",DK000000 "Denmark",DE000000 "Germany",EL000000 "Greece",ES000000 "Spain",FR000000 "France",IR000000 "Irland",IT000000 "Italy",NL000000 "The Netherlands",AT000000 "Austria",PT000000 "Portugal",SE000000 "Sweden",FI000000 "Finland",UK000000 "United Kingdom",CZ000000 "Czech Republic",HU000000 "Hungary",PL000000 "Poland",SI000000 "Slovenia",SK000000 "Slovak Republic",EE000000 "Estonia",LT000000 "Lithuania",LV000000 "Latvia",CY000000 "Cyprus",MT000000 "Malta",BG000000 "Bulgaria",RO000000 "Romania",NO000000 "Norway",TUR      "Turkey",AL000000 "Albania",MK000000 "Macedonia",CS000000 "Serbia",MO000000 "Montenegro",HR000000 "Croatia",BA000000 "Bosnia and Herzegovina",KO000000 "Kosovo"</Options>
+                  <range>10</range>
+                  <gamsName>Countries</gamsName>
+                  <style>output:set FstLst</style>
+                  <tasks>
+                  Finish national database,
+                  Build global database,
+                  Estimate GHG emission coefficients,
+                  Baseline calibration market model,
+                  Run scenario with market model, Run scenario only with market model,
+                  Run scenario only with market model,
+                  Calibrate CGE
+                  Re-calibrate behavioural functions CGE,
+                  </tasks>
+                  <disable>true</disable>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>NUTS2</Value>
+                  <Options>NUTS2,Farm types</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>
+                  Build regional database
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>NUTS2</Value>
+                  <Options>Farm types</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>Define fts from FSS</tasks>
+                  <disable>true</disable>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>Countries</Value>
+                  <Options>Countries</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>
+                     Prepare national database,
+                     Finish national database,
+                     Baseline calibration market model,
+                     Build global database
+                  </tasks>
+                  <disable>true</disable>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>NUTS2</Value>
+                  <Options>NUTS2</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>Build regional time series</tasks>
+                  <disable>true</disable>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>Countries</Value>
+                  <Options>Countries,NUTS2,Farm types</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>
+                     Baseline calibration supply models
+                     Baseline calibration farm types,
+                     Run scenario with market model, Run scenario only with market model,Generate expost results
+                     Run scenario only with market model
+                     Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Regional breakdown</Title>
+                  <Value>Countries</Value>
+                  <Options>Countries,NUTS2</Options>
+                  <gamsName>regLevel</gamsName>
+                  <tasks>Generate trend projection</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Non-default reference scenario for carbon accounting</Title>
+                  <Value>false</Value>
+                  <gamsName>nondefaultLUfile</gamsName>
+                  <tasks>
+                     Run scenario with market model,
+                     Run scenario without market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>filesel</Type>
+                  <Title>Reference scenario for carbon accounting</Title>
+                  <Value>%resdir%\capmod\res_2_0810_mtr_rd_ref.gdx</Value>
+                  <Options>%resdir%\capmod\res_*.gdx</Options>
+                  <gamsName>initialLUfile</gamsName>
+                  <tasks>
+                     Run scenario with market model,
+                     Run scenario without market model
+                  </tasks>
+                  <dependsOn>Non-default reference scenario for carbon accounting:true:visible:res_2_0810_mtr_rd_ref.gdx</dependsOn>
+         </control>
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Test options</Title>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <title>Run price shocks country by product</title>
+                  <Value>false</Value>
+                  <gamsName>priceShocksCountryProduct</gamsName>
+                  <tasks>Test alternative market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <title>Run tfp shocks globally</title>
+                  <Value>false</Value>
+                  <gamsName>globalQuantityShocks</gamsName>
+                  <tasks>Test alternative market model
+                  </tasks>
+         </control>
+
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Size of tfp shock</Title>
+                  <Value>1</Value>
+                  <range>1,25,1</range>
+                  <options>int</options>
+                  <gamsName>tfpShockSize</gamsName>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+         <control>
+                  <Type>panel</Type>
+                  <tasks>Test alternative market model</tasks>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Product group selection</Title>
+                  <Options>
+                        WHEA      "Wheat"
+                        BARL      "Barley"
+                        RYRM      "Rye and Meslin"
+                        MAIZ      "Maize"
+                        RICE      "Rice"
+                        BEEF      "Beef"
+                        PORK      "Pork"
+                        XCERE     "Cereals"
+                        XMEAT     "Meat"
+                        SED       "Oilseeds"
+                        CAK       "Cakes"
+                        OIL       "Vegetable oils"
+                        MLKSECO   "Dairy"
+                        FATS      "Fats"
+                        XXS       "All products"
+                  </Options>
+                  <range>10</range>
+                  <gamsName>shockGroups</gamsName>
+                  <tasks>Test alternative market model</tasks>
+
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Estimation options</Title>
+                  <tasks>Prepare national database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Estimate areas, yields and crop production</Title>
+                  <Value>true</Value>
+                  <gamsName>estimateCrop</gamsName>
+                  <tasks>Prepare national database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Estimate animals</Title>
+                  <Value>true</Value>
+                  <gamsName>estimateAnim</gamsName>
+                  <tasks>Prepare national database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Estimate markets</Title>
+                  <Value>true</Value>
+                  <gamsName>estimateMarket</gamsName>
+                  <tasks>Prepare national database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Estimate land use</Title>
+                  <Value>true</Value>
+                  <gamsName>estimateLandUse</gamsName>
+                  <tasks>Prepare national database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Country Data settings</Title>
+                  <tasks>Prepare FAOSTAT database,
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Country Data Consolidation Steps </Title>
+                  <Options>consolidateProdStat             "Consolidate acreage yield and landuse statistics"
+                           consolidateCommodityBalances    "Consolidate market balances"
+                           Combine                         "Combine both and bring to product eqivalent codes"
+                           EstimateMilk                    "Special calculations for Milkprodukts"
+                           AdjustPopulation                "Filling gaps in population data"
+                           Prices                          "producer prices"
+                  </Options>
+                  <range>6</range>
+                  <gamsName>SUASteps</gamsName>
+                  <tasks>Prepare FAOSTAT database</tasks>
+         </control>
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Trade Flow settings</Title>
+                  <tasks>Prepare FAOSTAT database,
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Trade Consolidation Steps </Title>
+                  <Options>SELECT    "Select data and save in smaller gdx-files"
+                           AGGTRADE  "Aggregations"
+                           UVATRADE  "Calculate unit values"
+                           STATRADE  "Some basic statistics"
+                           TRDTRADE  "Estimate linear trends"
+                           INITRADE  "Initialise expected means and standard deviations"
+                           MODTRADE  "Solve for trade consolidation"
+                           SHOWTRADE "Reduce model results"
+                           ExportGUI "Export results for visualisation"
+                           ExportGlobal "Export results for global_database.gms"
+                  </Options>
+                  <range>7</range>
+                  <gamsName>consSteps</gamsName>
+                  <tooltip>The trade flow consolidation is divided into 10 consolidation steps. \n
+                           The main reason is for debugging and memory issues. If an error appears in one of the later steps
+                           one does not have to start from the beginning. The intermediate results are stored in
+                           the scratch directory. Only the outputs of the last two steps enter the results directory
+                           and end up under version control.
+                  </tooltip>
+                  <tasks>Prepare FAOSTAT database</tasks>
+         </control>
+
+         <control>
+                  <Type>multilistNotZero</Type>
+                  <Title>Productgroups to consolidate</Title>
+                  <Value>agrInputs,</Value>
+                  <Options>agrInputs
+                           cereFeed
+                           cereFood
+                           cereGrain
+                           animFats
+                           feedstuff
+                           fruitTemp
+                           fruitTrop
+                           induCrop
+                           meats
+                           meatProc
+                           milkProd
+                           oilcakes
+                           vegoils
+                           oilseeds
+                           pulses
+                           roots
+                           sugaProd
+                           vegeProc
+                           vegetabl
+                           textiles
+                           lifeAnim
+                           nonAlcBeverage
+                           fruitProc
+                           nuts
+                           skinhide
+                           skinProd
+                           alcBeverage
+                           cereFlour</Options>
+                  <range>7</range>
+                  <gamsName>groups</gamsName>
+                  <tasks>Prepare FAOSTAT database</tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Modules and algorithm</Title>
+                  <tasks>Baseline calibration market model,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario without market model,
+                         Run scenario only with market model
+                         Build global database,
+                         Estimate GHG emission coefficients,
+                         Generate expost results
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>panel</Type>
+                  <Title>Modules</Title>
+                  <tasks>Baseline calibration market model,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario without market model,
+                         Run scenario only with market model
+                         Generate expost results
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Global, spatial multi-commodity model</Title>
+                  <Value>true</Value>
+                  <gamsName>MARKET_M</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Estimate GHG emission coefficients
+                  </tasks>
+                  <disable>true</disable>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Global, spatial multi-commodity model</Title>
+                  <Value>true</Value>
+                  <gamsName>MARKET_M</gamsName>
+                  <tasks>Generate expost results</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Endogenous bio-fuel markets in global market model</Title>
+                  <Value>true</Value>
+                  <gamsName>BIOF_M</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model
+                         Generate expost results
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Dampening of high activity level elasticities</Title>
+                  <Value>false</Value>
+                  <gamsName>dampenHighEla</gamsName>
+                  <tasks>Baseline calibration supply models</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Policy blocks (additional geographical layer)</Title>
+                  <Value>false</Value>
+                  <gamsName>policy_blocks</gamsName>
+                  <tasks>Baseline calibration market model,Run scenario with market model,Run scenario only with market model</tasks>
+                  <tooltip><![CDATA[The new market layer defines an additional geographical layer of country aggregates<BR>
+                  with homogenous border protection and market intervention measures (e.g. EU, MERCOSUR countries).<BR>
+                           If switched on, all trade policies (tariffs under trq, entry price system, intervention, flexible levies)<BR>
+                           are defined at the new geographical level.<BR>
+                           Be aware that before running a scenario, you need to re-calibrate the model with this option switched on.<BR>
+                           For more information contact Mihaly Himics.]]>
+                  </tooltip>
+
+                   </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Calibrate non-homothetic Armington-system (creates new simini)</Title>
+                  <Value>off</Value>
+                  <Options>off,commitment,KVT,extendedKVT</Options>
+                  <gamsName>modArmington</gamsName>
+                  <tasks>Run scenario with market model,Run scenario only with market model</tasks>
+                  <tooltip>Calibrates a non-homothetic CES specification for the lower Armington nest and runs scenarios</tooltip>
+                  <userLevls>developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Explicit representation of NTMs</Title>
+                  <Value>false</Value>
+                  <gamsName>explicit_NTM</gamsName>
+                  <tasks>Baseline calibration market model,Baseline calibration supply models,Run scenario with market model,Run scenario only with market model</tasks>
+                  <tooltip>Includes explicit NTMs in the market model calibration/simulations (see parameter p_ntm)</tooltip>
+                  <userLevls>developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Endogenous margins between trade block and country prices</Title>
+                  <Value>false</Value>
+                  <gamsName>adjustMargins</gamsName>
+                  <tasks>Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model
+                         Generate expost results
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Advanced tariff aggregation module</Title>
+                  <Value>false</Value>
+                  <gamsName>tagg_module</gamsName>
+                  <tasks>Run scenario with market model</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Endogenous young animal markets</Title>
+                  <Value>true</Value>
+                  <gamsName>yani_m</gamsName>
+                  <tasks>Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model
+                         Generate expost results
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Update transportcost matrix</Title>
+                  <Value>true</Value>
+                  <gamsName>updateTransportcosts</gamsName>
+                  <tasks>Build global database</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Update longrun projections</Title>
+                  <Value>false</Value>
+                  <gamsName>updatelongrun</gamsName>
+                  <tasks>Build global database</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Advanced tariff aggregation</Title>
+                  <Value>false</Value>
+                  <gamsName>tagg_module</gamsName>
+                  <tasks>Build global database</tasks>
+         </control>
+
+         <control>
+                  <Type>multilist</Type>
+                  <Title>Longrun Option</Title>
+                  <Options>FAO2050 "Fao projections"
+                           GLOBIOM_EU "Projections with GLOBIO EU model"
+                           GLOBIOM_GL "Projections with global GLOBIOM model"
+                  </Options>
+                  <Value>FAO2050 "Fao projections"</Value>
+                  <range>3</range>
+                  <gamsName>longrunScen</gamsName>
+                  <tasks>Build global database</tasks>
+         </control>
+
+
+         <control>
+                  <Title>Regional CGEs</Title>
+                  <Type>checkbox</Type>
+                  <Value>false</Value>
+                  <gamsName>REGCGE</gamsName>
+                  <tasks>Run scenario with market model, Run scenario only with market model,Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+         <control>
+                  <Type>panel</Type>
+                  <Title>Modules</Title>
+                  <tasks>Baseline calibration market model,Run scenario with market model, Run scenario only with market model,Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+         <control>
+                    <Type>spinner</Type>
+                  <Title>Number of iterations</Title>
+                  <Value>99</Value>
+                  <Options> </Options>
+                  <range>1,99,1</range>
+                  <gamsName>STEPS</gamsName>
+                  <tasks>Run scenario with market model,
+                         Run scenario without market model,
+                         Generate expost results
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Number of iterations</Title>
+                  <Value>1</Value>
+                  <Options> </Options>
+                  <range>1,1,1</range>
+                  <gamsName>STEPS</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Baseline calibration supply models
+                         Baseline calibration farm types,
+                         Run scenario only with market model
+                    </tasks>
+                  <disable>true</disable>
+         </control>
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Use lower price iterations weights after iteration</Title>
+                  <Value>20</Value>
+                  <Options> </Options>
+                  <range>1,100,1</range>
+                  <gamsName>LOWSTEPS</gamsName>
+                  <tasks>Run scenario with market model, Run scenario only with market model,Generate expost results</tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>filesel</Type>
+                  <Title>Alternative GAMS license file for GHG emission estimation</Title>
+                  <Value>gamslice_cplex</Value>
+                  <Options>%gamsdir%\gamslice*.txt</Options>
+                  <range>0</range>
+                  <gamsName>altLicense</gamsName>
+                  <tasks>
+                         Baseline calibration market model,
+                         Run scenario with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                   </tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Reporting</Title>
+                  <tasks>Run scenario with market model, Run scenario only with market model,
+                         Run scenario without market model,
+                         Run scenario only with market model
+                         Generate expost results
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Aggregates for activities and commodities</Title>
+                  <Value>true</Value>
+                  <gamsName>REPORTS_AGGREG</gamsName>
+                  <tasks>Run scenario with market model, Run scenario only with market model,
+                         Run scenario without market model,
+                         Run scenario only with market model
+                         Generate expost results</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Environmental Indicators</Title>
+                  <Value>true</Value>
+                  <gamsName>REPORTS_ENV</gamsName>
+                  <tasks>Run scenario with market model, Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Life-cycle assessment for energy</Title>
+                  <Value>true</Value>
+                  <gamsName>REPORTS_ENERGY</gamsName>
+                  <tasks>Run scenario with market model, Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Multi-functionality indicators</Title>
+                  <Value>true</Value>
+                  <gamsName>REPORTS_MULTIFUNC</gamsName>
+                  <tasks>Run scenario with market model, Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Iteration tracking</Title>
+                  <Value>true</Value>
+                  <gamsName>STEPREPORT</gamsName>
+                  <tasks>Run scenario with market model, Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+         <control>
+                  <Type>checkBox</Type>
+                  <Title>Sensitivity experiments with features in supply model</Title>
+                  <Value>true</Value>
+                  <gamsName>sensExperiments</gamsName>
+                  <tasks>Run scenario with market model,Run scenario without market model,Generate expost results</tasks>
+         </control>
+
+        <control>
+                  <Type>tab</Type>
+                  <Title>Aglink-Cosimo Baseline Selection</Title>
+                  <tasks>Build global database</tasks>
+         </control>
+
+         <control>
+                  <Type>panel</Type>
+                  <Title>Aglink-Cosimo Baseline Selection</Title>
+                  <tasks>Build global database</tasks>
+         </control>
+
+          <control>
+                  <Type>tab</Type>
+                  <Title>Sources and scaling for external baselines</Title>
+                  <tasks>Generate trend projection,
+                         Baseline calibration market model
+
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>panel</Type>
+                  <Title>Aglink-Cosimo Baseline Selection and Scaling options</Title>
+                  <tasks>
+                         Generate trend projection
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Aglink Cosimo model version</Title>
+                  <Value>aglink2010</Value>
+                  <Options>aglink2010,aglink2011oecd,aglink2011dgAgri,aglink2012oecd,aglink2012dgAgri,aglink2013dgAgri,aglink2014dgAgri</Options>
+                  <gamsName>AGLINK</gamsName>
+                  <tasks>Generate trend projection
+                         Build global database
+                 </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Aglink Cosimo scenario name</Title>
+                  <Value>Aglink2010</Value>
+                  <Options>Aglink2010,Aglink2011Sugar,Aglink2012oecd,Aglink2012dgAgri,aglink2013dgAgri,aglink2014dgAgri</Options>
+                  <gamsName>AGLINK_scen</gamsName>
+                  <tasks>Generate trend projection
+                         Build global database
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Scaling to DG Agri baseline</Title>
+                  <Value>OFF</Value>
+                  <Options>OFF,DGAGRI2009,DGAGRI2010,OECD2011,OECD2012</Options>
+                  <gamsName>ScaleToDgAgri</gamsName>
+                  <tasks>
+                         Generate trend projection
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Long run baseline selection</Title>
+                  <Value>SSP2+no_mtg+EU_AGMIP_S1 "Shared socioeconomic pathway #2 + default settings under AGMIP S1 from GLOBIOM_EU"</Value>
+                  <Options>
+                           SSP2+no_mtg+EU_AGMIP_S1 "Shared socioeconomic pathway #2 + default settings under AGMIP S1 from GLOBIOM_EU",
+                           SSP2+no_mtg+AGMIP_S1 "Shared socioeconomic pathway #2 + default settings under AGMIP S1 from GLOBIOM_GL",
+                           faoIfpri2009  "Merged FAO/IFPRI baseline 2009 (copy from old p_F2050IMPACT)",
+                           SSP1+GHG000_BIO00+ScenBASE "Shared socioeconomic pathway #1 + default other settings from GLOBIOM_GL",
+                           SSP2+GHG000_BIO00+ScenBASE "Shared socioeconomic pathway #2 + default other settings from GLOBIOM_GL",
+                           SSP3+GHG000_BIO00+ScenBASE "Shared socioeconomic pathway #3 + default other settings from GLOBIOM_GL",
+                           primes_bas_sep10+BioenScen_100+WRLD_NTRD_YDFR_YCHG_LUC5by "GLOBIOM_EU baseline run for DG CLIMA based on PRIMES sep 2010, otherwise default",
+                           primes_bas_jan13+BioenScen_100+WRLD_NTRD_YDFR_YCHG_LUC5by "GLOBIOM_EU baseline run for DG CLIMA based on PRIMES jan 2013, otherwise default",
+                           primes_ref_jan13+BioenScen_100+WRLD_NTRD_YDFR_YCHG_LUC5by "GLOBIOM_EU reference run for DG CLIMA based on PRIMES jan 2013, otherwise default",
+                           primes_bas_apr13+BioenScen_100+WRLD_NTRD_YDFR_YCHG_LUC5by "GLOBIOM_EU baseline run for DG CLIMA based on PRIMES 230413 plus some MS comments included",
+                           primes_ref_2015+REFERENCE+REFERENCE "GLOBIOM_EU reference run for DG CLIMA based on PRIMES 021015",
+                  </Options>
+                  <gamsName>SelecLongRunScen</gamsName>
+                  <tasks>
+                         Baseline calibration market model,
+                         Generate trend projection
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>filesel</Type>
+                  <Title>Primes scenarios for biofuel supports</Title>
+                  <Value>primes_ref_210212</Value>
+                  <Options>%datdir%\biofuel\primes_*.gdx</Options>
+                  <range>0</range>
+                  <gamsName>primesBiofuelFile</gamsName>
+                  <tasks>
+                         Generate trend projection
+                  </tasks>
+                  <tooltip>Results from PRIMES energy model used for derive expert supports related to biofuel markets</tooltip>
+         </control>
+
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>CGE General settings</Title>
+                  <tasks>Calibrate CGE,
+                         Re-calibrate behavioural functions CGE,
+                         Run test shocks with CGE,
+                         Run policy experiment with CGE
+                  </tasks>
+         </control>
+
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Wage curve elasticity</Title>
+                  <Value>0.6</Value>
+                  <range>0.1,5.0,0.05</range>
+                  <gamsName>wageCurveElas</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Prudency factor for DPSV investment rule</Title>
+                  <Value>0.30000000074505806</Value>
+                  <range>0.1,1.2,0.05</range>
+                  <gamsName>prudInvFactor</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Base year CAPRI </Title>
+                  <Options>04</Options>
+                  <gamsName>BAS</gamsName>
+                  <tasks>Calibrate CGE,
+                         Re-calibrate behavioural functions CGE
+                         Run test shocks with CGE,Run policy experiment with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Simulation year CAPRI</Title>
+                  <Options>06,10,15,20,30</Options>
+                  <gamsName>SIM</gamsName>
+                  <tasks>Calibrate CGE,
+                         Re-calibrate behavioural functions CGE
+                         Run test shocks with CGE,Run policy experiment with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Baseline scenario CAPRI</Title>
+                  <Options>MTR_RD</Options>
+                  <gamsName>baselineScen</gamsName>
+                  <tasks>Calibrate CGE,
+                         Re-calibrate behavioural functions CGE
+                         Run test shocks with CGE,Run policy experiment with CGE</tasks>
+         </control>
+
+<!--
+         <control>
+                  <Type>tab</Type>
+                  <Title>CGE Trade parameters</Title>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>table</Type>
+                  <Title>Trade elasticities</Title>
+                  <Value>0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,
+                        -0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5,-0.5
+                  </Value>
+                  <Columns>Import supply,Export demand</Columns>
+                  <Rows>AGR "Agriculture"
+                        FOR "Forestry"
+                        OPP "Other primary sectors"
+                        FOP "Food Processing"
+                        MAN "Manufacturing"
+                        ENE "Energy"
+                        CNS "Construction"
+                        TTR "Trade and Transport"
+                        HOT "Hotel and restaurants"
+                        EDU "Education"
+                        OSE "Other services"</Rows>
+                  <range>0.1,5.0,0.1,-5.0,-0.1,0.1,</range>
+                  <gamsName>p_tradeElas</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+-->
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>CGE Supply parameters</Title>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>table</Type>
+                  <Title>Supply elasticities</Title>
+                  <Value>0.5,0.286,0.3,0.8,0.74,0.62,0.64,0.63,0.58,0.65,0.9,0.65
+                         2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0</Value>
+                  <Columns>Substitution,CET transformation</Columns>
+                  <Rows>AGR "Agriculture",FOR "Forestry",OPP "Other primary sectors",FOP "Food Processing",MAN "Manufacturing",ENE "Energy",CNS "Construction",TTR "Trade and Transport",HOT "Hotel and restaurants",EDU "Education",OSE "Other services"</Rows>
+                  <range>0.1,2.0,0.01,0.1,10.0,0.1,</range>
+                  <gamsName>p_supplyElas</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>CGE factor supply</Title>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>table</Type>
+                  <Title>Transformation elasticity</Title>
+                  <Value>0.5,0.5,0.5,0.5</Value>
+                  <Columns>Transformation elasticity</Columns>
+                  <Rows>Capital,Labor,Land</Rows>
+                  <range>0.01,0.99,0.01,0.1,10.,0.1,</range>
+                  <gamsName>p_transElasFactor</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>CGE Demand parameters</Title>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>table</Type>
+                  <Title>Demand parameters</Title>
+                  <Value>0.05,0.63,0.98,0.56,0.66,0.93,0.94,0.79,0.95,1.07,1.1,1.09,
+                         2.50,2.54,2.25,3.76,2.48,2.76,2.40,1.95,1.95,2.00,1.95,1.95</Value>
+                  <Columns>Expenditure elasticity,Substitution elasticity</Columns>
+                  <Rows>AGR "Agriculture",FOR "Forestry",OPP "Other primary sectors",FOP "Food Processing",MAN "Manufacturing",ENE "Energy",CNS "Construction",TTR "Trade and Transport",HOT "Hotel and restaurants",EDU "Education",OSE "Other services"</Rows>
+                  <range>0.01,0.99,0.01,0.1,10.,0.1,</range>
+                  <gamsName>p_demandPar</gamsName>
+                  <tasks>Calibrate CGE
+                         Re-calibrate behavioural functions CGE
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Use seperate threads</Title>
+                  <Value>true</Value>
+                  <gamsName>USE_THREADS</gamsName>
+                  <tasks>Run test shocks with CGE,Run policy experiment with CGE</tasks>
+                  <tooltip>Solves the model for each country in a separate threads. Useful on multi-processor machines</tooltip>
+         </control>
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Methodological switches CGE</Title>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+                  <dependsOn>Regional CGEs:true</dependsOn>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Endogenous net migration</Title>
+                  <Value>true</Value>
+                  <gamsName>NET_MIGR</gamsName>
+                  <tasks>Run policy experiment with CGE,
+                  Run test shocks with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+                  <tooltip>Let the population size react to changes in per capita income and employment rates</tooltip>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Fixed budget for factor subsidies</Title>
+                  <Value>true</Value>
+                  <gamsName>FIX_BUDGET_FAC_SUBS</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+                  <tooltip>Factor subsidy rate depends on given budget</tooltip>
+         </control>
+
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Factor supply</Title>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Capital stock</Title>
+                  <Value>DPSV rule</Value>
+                  <Options>Fixed stock
+                           Capital stock updated by investments
+                           DPSV rule
+                           </Options>
+                  <gamsName>CapSupply</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Labor supply</Title>
+                  <Value>Wage curve</Value>
+                  <Options>Wage curve,
+                           Full employment,
+                           Fixed employment rate,
+                           Sticky wages
+                  </Options>
+                  <gamsName>LabSupply</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Factor mobility</Title>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Capital mobility</Title>
+                  <Value>Sluggish</Value>
+                  <Options>Fixed,Sluggish,Fully mobile</Options>
+                  <gamsName>CapMob</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Labor mobility</Title>
+                  <Value>Sluggish</Value>
+                  <Options>Fixed,Sluggish,Fully mobile</Options>
+                  <gamsName>LabMob</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Land mobility</Title>
+                  <Value>Sluggish</Value>
+                  <Options>Fixed,Sluggish,Fully mobile</Options>
+                  <gamsName>LandMob</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Closure rules</Title>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Closure current account and trade balance</Title>
+                  <Value>Exchange rate</Value>
+                  <Options>Exchange rate,Foreign borrowing government, Not closed</Options>
+                  <gamsName>closure_trade_current_account_bal</gamsName>
+                  <tasks>Run test shocks with CGE,
+                         Run policy experiment with CGE
+                         Run scenario with market model, Run scenario only with market model,Generate expost results
+                         Run scenario without market model
+                  </tasks>
+                  <tooltip>If switched off, current account balance is not equal trade balance and exchange rate is fixed</tooltip>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Closure household account</Title>
+                  <Value>Spending</Value>
+                  <Options>Spending,Saving rate,Foreign borrowing</Options>
+                  <gamsName>closure_hou</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Closure government account</Title>
+                  <Value>Spending</Value>
+                  <Options>Spending,Saving rate,Foreign borrowing,Income tax rate</Options>
+                  <gamsName>closure_gov</gamsName>
+                  <tasks>Run test shocks with CGE,
+                  Run policy experiment with CGE,
+                  Run scenario with market model, Run scenario only with market model,Generate expost results
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Shock selection</Title>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>TFP increase 10%</Title>
+                  <Value>false</Value>
+                  <gamsName>shock_TFP_10</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>TFP increase 50%</Title>
+                  <Value>false</Value>
+                  <gamsName>shock_TFP_50</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Factor endowment increase 10%</Title>
+                  <Value>false</Value>
+                  <gamsName>shock_end_10</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Investment increase 50%</Title>
+                  <Value>false</Value>
+                  <gamsName>shock_inv_50</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>RD measure increase 10%</Title>
+                  <Value>true</Value>
+                  <gamsName>shock_rd_10</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>RD measure decrease 100%</Title>
+                  <Value>true</Value>
+                  <gamsName>shock_rd_minus100</gamsName>
+                  <tasks>Run test shocks with CGE</tasks>
+         </control>
+
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Additional farm groups from fss from 1.600 onwards</Title>
+                  <Value>14</Value>
+                  <range>10,25,1</range>
+                  <gamsName>RangeMaxNoFt</gamsName>
+                  <tasks>Find No of fts in Nuts2</tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Debug options</Title>
+                  <tasks>all</tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Load meta information from older task</Title>
+                  <value>true</value>
+                  <gamsName>loadMeta</gamsName>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>Separator</Type>
+                  <Title>Supply model</Title>
+                  <tasks>Baseline calibration market model,
+                  Baseline calibration supply models,
+                  Baseline calibration farm types,
+                  Run scenario with market model, Generate expost results
+                  Run scenario without market model</tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Solution printing</Title>
+                  <Value>Suppress</Value>
+                  <Options>Suppress,Variables and equations,Full output</Options>
+                  <gamsName>solprintSupply</gamsName>
+                  <tasks>Build regional database,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         Run scenario with market model,
+                         Run scenario without market model,
+                         Generate expost results
+                         Generate farm type trends
+
+                         </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Determine point price elasticities</Title>
+                  <Value>false</Value>
+                  <gamsName>runPriceScens</gamsName>
+                  <tasks>Run scenario with market model,
+                         Run scenario without market model,
+                         Generate expost results
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Determine point price elasticities</Title>
+                  <Value>true</Value>
+                  <gamsName>runPriceScens</gamsName>
+                  <tasks>Baseline calibration supply models
+                         Baseline calibration farm types,
+                  </tasks>
+                  <disable>true</disable>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+
+
+         <control>
+                   <type>singlelist</type>
+                   <title>Print gams code to listing</title>
+                   <value>offListing</value>
+                   <options>onListing,offListing</options>
+                   <gamsName>$</gamsName>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                   <type>singlelist</type>
+                   <title>Solprint</title>
+                   <value>2</value>
+                   <options>On,Off,Silent</options>
+                   <gamsName>option solprint</gamsName>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                   <type>spinner</type>
+                   <title>Limrow</title>
+                   <value>0</value>
+                   <range>0,10000,1</range>
+                   <gamsName>option limrow</gamsName>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                   <type>spinner</type>
+                   <title>Limcol</title>
+                   <value>0</value>
+                   <range>0,10000,1</range>
+                   <gamsName>option limcol</gamsName>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>Separator</Type>
+                  <Title>Market model</Title>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Maximum number of pre-steps market model</Title>
+                  <Value>15</Value>
+                  <Options> </Options>
+                  <range>1,100,1</range>
+                  <gamsName>maxPreSteps</gamsName>
+                  <tasks>Run scenario with market model
+                         Run scenario only with market model
+                         Generate expost results
+                         Test alternative market model
+                         </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Solution print at preparatory solve</Title>
+                  <Value>false</Value>
+                  <gamsName>solprintFirstMarketSolve</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                   </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Abort after preparatory solve</Title>
+                  <Value>false</Value>
+                  <gamsName>abortAfterFirstMarketSolve</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Solution print for pre-steps in 1st iteration with abort</Title>
+                  <Value>false</Value>
+                  <gamsName>debugPrestepModels</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Plus iterlim to zero for 1st pre-steps in 1st iteration</Title>
+                  <Value>false</Value>
+                  <gamsName>iterlimZeroPrestepModels</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>spinner</Type>
+                  <Title>Number of presteps before abort</Title>
+                  <Value>1</Value>
+                  <Options> </Options>
+                  <range>1,99,1</range>
+                  <gamsName>numberPreStepsBeforeAbort</gamsName>
+                  <tasks>Baseline calibration market model,
+                         Run scenario with market model, Run scenario only with market model,
+                         Run scenario only with market model,
+                         Generate expost results
+                         Test alternative market model
+                  </tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Start threats in visible dos windows</Title>
+                  <Value>false</Value>
+                  <gamsName>dosmode</gamsName>
+                  <tasks>Prepare FAOSTAT database</tasks>
+                  <userLevls>Runner:hide,Administrator:hide,developper,debugger</userLevls>
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Kill simini file</Title>
+                  <Value>false</Value>
+                  <gamsName>killSimini</gamsName>
+                  <tasks>
+                  Run scenario with market model, Run scenario only with market model,
+                  Run scenario only with market model
+                  </tasks>
+         </control>
+
+         <control>
+                  <Type>Text</Type>
+                  <Title>Additional result type identifier</Title>
+                  <Value> </Value>
+                  <gamsName>ResId</gamsName>
+                  <tasks>
+                  Estimate GHG emission coefficients
+                  Run scenario with market model, Run scenario only with market model,
+                  Run scenario only with market model
+                  Run scenario without market model
+                  </tasks>
+         </control>
+
+
+         <control>
+                  <Type>tab</Type>
+                  <Title>Options and workflow</Title>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+         </control>
+         <control>
+                  <Type>separator</Type>
+                  <Title>Workflow</Title>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+<!--
+                  <tooltip>Workflow for disaggregation. Should only be changed when testing out modules or when no spatial indicators are required.</tooltip>
+-->
+         </control>
+
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Disaggregate landuse</Title>
+                  <Value>true</Value>
+                  <gamsName>disagglanduse</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+<!--
+                  <tooltip>1. Step in disaggregation: load a priori land use shares and calculates shares consistent with current capri database. Includes estimation of yield and irrigation shares.</tooltip>
+-->
+
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Disaggregate livestock density</Title>
+                  <Value>true</Value>
+                  <gamsName>dolivestock</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+<!--
+                  <tooltip>2. Step in disaggregation: regression of Livestock density of ruminants and monogastric animals and achieving consistency with CAPRI regional data. </tooltip>
+-->
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Disaggregate fertiilizer distribution</Title>
+                  <Value>true</Value>
+                  <gamsName>dofertdist</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+<!--
+                  <tooltip>3. Step in disaggregation: Nutrient input per spatial unit and crop</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Calculate spatial indicators</Title>
+                  <Value>true</Value>
+                  <gamsName>dofertnut</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+<!--
+                  <tooltip>Post-disaggregation: calculate spatial indicators.</tooltip>
+-->
+         </control>
+
+         <control>
+                  <Type>separator</Type>
+                  <Title>Options</Title>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+                  <tooltip>Options steering capdis module</tooltip>
+         </control>
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Spatial unit</Title>
+                  <Value>hsmu</Value>
+                  <Options>hsmu,hsu</Options>
+                  <gamsName>spatunit</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+<!--
+                  <tooltip>"Old" Homogeneous spatial units (HSMU, CAPRI-DynaSpat vs. "New" Homogeneous Spatial Units (HSU2, C-SCAPE).</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Include meta-model calculation</Title>
+                  <Value>false</Value>
+                  <gamsName>dometamod</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+                  <disable>false</disable>
+<!--
+                  <tooltip>DNDC-meta-model will be revised soon. Use it only for specific and dedicated projects.</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Use new format 5dim xobs</Title>
+                  <Value>false</Value>
+                  <gamsName>newFormat</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner:hide,administrator:hide,developper,debugger</userLevls>
+                  <disable>false</disable>
+<!--
+                  <tooltip>The new format with 5 xobs-dimensions will allow easier & more flexible evaluation of the distribution of spatial indicators.</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>separator</Type>
+                  <Title>Loop Options</Title>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+                  <tooltip></tooltip>
+         </control>
+         <control>
+                  <Type>text</Type>
+                  <Title>Testregion</Title>
+                  <Value></Value>
+                  <Range></Range>
+                  <Options></Options>
+                  <gamsName>rg</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+<!--
+                  <tooltip>ONE region to test the functioning of the code. Take care to select the country consistently!!</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>singlelist</Type>
+                  <Title>Test mode</Title>
+                  <Value>off</Value>
+                  <Options>off,on,nojoin,onlyjoin</Options>
+                  <gamsName>test</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+<!--
+                  <tooltip>Possible modi: off; ON=do not launch capdis_grid.gms; NOJOIN=run all NUTS2 but do not attempt to join the data in one file; ONLYJOIN: do not run NUTS2 disaggregations, but join existing ones into one file per country.</tooltip>
+-->
+         </control>
+         <control>
+                  <Type>checkbox</Type>
+                  <Title>Missing NUTS</Title>
+                  <Value>false</Value>
+                  <gamsName>rp</gamsName>
+                  <tasks>Build HSMU database,
+                         HSMU baseline,
+                         Downscale scenario results
+                  </tasks>
+                  <userLevls>runner,administrator,developper,debugger</userLevls>
+<!--
+                  <tooltip>Compare xobs and res files and disaggregate only missing/incomplete NUTS</tooltip>
+-->
+         </control>
+
+
+
+         <Export_to_file.file><attr>d:\temp\test.xls</attr></Export_to_file.file>
+         <Export_to_file.format><attr>XLS (MS Excel new workbook)</attr></Export_to_file.format>
+         <Export_to_file.selectedTables><attr>Assets, mean : Machines, mean;</attr></Export_to_file.selectedTables>
+         <LastBatchExecutionFile><attr></attr></LastBatchExecutionFile>
+         <SVNPwd><attr>0_/^.]</attr></SVNPwd>
+         <SVNUserID><attr>vmibb[g_</attr></SVNUserID>
+         <SvnURLforDat><attr></attr></SvnURLforDat>
+         <SvnURLforGUI><attr>https://svn1.agp.uni-bonn.de/svn/capri/trunk/GUI</attr></SvnURLforGUI>
+         <SvnURLforGams><attr>https://svn1.agp.uni-bonn.de/svn/capri/trunk/gams</attr></SvnURLforGams>
+         <SvnURLforRestart><attr></attr></SvnURLforRestart>
+         <SvnURLforResult><attr>https://svn1.agp.uni-bonn.de/svn/capri/trunk/results/regcge</attr></SvnURLforResult>
+         <activityDim><attr>2</attr></activityDim>
+         <allowAdmin><attr>NO</attr></allowAdmin>
+    <!-- <backgroundColor><attr>240,255,155</attr></backgroundColor> -->
+         <baseYear><attr>2004</attr></baseYear>
+         <cleanUpBatchFile><attr>util\cleanUpGamsDir.bat</attr></cleanUpBatchFile>
+         <curTask><attr>Run policy experiment with CGE</attr></curTask>
+         <dim0Name><attr>Region</attr></dim0Name>
+         <dim1Name><attr>dim5</attr></dim1Name>
+         <dim2Name><attr>Activity</attr></dim2Name>
+         <dim3Name><attr>Product</attr></dim3Name>
+         <dim4Name><attr>Year</attr></dim4Name>
+         <dim5Dim><attr>1</attr></dim5Dim>
+         <dim5Name><attr>Scenario</attr></dim5Name>
+         <editor><attr></attr></editor>
+         <firstYear><attr>1984</attr></firstYear>
+         <gamsFile><attr>regcge.gms</attr></gamsFile>
+         <gamsOptions><attr>threads 0</attr></gamsOptions>
+
+         <helpmenuitem>
+                  <name>View capri web page</name>
+                  <value>http://www.capri-model.org</value>
+         </helpmenuitem>
+
+
+
+         <helpmenuitem>
+                  <name>Send mail to capri user list</name>
+                  <value>capritalks@ti.bund.de</value>
+                  <type>mail</type>
+         </helpmenuitem>
+
+         <helpmenuitem>
+                  <name>Open CAPRI model documentation</name>
+                  <value>..\doc\capri_documentation.pdf</value>
+                  <type>pdf</type>
+         </helpmenuitem>
+
+         <helpmenuitem>
+                  <name>Open CAPRI user interface guide</name>
+                  <value>..\doc\GUI2014.pdf</value>
+                  <type>pdf</type>
+         </helpmenuitem>
+
+         <helpmenuitem>
+                  <name>Open general user interface guide</name>
+                  <value>docs\GGIG_user_guide.pdf</value>
+                  <type>pdf</type>
+         </helpmenuitem>
+
+         <language><attr>English</attr></language>
+         <lastYear><attr>2030</attr></lastYear>
+         <loadXML><attr>YES</attr></loadXML>
+         <nDim><attr>6</attr></nDim>
+         <numberOfIterations><attr>50</attr></numberOfIterations>
+         <numberOfProcessors><attr>8</attr></numberOfProcessors>
+         <policyFile><attr>MTR_RD</attr></policyFile>
+         <policyFileExpost><attr>AGENDA</attr></policyFileExpost>
+         <productDim><attr>3</attr></productDim>
+         <regionDim><attr>0</attr></regionDim>
+         <scenDim><attr>4</attr></scenDim>
+         <scenName0><attr>RES_CGE_RD_NOCHG</attr></scenName0>
+         <scenName1><attr>RES_CGE_RD_PLUS10</attr></scenName1>
+         <scenName2><attr></attr></scenName2>
+         <scenName3><attr></attr></scenName3>
+         <scenName4><attr></attr></scenName4>
+         <scratchDir><attr>d:\temp</attr></scratchDir>
+         <showMeta><attr>NO</attr></showMeta>
+         <simYear><attr>2020</attr></simYear>
+         <simulationOnly><attr>NO</attr></simulationOnly>
+         <svn><attr>yes</attr></svn>
+
+         <task>
+                  <name>Prepare national database</name>
+                  <gamsFile>coco1.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>RunSetsCoco1</incFile>
+                  <instances>countries</instances>
+                  <resdir>coco</resdir>
+                  <filemask>coco1_output.*[\.]{1}gdx</filemask>
+                  <gdxSymbol>DATA2</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <scenDim>1</scenDim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>4</yearDim>
+                  <nScenBoxes>1</nScenBoxes>
+                  <xmlTableDef>views\tables_coco.xml</xmlTableDef>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>year,YearsSel,Starts_with</filter>
+         </task>
+
+
+         <task>
+                  <name>Finish national database</name>
+                  <gamsFile>coco2.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>RunSetsCoco2</incFile>
+                  <resdir>coco</resdir>
+                  <filemask>coco2_output.*[\.]{1}gdx</filemask>
+                  <gdxSymbol>DATA2</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <scenDim>1</scenDim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>4</yearDim>
+                  <nScenBoxes>1</nScenBoxes>
+                  <xmlTableDef>views\tables_coco.xml</xmlTableDef>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>year,YearsSel,Starts_with</filter>
+         </task>
+
+         <task>
+                  <name>Find No of fts in Nuts2</name>
+                  <gamsFile>capftdis.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fromGuiforcapftdis</incFile>
+                  <resdir>capreg</resdir>
+                  <filemask>res_NofarmNuts2.gdx</filemask>
+                  <gdxSymbol>p_resfarmsr</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>3</yearDim>
+         </task>
+
+         <task>
+                  <name>Define fts from FSS</name>
+                  <gamsFile>capreg.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <instances>Countries</instances>
+                  <incFile>forreg</incFile>
+                  <resdir>capreg</resdir>
+                  <filemask>farmtype_se[0-9]?.gdx</filemask>
+                  <gdxSymbol>DATA2</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>3</yearDim>
+         </task>
+
+         <task>
+                  <name>Compile RDP data</name>
+                  <gamsFile>compile_rdp_data.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>from_gui_for_rdp_data_compilation</incFile>
+                  <filemask>rd_budget.gdx</filemask>
+                  <resdir>policy</resdir>
+                  <gdxSymbol>p_rdBudget</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>1</yearDim>
+                  <userLevls>Administrator,developper,debugger</userLevls>
+         </task>
+
+         <task>
+                  <name>Build regional time series</name>
+                  <gamsFile>capreg.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <instances>Countries</instances>
+                  <incFile>forreg</incFile>
+                  <instances>countries</instances>
+                  <resdir>capreg</resdir>
+                  <filemask>res_time_series.*[\.]{1}gdx</filemask>
+                  <gdxSymbol>DATA1</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>4,versions</yearDim>
+                  <scenDim>3,Years</scenDim>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>Scen,YearsSel,Starts_with</filter>
+                  <xmlTableDef>views\tables_capreg.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Build regional database</name>
+                  <gamsFile>capreg.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <instances>Countries,BaseYear</instances>
+                  <resdir>capreg</resdir>
+                  <incFile>forreg</incFile>
+                  <filemask>res_[0-9]{2}(_F)?(_N)?[\.]{1}gdx$</filemask>
+                  <gdxSymbol>DATA2</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <scenDim>3</scenDim>
+                  <xmlTableDef>views\tables_capreg.xml</xmlTableDef>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+
+         </task>
+
+         <task>
+                  <name>Prepare FAOSTAT database</name>
+                  <gamsFile>prepare_faostat_database.gms</gamsFile>
+                  <resdir>fao</resdir>
+                  <incFile>runfaostat</incFile>
+                  <!--incgendir><attr>%modeldir%</attr></incgendir-->
+                  <userLevls>Administrator,developper,debugger</userLevls>
+         </task>
+
+
+         <task>
+                  <name>Build global database</name>
+                  <gamsFile>global.gms</gamsFile>
+                  <resdir>global</resdir>
+                  <incFile>runGlobal</incFile>
+                  <useMeta>true</useMeta>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+         </task>
+
+         <task>
+                  <name>Estimate GHG emission coefficients</name>
+                  <gamsFile>est_emission_factors.gms</gamsFile>
+                  <resdir>envind</resdir>
+                  <filemask>ghg_emission_trends.gdx</filemask>
+                  <gdxSymbol>p_report</gdxSymbol>
+                  <incFile>run_est_emission_factors.gms</incFile>
+                  <useMeta>true</useMeta>
+                  <userLevls>Administrator,developper,debugger</userLevls>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <xmlTableDef>views\tables_est_ghg_coef_trends.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Build HSMU database</name>
+                  <gamsFile>capdis_loop.gms</gamsFile>
+<!--
+                  <gamsFile>capdis_grid.gms</gamsFile>
+-->
+<!--              Attentiona! commenting the 'instances' tag
+                  removes the loop over the countries for cur_run.gms but writes all countries into the globals and sets
+                  Works only if linked with capdis_loop instead of capdis_grid
+                  <Instances>Countries</Instances>
+-->
+                  <resdir>capdis</resdir>
+                  <incFile>cur_run</incFile>
+                  <useMeta>true</useMeta>
+<!--              <filter>Region,CountriesSel,6,7,merge</filter>   -->
+                  <filter>Base year,BaseYearsSel,9,10,skip</filter>
+                  <filemask>xob[2s]{1}_[A-Z]{2}_[0-9]{4}[.]{1}gdx$</filemask>
+<!--
+                  <filemask>xobs_[A-Z]{2}_[0-9]{4}[.]{1}gdx$</filemask>
+-->
+                  <gdxSymbol>XOBS</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2,Items</productDim>
+                  <yearDim>3,Base year</yearDim>
+                  <useMeta>true</useMeta>
+                  <xmlTableDef>views\tables_capdis.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Generate expost results</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_capmod.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Generate trend projection</name>
+                  <gamsFile>captrd.gms</gamsFile>
+                  <incFile>fortrd</incFile>
+                  <useMeta>true</useMeta>
+                  <useSettings>true</useSettings>
+                  <resdir>baseline</resdir>
+                  <filemask>results_[0-9]*.{1}gdx$</filemask>
+                  <gdxSymbol>p_result</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>3</yearDim>
+                  <scenDim>3</scenDim>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_capreg.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Generate farm type trends</name>
+                  <gamsFile>captrdfrm.gms</gamsFile>
+                  <incFile>fortrdfrm</incFile>
+                  <instances>Countries</instances>
+                  <useMeta>true</useMeta>
+                  <useSettings>true</useSettings>
+                  <resdir>baseline</resdir>
+                  <filemask>results_[0-9]*_F*[_new]*.{1}gdx$</filemask>
+                  <gdxSymbol>p_result</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>3</yearDim>
+                  <scenDim>4</scenDim>
+                  <xmlTableDef>views\tables_capreg.xml</xmlTableDef>
+         </task>
+         <task>
+                  <name>Baseline calibration market model</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_marketmodel.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Baseline calibration supply models</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_supplymodel.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Baseline calibration farm types</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <instances>countries</instances>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_supplymodel.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>HSMU baseline</name>
+                  <gamsFile>capdis_loop.gms</gamsFile>
+<!--
+                  <gamsFile>capdis_grid.gms</gamsFile>
+                  <Instances>Countries</Instances>
+-->
+                  <resdir>capdis</resdir>
+                  <incFile>cur_run</incFile>
+                  <useMeta>true</useMeta>
+                  <filter>Region,CountriesSel,6,7,merge</filter>
+                  <filter>Base year,BaseYearsSel,9,10,skip</filter>
+                  <filemask>xob[2s]{1}_[A-Z]{2}_[0-9]{4}.*[.]{1}gdx$</filemask>
+<!--
+                  <filemask>xobs_[A-Z]{2}_[0-9]{4}.*[.]{1}gdx$</filemask>
+                  <filemask>xob[s2]{1}_[A-Z]{2}_[0-9]{4}[.]{1}gdx$</filemask>
+-->
+                  <gdxSymbol>XOBS</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <activityDim>1</activityDim>
+                  <productDim>2</productDim>
+                  <yearDim>3</yearDim>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_capdis.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Define scenario</name>
+                  <userLevls>runner,Administrator,developper,debugger</userLevls>
+         </task>
+
+
+         <task>
+                  <name>Run scenario with market model</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <xmlTableDef>views\tables_capmod.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Run scenario without market model</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>4</yearDim>
+                  <scenDim>5</scenDim>
+                  <filter>Region,CountriesSel,starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <xmlTableDef>views\tables_supplymodel.xml</xmlTableDef>
+         </task>
+         <task>
+                  <name>Test alternative market model</name>
+                  <gamsFile>cge_mrkmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>cge_mrkmod_inc</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>4</yearDim>
+                  <scenDim>5</scenDim>
+                  <filter>Region,CountriesSel,starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <userLevls>developper,debugger</userLevls>
+                  <xmlTableDef>views\tables_marketmodel.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Run scenario only with market model</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <yearDim>4</yearDim>
+                  <scenDim>5</scenDim>
+                  <filter>Region,CountriesSel,starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <xmlTableDef>views\tables_marketmodel.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Downscale scenario results</name>
+                  <gamsFile>capdis_loop.gms</gamsFile>
+<!--
+                  <gamsFile>capdis_grid.gms</gamsFile>
+                  <Instances>Countries</Instances>
+-->
+                  <useMeta>true</useMeta>
+                  <incFile>cur_run</incFile>
+                  <resdir>capdis</resdir>
+                  <filter>Base year,BaseYearsSel,9,10,skip</filter>
+                  <filter>Year,SimYearsSel,11,12,skip</filter>
+<!--              <filter>Region,CountriesSel,6,7,merge</filter>   -->
+                  <filemask>xob[2s]{1}_[A-Z]{2}_[0-9]{4}.*[.]{1}gdx$</filemask>
+                  <gdxSymbol>XOBS</gdxSymbol>
+                  <regionDim>0,Regions</regionDim>
+                  <activityDim>1,Activities</activityDim>
+                  <productDim>2,Items</productDim>
+                  <scenDim>3,Scenario</scenDim>
+                  <useMeta>true</useMeta>
+                  <xmlTableDef>views\tables_capdis.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Calibrate CGE</name>
+                  <gamsFile>regcge.gms</gamsFile>
+                  <incFile>regcge_settings</incFile>
+                  <regionDim>0</regionDim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>4</scenDim>
+                  <Dim5Dim>1</Dim5Dim>
+                  <yearDim>5</yearDim>
+                  <useMeta>true</useMeta>
+                  <userLevls>Administrator,developper,debugger</userLevls>
+         </task>
+
+         <task>
+                  <name>Re-calibrate behavioural functions CGE</name>
+                  <gamsFile>regcge.gms</gamsFile>
+                  <incFile>regcge_settings</incFile>
+                  <regionDim>0</regionDim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>4</scenDim>
+                  <Dim5Dim>1</Dim5Dim>
+                  <yearDim>5</yearDim>
+                  <useMeta>true</useMeta>
+                  <userLevls>Administrator,developper,debugger</userLevls>
+         </task>
+
+
+         <task>
+                  <name>Run policy experiment with CGE</name>
+                  <gamsFile>regcge.gms</gamsFile>
+                  <incFile>regcge_settings</incFile>
+                  <regionDim>0</regionDim>
+                  <Dim5Dim>1</Dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <useMeta>true</useMeta>
+                  <resdir>regcge</resdir>
+                  <filter>Region,CountriesSel,starts_with</filter>
+                  <filter>Base year,BaseYearsSel,5,6,skip</filter>
+                  <filter>Year,SimYearsSel,7,8,skip</filter>
+                  <filemask>res_[0-9]{4}.*[.]{1}gdx$</filemask>
+                  <xmlTableDef>views\tables_cge.xml</xmlTableDef>
+         </task>
+
+
+         <task>
+                  <name>Run test shocks with CGE</name>
+                  <gamsFile>regcge.gms</gamsFile>
+                  <incFile>regcge_settings</incFile>
+                  <regionDim>0</regionDim>
+                  <Dim5Dim>1</Dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>4</scenDim>
+                  <yearDim>5</yearDim>
+                  <useMeta>true</useMeta>
+                  <resdir>regcge</resdir>
+                  <filemask>res_[0-9]{4}testShocks.{1}gdx$</filemask>
+                  <xmlTableDef>views\tables_cge.xml</xmlTableDef>
+         </task>
+
+         <task>
+                  <name>Check original Aglink results</name>
+                  <gamsFile>capmod.gms</gamsFile>
+                  <useMeta>true</useMeta>
+                  <incFile>fortran</incFile>
+                  <resdir>capmod</resdir>
+                  <filemask>res_[0-9]*_[0-9]{4}.*.{1}gdx$</filemask>
+                  <gdxSymbol>dataout</gdxSymbol>
+                  <regionDim>0</regionDim>
+                  <dim5Dim>1</dim5Dim>
+                  <activityDim>2</activityDim>
+                  <productDim>3</productDim>
+                  <scenDim>5</scenDim>
+                  <yearDim>4</yearDim>
+                  <filter>Region,CountriesSel,Starts_with</filter>
+                  <filter>Regional level,regionLevelsSel,5,5,skip</filter>
+                  <filter>Base year,BaseYearsSel,7,8,skip</filter>
+                  <filter>Year,SimYearsSel,9,10,skip</filter>
+                  <xmlTableDef>views\tables_aglink.xml</xmlTableDef>
+         </task>
+
+
+         <toolName><attr>CAPRI</attr></toolName>
+         <useOnOff><attr>true</attr></useOnOff>
+         <userName><attr>undefined</attr></userName>
+         <userType><attr>runner</attr></userType>
+
+         <workstep>
+                  <name>Build database</name>
+                  <tasks>Prepare national database,
+                         Finish national database,
+                         Find No of fts in Nuts2,
+                         Define fts from FSS,
+                         Compile RDP data,
+                         Build regional time series,
+                         Build regional database,
+                         Prepare FAOSTAT database,
+                         Build global database,
+                         Estimate GHG emission coefficients,
+                         Build HSMU database
+                  </tasks>
+         </workstep>
+
+
+         <workstep>
+                  <name>Generate baseline</name>
+                  <tasks>Generate expost results,
+                         Generate trend projection,
+                         Generate farm type trends,
+                         Baseline calibration market model,
+                         Baseline calibration supply models,
+                         Baseline calibration farm types,
+                         HSMU baseline,
+                         Calibrate CGE,
+                         Re-calibrate behavioural functions CGE,
+                         Run test shocks with CGE,
+                         Check original Aglink results
+                  </tasks>
+         </workstep>
+
+
+         <workstep>
+                  <name>Run scenario</name>
+                  <tasks>Define scenario,
+                   Run scenario with market model, Run scenario only with market model,
+                   Run scenario only with market model,
+                   Run scenario without market model,
+                   Test alternative market model,
+                   Downscale scenario results,
+                   Run policy experiment with CGE
+                  </tasks>
+         </workstep>
+
+         <xmlTables><attr>views\tables_incl.xml</attr></xmlTables>
+         <yearDim><attr>5</attr></yearDim>
+         <allowAdmin><attr>yes</attr></allowAdmin>
+</GGIG>

@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<tables  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<themes>Meta,Coefficients,Inventories</themes>
+
+<table>
+  <theme>Coefficients</theme>
+  <name>Priors and fitted values</name>
+  <regionText>Region</regionText>
+  <regionSel>Regions in market model</regionSel>
+  <activityText>Emission category</activityText>
+  <activitySel>gascolst</activitySel>
+  <yearText>Year</yearText>
+  <productText>Commodity</productText>
+  <dim5Text>Statistic</dim5Text>
+  <!--<dim5Sel>empty</dim5Sel>-->
+  <scenText>hide</scenText>
+  <defpivot>0I0Y</defpivot>
+  <defview>Line chart</defview>
+  <itemDim>dim5</itemDim>
+ <item>
+    <itemName>Fitted values</itemName>
+    <key>fitted</key>
+    <longtext>Fitted emission factors</longtext>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Prior mode</itemName>
+    <key>priMode</key>
+    <unit>1000 t</unit>
+    <longtext>Prior mode for emission coefficient</longtext>
+ </item>
+ <item>
+    <itemName>Mode+2s</itemName>
+    <key>mode+2s</key>
+    <unit>1000 t</unit>
+    <longtext>Prior mode plus two standard deviations</longtext>
+ </item>
+ <item>
+    <itemName>Mode-2s</itemName>
+    <key>mode-2s</key>
+    <unit>1000 t</unit>
+    <longtext>Prior mode minus two standard deviations</longtext>
+ </item>
+</table>
+
+<table>
+  <theme>Coefficients</theme>
+  <name>Prior sources and densities</name>
+  <regionText>Region</regionText>
+  <regionSel>Regions in market model</regionSel>
+  <activityText>Emission category</activityText>
+  <activitySel>gascolst</activitySel>
+  <yearText>Year</yearText>
+  <productText>Commodity</productText>
+  <dim5Text>Statistic</dim5Text>
+  <!--<dim5Sel>empty</dim5Sel>-->
+  <scenText>hide</scenText>
+  <defpivot>0I0Y</defpivot>
+  <defview>Table</defview>
+  <itemDim>dim5</itemDim>
+ <item>
+    <itemName>Prior source</itemName>
+    <key>priSource</key>
+    <longtext>Source of prior for coefficient</longtext>
+ </item>
+ <item>
+    <itemName>Prior density</itemName>
+    <key>priFamily</key>
+    <longtext>Density function for priors</longtext>
+ </item>
+ <item>
+    <itemName>Prior mode</itemName>
+    <key>priMode</key>
+    <unit>1000 t</unit>
+    <longtext>Prior mode for emission coefficient</longtext>
+ </item>
+ <item>
+    <itemName>Std. dev.</itemName>
+    <key>priSdev</key>
+    <longtext>Prior standard deviation</longtext>
+ </item>
+</table>
+
+<table>
+  <theme>Inventories</theme>
+  <name>Inventory fitted values</name>
+  <regionText>Region</regionText>
+  <regionSel>Regions in market model</regionSel>
+  <activityText>Emission category</activityText>
+  <activitySel>gascolst</activitySel>
+  <yearText>Year</yearText>
+  <productText>Commodity</productText>
+  <dim5Text>Statistic</dim5Text>
+  <!--<dim5Sel>empty</dim5Sel>-->
+  <scenText>hide</scenText>
+  <defpivot>0I0Y</defpivot>
+  <defview>Line chart</defview>
+  <itemDim>dim5</itemDim>
+ <item>
+    <itemName>Fitted values</itemName>
+    <key>fitted</key>
+    <longtext>Fitted emission factors multiplied with observed production</longtext>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Observations</itemName>
+    <key>obs</key>
+    <unit>1000 t</unit>
+    <longtext>Observed inventory</longtext>
+ </item>
+ <item>
+    <itemName>Obs+2s</itemName>
+    <key>obs+2s</key>
+    <unit>1000 t</unit>
+    <longtext>Observation plus two standard deviations</longtext>
+ </item>
+ <item>
+    <itemName>Obs-2s</itemName>
+    <key>obs-2s</key>
+    <unit>1000 t</unit>
+    <longtext>Observation minus two standard deviations</longtext>
+ </item>
+</table>
+
+
+<xi:include href="views/dimdefs.xml"/>
+
+</tables>

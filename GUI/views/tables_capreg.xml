@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tables  xmlns:xi="http://www.w3.org/2001/XInclude">
+<themes>Welfare,Farm,Farm - totals,Feed,Fertilizer,Environment</themes>
+
+<xi:include href="views\coco_tables.xml"/>
+<xi:include href="views\capreg_tables.xml"/>
+<xi:include href="views\dimdefs.xml"/>
+
+</tables>

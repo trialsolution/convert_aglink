@@ -1,0 +1,1197 @@
+<generated>
+<table>
+  <theme>Meta</theme>
+  <name>Scenario information</name>
+  <regionSel>Info</regionSel>
+  <productSel>meta</productSel>
+  <activityText>Activity</activityText>
+  <regionText>hide</regionText>
+  <yearText>Year</yearText>
+  <productText>hide</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0I0S</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Time and date[German:Datum]</itemName>
+    <key>DATETIME</key>
+ </item>
+ <item>
+    <itemName>Recursive dynamic mode</itemName>
+    <key>RECDYN</key>
+ </item>
+ <item>
+    <itemName>Expost calibration test[German:Expost Test]</itemName>
+    <key>EXPOST</key>
+ </item>
+ <item>
+    <itemName>Baseline calibration mode</itemName>
+    <key>BASELINE</key>
+ </item>
+ <item>
+    <itemName>Global market model[German: Marktmodell]</itemName>
+    <key>MARKET_M</key>
+ </item>
+ <item>
+    <itemName>Market model for young animals</itemName>
+    <key>YANI_M</key>
+ </item>
+ <item>
+    <itemName>Regional break down (NUTS-level)</itemName>
+    <key>NTSLVL</key>
+ </item>
+ <item>
+    <itemName>Simulation years</itemName>
+    <key>SIMY_YEAR</key>
+ </item>
+ <item>
+    <itemName>Base year</itemName>
+    <key>BASE_YEAR</key>
+ </item>
+ <item>
+    <itemName>Number of Member States included</itemName>
+    <key>NUM_MS</key>
+ </item>
+ <item>
+    <itemName>Number of regional units included</itemName>
+    <key>NUM_RU</key>
+ </item>
+ <item>
+    <itemName>Max number of iterations</itemName>
+    <key>NSTEPS</key>
+ </item>
+ <item>
+    <itemName>Number of iterations until convergence</itemName>
+    <key>StepsToConversion</key>
+ </item>
+ <item>
+    <itemName>Number of infeasibilities in market model</itemName>
+    <key>NUMINFES_MARKET</key>
+ </item>
+ <item>
+    <itemName>Sum of infeasibilities in market model</itemName>
+    <key>SUMINFES_MARKET</key>
+ </item>
+ <item>
+    <itemName>Numer of tries of market model</itemName>
+    <key>SUMTRIES_MARKET</key>
+ </item>
+</table>
+<table>
+  <theme>Scenario shifter</theme>
+  <name>Exogenous yield changes</name>
+  <dim5Sel>shifters</dim5Sel>
+  <activityText>Activities</activityText>
+  <yearText>Year</yearText>
+  <scenText>Scenario</scenText>
+  <defpivot>PRSD</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Yield[German:Ertrag]</itemName>
+    <key>YILD</key>
+ </item>
+</table>
+<table>
+  <theme>Welfare</theme>
+  <name>Welfare overview</name>
+  <activitySel>welfare</activitySel>
+  <activityText>hide</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Welfare positions</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0I0S</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Total</itemName>
+    <key>DIFR</key>
+    <unit>Mio Euro</unit>
+    <longtext>Money metric + Agricultural Income + Profit dairy + Profit Processing + Tariff Revenues - costs to taxpayer</longtext>
+ </item>
+ <item>
+    <itemName>Money metric</itemName>
+    <key>CSSP</key>
+    <unit>Mio Euro</unit>
+    <longtext>Consumer welfare measurement: expenditures necessary to reach utility in current simulation under prices of reference scenario</longtext>
+    <link>Money metric</link>
+ </item>
+ <item>
+    <itemName>Agricultural income[German:Landwirtschaftliches Einkommen]</itemName>
+    <key>AGGA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Premiums + EAA Output - EAA Input, income available to farmers to pay for land, labour, capital and profits</longtext>
+    <link>Economic Accounts for Agriculture</link>
+ </item>
+ <item>
+    <itemName>Premiums[German:Praemien]</itemName>
+    <key>PRMA</key>
+    <unit>Mio Euro</unit>
+    <link>Premium groups</link>
+ </item>
+ <item>
+    <itemName>EAA Output[German: Landwirtschaftlicher Produktionswert]</itemName>
+    <key>TOOA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Value of all products and services produced by the agricultural sector at market prices, according to the definition of Economic Account for Agriculture (EAA)</longtext>
+ </item>
+ <item>
+    <itemName>Output crops[German: Produktionswert Pflanzenbau]</itemName>
+    <key>CRPA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Output animals</itemName>
+    <key>ANIA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Output rest[German: Produktionswert Rest]</itemName>
+    <key>RESA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>EAA Input[German: Vorleistungswert gesamt]</itemName>
+    <key>TOIA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Value of all products and services used as inputs by the agricultural sector at market prices, according to the definition of Economic Account for Agriculture (EAA)</longtext>
+ </item>
+ <item>
+    <itemName>Crop specific Input[German: Vorleistunsgwert Pflanzenbau]</itemName>
+    <key>CRPI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Animal specific Input[German: Vorleistungwert Tierhaltung]</itemName>
+    <key>ANMI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Other Input[German: nicht Vorleistungswert</itemName>
+    <key>RESI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of non-agricultural land use</itemName>
+    <key>ProfitLandUse</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of dairies</itemName>
+    <key>PROFITDAIRY</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of other processing</itemName>
+    <key>PROFITPROC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of feed industry</itemName>
+    <key>PROFITFEED</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff revenues</itemName>
+    <key>TARIFFREV</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff rate quota rents</itemName>
+    <key>TRQRents</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tax payers cost, total</itemName>
+    <key>FEOG</key>
+    <unit>Mio Euro</unit>
+    <longtext>Costs to the tax payer for the different measures covered by the model (Pillar I; LFA, Natura 2000 and agri-environmental measures from Pillar II; selected national premiums)</longtext>
+    <link>Tax payers cost</link>
+ </item>
+ <item>
+    <itemName>Cost EU</itemName>
+    <key>budEU</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Cost EU under Pillar I</itemName>
+    <key>budPil1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Cost EU under Pillar II</itemName>
+    <key>budPil2</key>
+    <unit>Mio Euro</unit>
+    <longtext>Currently only LFA, Natura 2000 and agri-environmental measures</longtext>
+ </item>
+ <item>
+    <itemName>Cost national budget</itemName>
+    <key>budNat</key>
+    <unit>Mio Euro</unit>
+    <longtext>Reports co-financing of pillar II and selected national programs; without changes in national budget due to changes in national contribution to EU budget</longtext>
+ </item>
+ <item>
+    <itemName>National contribution to EU Cost</itemName>
+    <key>budNatEU</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Welfare</theme>
+  <name>Welfare comparison, overview across regions</name>
+  <clone>Welfare overview</clone>
+  <defpivot>0R0S</defpivot>
+</table>
+<table>
+  <name>Distribution farm types</name>
+  <activitySel>welfare</activitySel>
+  <activityText>hide</activityText>
+  <regionText>FA</regionText>
+  <yearText>Year</yearText>
+  <productText>Welfare positions</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <theme>Welfare</theme>
+  <defview>Line chart</defview>
+  <lineChartMaxObs>2500</lineChartMaxObs>
+  <lineChartSort>YES</lineChartSort>
+  <lineChartCumulative>YES</lineChartCumulative>
+  <zerosAsMissingValues>YES</zerosAsMissingValues>
+  <defpivot>0PSR</defpivot>
+  <compareDim>Scenarios</compareDim>
+  <compareMode>ONLY_ABSOLUTE</compareMode>
+ <item>
+    <itemName>Agricultural income[German:Landwirtschaftliches Einkommen]</itemName>
+    <key>AGGA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Premiums + EAA Output - EAA Input, income available to farmers to pay for land, labour, capital and profits</longtext>
+    <link>Economic Accounts for Agriculture</link>
+ </item>
+ <item>
+    <itemName>Premiums[German:Praemien]</itemName>
+    <key>PRMA</key>
+    <unit>Mio Euro</unit>
+    <link>Premium groups</link>
+ </item>
+ <item>
+    <itemName>EAA Output[German: Landwirtschaftlicher Produktionswert]</itemName>
+    <key>TOOA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Value of all products and services produced by the agricultural sector at market prices, according to the definition of Economic Account for Agriculture (EAA)</longtext>
+ </item>
+ <item>
+    <itemName>Output crops[German: Produktionswert Pflanzenbau]</itemName>
+    <key>CRPA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Output animals</itemName>
+    <key>ANIA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Output rest[German: Produktionswert Rest]</itemName>
+    <key>RESA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>EAA Input[German: Vorleistungswert gesamt]</itemName>
+    <key>TOIA</key>
+    <unit>Mio Euro</unit>
+    <longtext>Value of all products and services used as inputs by the agricultural sector at market prices, according to the definition of Economic Account for Agriculture (EAA)</longtext>
+ </item>
+ <item>
+    <itemName>Crop specific Input[German: Vorleistunsgwert Pflanzenbau]</itemName>
+    <key>CRPI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Animal specific Input[German: Vorleistungwert Tierhaltung]</itemName>
+    <key>ANMI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Other Input[German: nicht Vorleistungswert</itemName>
+    <key>RESI</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Welfare</theme>
+  <name>Welfare comparison across Member States</name>
+  <activitySel>welfare</activitySel>
+  <regionSel>Countries</regionSel>
+  <activityText>hide</activityText>
+  <regionText>Member State</regionText>
+  <yearText>Year</yearText>
+  <productText>Welfare positions</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSI</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Tax payers cost</itemName>
+    <key>FEOG</key>
+    <unit>Mio Euro</unit>
+    <longtext>Costs to the tax payer for the different measures covered by the model (Pillar I; LFA, Natura 2000 and agri-environmental measures from Pillar II; selected national premiums)</longtext>
+    <link>Feoga</link>
+ </item>
+ <item>
+    <itemName>Money metric</itemName>
+    <key>CSSP</key>
+    <unit>Mio Euro</unit>
+    <longtext>Consumer welfare measurement: expenditures necessary to reach utility in current simulation under prices of reference scenario</longtext>
+    <link>Money metric</link>
+ </item>
+ <item>
+    <itemName>Agricultural income</itemName>
+    <key>AGGA</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Total</itemName>
+    <key>DIFR</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>CAP</theme>
+  <name>Tax payers cost</name>
+  <regionSel>Countries</regionSel>
+  <activityText>Budget position</activityText>
+  <regionText>Member State</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Budget outlays</itemName>
+    <key>FEOG</key>
+    <unit>Mio Euro</unit>
+    <link>Welfare</link>
+ </item>
+ <item>
+    <itemName>Paid by pillar I</itemName>
+    <key>budPil1</key>
+    <unit>Mio Euro</unit>
+    <link>Premiums</link>
+ </item>
+ <item>
+    <itemName>Paid by pillar II</itemName>
+    <key>budPil2</key>
+    <unit>Mio Euro</unit>
+    <link>Premiums</link>
+ </item>
+ <item>
+    <itemName>Paid by nation budget</itemName>
+    <key>budNat</key>
+    <unit>Mio Euro</unit>
+    <link>Premiums</link>
+ </item>
+ <item>
+    <itemName>Premiums</itemName>
+    <key>FEOP</key>
+    <unit>Mio Euro</unit>
+    <link>Premiums</link>
+ </item>
+ <item>
+    <itemName>Export subsidies outlays</itemName>
+    <key>FEOE</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Intervention stock costs</itemName>
+    <key>FEOS</key>
+    <unit>Mio Euro</unit>
+    <link>Tax payers cost</link>
+ </item>
+ <item>
+    <itemName>Processing aid</itemName>
+    <key>FEOI</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Consumption aid</itemName>
+    <key>FEOC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Feed industry aid</itemName>
+    <key>FEOF</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Policy indicators</theme>
+  <name>PSE, sector and per product</name>
+  <regionSel>Countries</regionSel>
+  <activityText>PSE support category</activityText>
+  <regionText>Member State</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Market price support</itemName>
+    <key>PSE_A1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current output</itemName>
+    <key>PSE_A2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Variable inputs</itemName>
+    <key>PSE_B1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Fixed capital formation</itemName>
+    <key>PSE_B2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Farm services</itemName>
+    <key>PSE_B3</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current receipts/income</itemName>
+    <key>PSE_C1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current area/animal number (total)</itemName>
+    <key>PSE_C2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Current area/animal number, with input constraints</itemName>
+    <key>PSE_C2_IC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production required</itemName>
+    <key>PSE_D</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production not required, variable</itemName>
+    <key>PSE_E1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Not current, production not required, fixed</itemName>
+    <key>PSE_E2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Long term resource retirement</itemName>
+    <key>PSE_F1</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Non commodity output</itemName>
+    <key>PSE_F2</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Miscellaneous</itemName>
+    <key>G</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+
+
+<table>
+  <theme>Farm</theme>
+  <name>Structure of the holdings</name>
+  <activitySel>Farm indicators</activitySel>
+  <regionSel>FA</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSP</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Hectares or herd size</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha or hds</unit>
+ </item>
+</table>
+<table>
+  <theme>Farm EU</theme>
+  <name>Structure of the holdings across EU-27</name>
+  <activitySel>Farm indicators</activitySel>
+  <regionSel>FAAGG</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSP</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Farm Type Information</itemName>
+    <key>LEVL</key>
+    <unit>differnt Units</unit>
+ </item>
+</table>
+<table>
+  <theme>Farm EU</theme>
+  <name>EU Farms Supply details</name>
+  <regionSel>EU027FAAGG</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSI</defpivot>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Income[German:Einkommen][Swedish:Inkomster]</itemName>
+    <key>MGVA</key>
+    <unit>Euro/ha or head</unit>
+    <longtext>Premiums + Revenues - variable costs according to the definition of Economic Accounts for Agriculture, income available to farmers to pay for land, labour, capital and profits</longtext>
+    <link>Income Indicators</link>
+ </item>
+ <item>
+    <itemName>Hectares or herd size[German:Anbauumfang oder Herdengroesse][Swedish:Antal hektar eller djur]</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha or hds</unit>
+ </item>
+ <item>
+    <itemName>Yield[German:Ertrag][Swedish:Avkastning]</itemName>
+    <key>YILD</key>
+    <unit>kg or 1/1000 head/ha or head</unit>
+ </item>
+ <item>
+    <itemName>Supply[German:Produktion][Swedish:Utbud]</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+    <link>Product Balances</link>
+ </item>
+ <item>
+    <itemName>Crop share/Animal density[German:Anbauanteil/Bestandsdichte][Swedish:Andel i vaextfoeljd/djurtaethet]</itemName>
+    <key>LEVL</key>
+    <unit>% or 0.01 animals/ha</unit>
+    <eval>VAL/VAL[*,UAAR,LEVL,*,*,*] * 100.</eval>
+ </item>
+ <item>
+    <itemName>Production per UAAR[German:Produktion pro ha LNF][Swedish:Produktion per UAA]</itemName>
+    <key>YILD</key>
+    <unit>kg/ha</unit>
+    <eval>VAL*VAL[*,*,LEVL,*,*,*]/VAL[*,UAAR,LEVL,*,*,*]</eval>
+ </item>
+</table>
+<table>
+  <theme>Farm EU</theme>
+  <name>Main crop areas EU-25</name>
+  <activitySel>Crop aggregates</activitySel>
+  <regionSel>EU027FAAGG</regionSel>
+  <activityText>Crop activity group</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSP</defpivot>
+  <defview>Table</defview>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Acreage</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+    <link>Supply details</link>
+ </item>
+</table>
+<table>
+  <theme>Farm EU</theme>
+  <name>Main crop areas EU-15</name>
+  <activitySel>Crop aggregates</activitySel>
+  <regionSel>EU015FAAGG</regionSel>
+  <activityText>Crop activity group</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSP</defpivot>
+  <defview>Table</defview>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Acreage</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+    <link>Supply details</link>
+ </item>
+</table>
+<table>
+  <theme>Farm EU</theme>
+  <name>Main crop areas EU-10</name>
+  <activitySel>Crop aggregates</activitySel>
+  <regionSel>EU010FAAGG</regionSel>
+  <activityText>Crop activity group</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defpivot>0RSP</defpivot>
+  <defview>Table</defview>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Acreage</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+    <link>Supply details</link>
+ </item>
+</table>
+
+<table>
+
+  <theme>Multi-Functionality</theme>
+  <name>Multi-Functionality overview</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>levl</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defview>Spider chart</defview>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Agricultural income per UAA</itemName>
+    <key>MGVA_PER_HA</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Agricultural income per capita</itemName>
+    <key>MGVA_PER_HEAD</key>
+    <unit>Euro/capita</unit>
+ </item>
+ <item>
+    <itemName>Agricultural land rent</itemName>
+    <key>LandRent</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Shannon index</itemName>
+    <key>SHANN</key>
+ </item>
+ <item>
+    <itemName>Ruminant density on grass land</itemName>
+    <key>RUDE</key>
+    <unit>Livestock units/ha</unit>
+ </item>
+ <item>
+    <itemName>Calories produced per Euro</itemName>
+    <key>N_CAL_PER_EURO</key>
+    <unit>Calories/Euro</unit>
+ </item>
+ <item>
+    <itemName>Revenues per intermediate costs</itemName>
+    <key>TOOU_PER_TOIN</key>
+    <unit>Euro/Euro</unit>
+ </item>
+ <item>
+    <itemName>Premiums per revenues</itemName>
+    <key>PRME_PER_TOOU</key>
+    <unit>Euro/Euro</unit>
+ </item>
+</table>
+<table>
+  <theme>Multi-Functionality</theme>
+  <name>Production potential</name>
+  <regionSel>Regions and countries</regionSel>
+  <productSel>levl</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <defview>Spider chart</defview>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Utilizable Agricultural Area per capita</itemName>
+    <key>UAACAP</key>
+    <unit>ha/capita</unit>
+ </item>
+ <item>
+    <itemName>Arable land per capita</itemName>
+    <key>ARACAP</key>
+    <unit>ha/capita</unit>
+ </item>
+ <item>
+    <itemName>Runinants per capita</itemName>
+    <key>RUCAP</key>
+    <unit>Livestock units/capita</unit>
+ </item>
+ <item>
+    <itemName>Granivors per capita</itemName>
+    <key>GRCAP</key>
+    <unit>Livestock units/capita</unit>
+ </item>
+ <item>
+    <itemName>Calories produced per UAA</itemName>
+    <key>N_CAL_PER_HA</key>
+    <unit>kilo calories/ha</unit>
+ </item>
+</table>
+<table>
+  <theme>Energy</theme>
+  <name>Energy and ressource consumption</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>ENER_ACT</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Ressources</productText>
+  <dim5Text>MJ or metric</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Total</itemName>
+    <key>INPUT</key>
+    <unit>MJ</unit>
+    <longtext>total energy input per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>Diesel</itemName>
+    <key>DIESEL</key>
+    <unit>MJ or kg</unit>
+    <longtext>diesel per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>other fuels</itemName>
+    <key>OFUEL</key>
+    <unit>MJ or kg</unit>
+    <longtext>other fuels (benzin, heating oil, gas, coal, wood) - often used for heating  per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>water for irrigation</itemName>
+    <key>WATER</key>
+    <unit>kg</unit>
+    <longtext>water for irrigation per ha</longtext>
+ </item>
+ <item>
+    <itemName>electricity</itemName>
+    <key>ELEC</key>
+    <unit>MJ or kw</unit>
+    <longtext>ectricity per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>buildings</itemName>
+    <key>BUIL</key>
+    <unit>MJ</unit>
+    <longtext>depreciation and repair of buildings</longtext>
+ </item>
+ <item>
+    <itemName>machinery</itemName>
+    <key>MACH</key>
+    <unit>MJ</unit>
+    <longtext>depreciation and repair of machinery</longtext>
+ </item>
+ <item>
+    <itemName>feed/fertilizer</itemName>
+    <key>FEFE</key>
+    <unit>MJ or kg</unit>
+    <longtext>feed or fertilizer input</longtext>
+ </item>
+ <item>
+    <itemName>young animal/seed</itemName>
+    <key>SEYA</key>
+    <unit>MJ or kg</unit>
+    <longtext>young animal or seed input</longtext>
+ </item>
+ <item>
+    <itemName>plant protection</itemName>
+    <key>PLAP</key>
+    <unit>MJ or kg</unit>
+    <longtext>plant protection input</longtext>
+ </item>
+ <item>
+    <itemName>other</itemName>
+    <key>OTHER</key>
+    <unit>MJ</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+</table>
+<table>
+  <theme>Energy</theme>
+  <name>Energy and ressource consumption - detailed</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>SYSTEMS</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Ressources,energy or shar</productText>
+  <dim5Text>Production systems</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Total energy</itemName>
+    <key>INPUT</key>
+    <unit>MJ</unit>
+    <longtext>total energy input per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>share of system in region</itemName>
+    <key>PERCENT</key>
+    <unit>%</unit>
+    <longtext>total energy input per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>Diesel</itemName>
+    <key>DIESEL</key>
+    <unit>kg</unit>
+    <longtext>diesel per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>Benzin</itemName>
+    <key>BENZIN</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Oil</itemName>
+    <key>OIL</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Heating oil</itemName>
+    <key>HOIL</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Gas</itemName>
+    <key>GAS</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Coal</itemName>
+    <key>COAL</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Wood</itemName>
+    <key>WOOD</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>other energy</itemName>
+    <key>OTHER</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>water for irrigation</itemName>
+    <key>WATER</key>
+    <unit>cbm</unit>
+    <longtext>water for irrigation per ha</longtext>
+ </item>
+ <item>
+    <itemName>electricity</itemName>
+    <key>ELEC</key>
+    <unit>KWk</unit>
+    <longtext>ectricity per ha or head</longtext>
+ </item>
+ <item>
+    <itemName>lubricants</itemName>
+    <key>LUBRI</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>depreciation machinery</itemName>
+    <key>DEPM</key>
+    <unit>MJ</unit>
+    <longtext>depreciation of machinery</longtext>
+ </item>
+ <item>
+    <itemName>repair machinery</itemName>
+    <key>REPM</key>
+    <unit>MJ</unit>
+    <longtext>depreciation and repair of machinery</longtext>
+ </item>
+ <item>
+    <itemName>depreciation building</itemName>
+    <key>DEPB</key>
+    <unit>MJ</unit>
+    <longtext>depreciation of machinery</longtext>
+ </item>
+ <item>
+    <itemName>repair building</itemName>
+    <key>REPB</key>
+    <unit>MJ</unit>
+    <longtext>depreciation and repair of machinery</longtext>
+ </item>
+ <item>
+    <itemName>losses non marketable production</itemName>
+    <key>LOSSES</key>
+    <unit>MJ</unit>
+ </item>
+ <item>
+    <itemName>young animal</itemName>
+    <key>YANI</key>
+    <unit>MJ</unit>
+    <longtext>fertilizer input</longtext>
+ </item>
+ <item>
+    <itemName>certified seed</itemName>
+    <key>SEED_CERT</key>
+    <unit>kg</unit>
+    <longtext>seed input</longtext>
+ </item>
+ <item>
+    <itemName>non certified seed</itemName>
+    <key>SEED_NCERT</key>
+    <unit>kg</unit>
+    <longtext>seed input</longtext>
+ </item>
+ <item>
+    <itemName>plant protection</itemName>
+    <key>PLAP</key>
+    <unit>kg</unit>
+    <longtext>plant protection input</longtext>
+ </item>
+ <item>
+    <itemName>transport</itemName>
+    <key>TRANSPORT</key>
+    <unit>MJ</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+ <item>
+    <itemName>Nitrate</itemName>
+    <key>NITF</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Phosphate fertilizer</itemName>
+    <key>PHOF</key>
+    <unit>kg</unit>
+ </item>
+ <item>
+    <itemName>Potassium fertilizer</itemName>
+    <key>POTF</key>
+    <unit>kg</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+ <item>
+    <itemName>salt</itemName>
+    <key>SALT</key>
+    <unit>kg</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+ <item>
+    <itemName>mineral</itemName>
+    <key>Mineral</key>
+    <unit>kg</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+ <item>
+    <itemName>Dryinf of feeding stuff</itemName>
+    <key>DRYING</key>
+    <unit>MJ</unit>
+    <longtext>losses for non marketable production, transport and drying of feed</longtext>
+ </item>
+</table>
+<table>
+  <theme>Energy</theme>
+  <name>Energy per product</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>ENER_PROD</dim5Sel>
+  <activityText>Origin/efficency</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Products</productText>
+  <dim5Text>Energy content</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSI</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>input domestic</itemName>
+    <key>INPUT</key>
+    <unit>MJ/kg or unit</unit>
+    <longtext>total energy input domestic production</longtext>
+ </item>
+ <item>
+    <itemName>input import</itemName>
+    <key>IMPORT</key>
+    <unit>MJ/kg or unit</unit>
+    <longtext>total energy input imported product (foreigen production + transport)</longtext>
+ </item>
+ <item>
+    <itemName>input export</itemName>
+    <key>EXPORT</key>
+    <unit>MJ/kg or unit</unit>
+    <longtext>total energy input exported product (domestic production + transport)</longtext>
+ </item>
+ <item>
+    <itemName>energy in product</itemName>
+    <key>OUTPUT</key>
+    <unit>MJ/kg or unit</unit>
+    <longtext>energy content in product</longtext>
+ </item>
+ <item>
+    <itemName>domestic efficency</itemName>
+    <key>MJ/MJ</key>
+    <unit>MJ/MJ</unit>
+    <longtext>domestic input / energy content in product</longtext>
+ </item>
+ <item>
+    <itemName>domestic Energy/Income</itemName>
+    <key>MJ/EUR</key>
+    <unit>MJ/EUR</unit>
+    <longtext>domestic input per kg / (yield / income)</longtext>
+ </item>
+</table>
+<table>
+  <theme>Energy</theme>
+  <name>Energy Input</name>
+  <regionSel>Regions and countries</regionSel>
+  <dim5Sel>ENER_PROD</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Energy indicators</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSD</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Total</itemName>
+    <key>INPUT</key>
+    <unit>MJ/ha or head</unit>
+    <longtext>aggregated over all resources</longtext>
+ </item>
+</table>
+
+
+
+
+
+<table>
+  <theme>ESIM comparison</theme>
+  <name>Balances, ESIM and CAPRI</name>
+  <regionSel>ESIM Regions</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <productSel>ESIM</productSel>
+  <dim5Sel>CAPRI_ESIM</dim5Sel>
+  <dim5Text>CAPRI or ESIM</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>PDSI</defpivot>
+  <item>
+    <itemName>Production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+  <item>
+    <itemName>Human consumption</itemName>
+    <key>HCON</key>
+    <unit>1000 t</unit>
+ </item>
+  <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Seed use</itemName>
+    <key>SEDM</key>
+    <eval>VAL+VAL[*,SEDF,*,*,*,*]</eval>
+    <unit>1000 t</unit>
+ </item>
+  <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <eval>VAL+VAL[*,BIOF,*,*,*,*]</eval>
+    <unit>1000 t</unit>
+ </item>
+  <item>
+    <itemName>Net trade</itemName>
+    <key>NTRD</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>ESIM comparison</theme>
+  <name>Prices, ESIM and CAPRI</name>
+  <regionSel>ESIM Regions</regionSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <productSel>ESIM</productSel>
+  <dim5Sel>CAPRI_ESIM</dim5Sel>
+  <dim5Text>CAPRI or ESIM</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>PDSI</defpivot>
+  <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+  <item>
+    <itemName>Consumer price</itemName>
+    <key>CPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>ESIM comparison</theme>
+  <name>Areas, ESIM and CAPRI</name>
+  <regionSel>ESIM Regions</regionSel>
+  <activityText>Activity</activityText>
+  <activitySel>ESIM</activitySel>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Item</productText>
+  <dim5Sel>CAPRI_ESIM</dim5Sel>
+  <dim5Text>CAPRI or ESIM</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Product</itemDim>
+  <defpivot>PDSI</defpivot>
+  <item>
+    <itemName>Area</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+ </item>
+</table>
+</generated>

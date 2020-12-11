@@ -1,0 +1,1076 @@
+<generated>
+<table>
+  <theme>HSMU</theme>
+  <name>Indicators from downscaling, mapping view, statistics</name>
+  <activitySel>HSMU_Stats</activitySel>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <regionSel>ALL NUTS2</regionSel>
+  <COO>coo\NUTSII.zip</COO>
+  <activityText>Statistics</activityText>
+  <regionText>NUTS2</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Table</defview>
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Biodiversity Friendly Farming Practices index (BFP)</itemName>
+    <key>SolIndex</key>
+    <unit>0 (bad) - 10 (optimal)</unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 7</itemName>
+    <key>Sol70</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 7.5</itemName>
+    <key>Sol75</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 8</itemName>
+    <key>Sol80</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 8.5</itemName>
+    <key>Sol85</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 9</itemName>
+    <key>Sol90</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>BFP index gt 9.5</itemName>
+    <key>Sol95</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>No 18, Ammonia emissions</itemName>
+    <key>GNH3</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>Share of arable land per UAA</itemName>
+    <key>shareARAB</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Share of grasand per UAA</itemName>
+    <key>shareGRAS</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Share of itrees per UAA</itemName>
+    <key>shareTREE</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Ratio EFA/Arable Crops</itemName>
+    <key>SiEFA_ArabRatio</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Ratio EFA/UAA</itemName>
+    <key>SiEFA_UAARatio</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName></itemName>
+    <key>SeLandDiv_ShanDiv</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Average soil erosion</itemName>
+    <key>SiSoillos_AvSoilLossHa</key>
+    <unit>t/ha/year</unit>
+ </item>
+ <item>
+    <itemName>Soil erosion total</itemName>
+    <key>SiSoillos_TotSoilLoss</key>
+    <unit>t/year</unit>
+ </item>
+ <item>
+    <itemName>N Surplus at soil level</itemName>
+    <key>SURSOI</key>
+    <unit>1000t or kg per ha N,P2O5,K2O</unit>
+    <link>Soil Surface N surplus</link>
+    <longtext>Soil surface N-surplus (leaching and denitrification)</longtext>
+ </item>
+ <item>
+    <itemName>N Surplus soil and manure</itemName>
+    <key>SURTOT</key>
+    <unit>1000t or kg per ha N,P2O5,K2O</unit>
+    <longtext>N Surplus including all gaseous losses (land budget)</longtext>
+ </item>
+ <item>
+    <itemName></itemName>
+    <key>ecobiom</key>
+    <unit></unit>
+ </item>
+</table>
+
+<table>
+  <theme>HSMU</theme>
+  <name>Indicators from downscaling, per region, statistics</name>
+  <clone>Indicators from downscaling, mapping view, statistics</clone>
+  <defpivot>0I0S</defpivot>
+  <defview>Table</defview>
+</table>
+
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-env indicators, driving forces</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0I</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+ <item>
+    <itemName>LEVL</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+ </item>
+ <item>
+    <itemName>UAAR share</itemName>
+    <key>LEVL</key>
+    <unit>%</unit>
+    <eval>100*VAL/VAL[*,AREA,LEVL,*,*]</eval>
+ </item>
+ <item>
+    <itemName>No 5a, Mineral Fertilizer Consumption, Nitrogen</itemName>
+    <key>NMIN</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>No 5b, Mineral Fertilizer Consumption, Phosphorous</itemName>
+    <key>PMIN</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>No 5c, Mineral Nitrogen Application rate, Soft wheat</itemName>
+    <key>NMIN_SWHE</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>No 6, Consumption of Pesticides</itemName>
+    <key>PLAP</key>
+    <unit>Euro /ha</unit>
+ </item>
+ <item>
+    <itemName>No 7a, Irrigation, share</itemName>
+    <key>IRR</key>
+    <unit>% irrigated</unit>
+ </item>
+ <item>
+    <itemName>No 7b, Irrigation, water abstraction</itemName>
+    <key>WAT_SURP</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>No 8a, Energy, Electricity</itemName>
+    <key>ELEC</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>No 8b, Energy, Gas</itemName>
+    <key>EGAS</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>No 8c, Energy, Fuels</itemName>
+    <key>EFUL</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>No 10a, Crop/Livestock pattern, livestock density</itemName>
+    <key>LU</key>
+    <unit>Livest. units/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>No 10b, Crop/Livestock pattern, ruminants density</itemName>
+    <key>RUMI</key>
+    <unit>Livest. units/ha fodder</unit>
+ </item>
+ <item>
+    <itemName>No 10b, Crop/Livestock pattern, non-ruminants density</itemName>
+    <key>PP</key>
+    <unit>Livest. units/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>No 10b, Crop/livestock pattern, arable land density</itemName>
+    <key>ARAB</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>No 10e, Crop/livestock pattern, grass land density</itemName>
+    <key>GRAS</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>No 10f, Crop/livestock pattern, permanent crops density</itemName>
+    <key>PERM</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>No 10g, Crop/livestock pattern, UAAR share on total</itemName>
+    <key>UAAR</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>No 12, Low-medium-high input farming</itemName>
+    <key>INTE</key>
+    <unit>Index 0 - 2</unit>
+ </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Crop shares, mapping view</name>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Sel>empty</dim5Sel>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <COO>coo\hsmu</COO>
+  <item>
+    <itemName>Crop levels</itemName>
+    <key>LEVL</key>
+    <unit>1000 ha</unit>
+   </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, pressures and benefits</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+ <item>
+    <itemName>No. 15, Gross Nitrogen Balance (N-Surplus total)</itemName>
+    <key>SURTOT</key>
+    <unit>kg N per ha</unit>
+    <longtext>Total nitrogen surplus according to the definition of the 'land nutrient budget' approach</longtext>
+    <!-- <link>Nutrient budgets - details</link> -->
+  </item>
+ <item>
+    <itemName>N Surplus at soil level</itemName>
+    <key>SURSOI</key>
+    <unit>kg N per ha</unit>
+    <link>Soil Surface N surplus</link>
+    <longtext>Soil surface N-surplus (leaching and denitrification)</longtext>
+ </item>
+ <item>
+    <itemName>No 15, Gross Nitrogen Balance</itemName>
+    <key>SURTOT</key>
+    <unit>kg N per ha</unit>
+    <longtext>Total nutrient surplus according to the definition of the 'land nutrient budget' approach</longtext>
+    <link>Gross Nitrogen Surplus - details</link>
+  </item>
+ <item>
+    <itemName>No 16, Risk of Pollution by Phosphorous</itemName>
+    <key>SURT_P</key>
+    <unit>surplus in kg P2O5/ha</unit>
+ </item>
+ <item>
+    <itemName>No 18, Ammonia emissions</itemName>
+    <key>GNH3</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <!--  -->
+<!--  <item>-->
+<!--     <itemName>No 19, Green House Gas Emissions</itemName>-->
+<!--     <key>GWPT</key>-->
+<!--     <unit>CO2 equivalents/ha</unit>-->
+<!--     <longtext>Regional GWPT, dis-aggregated according to LEVL</longtext>-->
+<!--  </item>-->
+ <!--  -->
+ <item>
+    <itemName>No 23A, Biodiversity Friendly Farming Practices Indicator (BFP)</itemName>
+    <key>SolIndex</key>
+    <unit>Index, 1-10</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+  <item>
+    <itemName>Area with BFP indicator above 8</itemName>
+    <key>SiSolIndex_HNV8</key>
+    <unit>Ratio</unit>
+    <pdf></pdf>
+ </item>
+ <item>
+    <itemName>No 23B, BFP Indicator, UAA share gt 7 points</itemName>
+    <key>Sol7</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23C, BFP Indicator, UAA share gt 7.5 points</itemName>
+    <key>Sol75</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23D, BFP Indicator, UAA share gt 8 points</itemName>
+    <key>Sol8</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23E, BFP Indicator, UAA share gt 8.5 points</itemName>
+    <key>Sol85</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23VF, BFP Indicator, UAA share gt 9 points</itemName>
+    <key>Sol9</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23G, BFP Indicator, UAA share gt 9.5 points</itemName>
+    <key>Sol95</key>
+    <unit>Share, 0-1</unit>
+    <colorMode>RYG</colorMode>
+ </item>
+ <item>
+    <itemName>No 23a, Shannon index on non grass-land crops</itemName>
+    <key>Shannon I</key>
+    <unit>Index, 0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23b, Share of arable crops</itemName>
+    <key>Arable share</key>
+    <unit>0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23c, N-fertilising index arable</itemName>
+    <key>MinMan arable I</key>
+    <unit>Index, 0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23d, Grassland share</itemName>
+    <key>Gras share</key>
+    <unit>0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23e, Ruminant density index</itemName>
+    <key>Rum. Density I</key>
+    <unit>Index, 0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23f, Share of tree cultures and fallow</itemName>
+    <key>Trees share</key>
+    <unit>0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23g, N-fertilising index trees and fallow</itemName>
+    <key>MinMan trees I</key>
+    <unit>Index, 0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23h, Share of olive groves</itemName>
+    <key>Olive share</key>
+    <unit>0-1</unit>
+ </item>
+ <item>
+    <itemName>No 23i, Share of traditional low input plantations</itemName>
+    <key>Olive intensity I</key>
+    <unit>Index, 0-1</unit>
+ </item>
+ <item>
+    <itemName>No 24, Production of Renewable Resources</itemName>
+    <key>NONF</key>
+    <unit>non food production, % UAA</unit>
+ </item>
+ <item>
+    <itemName>Average soil erosion</itemName>
+    <key>SiSoillos_AvSoilLossHa</key>
+    <unit>t/ha/year</unit>
+ </item>
+ <item>
+    <itemName>Soil erosion total</itemName>
+    <key>SiSoillos_TotSoilLoss</key>
+    <unit>t/year</unit>
+ </item>
+ <item>
+    <itemName>Area with soil erosion below 0.5 t/ha/y</itemName>
+    <key>SiSoillos_ErosInf05</key>
+    <unit>Ratio</unit>
+ </item>
+ <item>
+    <itemName>Area with soil erosion below 5.0 t/ha/y</itemName>
+    <key>SiSoillos_ErosInf5</key>
+    <unit>Ratio</unit>
+ </item>
+ <item>
+    <itemName>Area with soil erosion above 5.0 t/ha/y</itemName>
+    <key>SiSoillos_ErosSup5</key>
+    <unit>Ratio</unit>
+ </item>
+  <item>
+    <itemName>Landscape Indicator</itemName>
+    <key>SiLanddiv_LandClass</key>
+    <unit>Class Index composition 11-33</unit>
+ </item>
+ <item>
+    <itemName>Ratio ECZ to UAA</itemName>
+    <key>SiEFA_UAARatio</key>
+    <unit>Ratio</unit>
+ </item>
+ <item>
+    <itemName>Ratio ECZ to arable land</itemName>
+    <key>SiEFA_ArabRatio</key>
+    <unit>Ratio</unit>
+ </item>
+
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, energy content output (ECO)</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <!--  <defpivot>PR0A</defpivot> -->
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+ <item>
+    <itemName>ECO food</itemName>
+    <longtext>Energy content output from food</longtext>
+    <key>ecofood</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>ECO feed</itemName>
+    <longtext>Energy content output from feed</longtext>
+    <key>ecofeed</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>ECO pruning of trees</itemName>
+    <longtext>Energy content output from pruning of trees</longtext>
+    <key>ecoprun</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>ECO residues permanent crops</itemName>
+    <longtext>Energy content output from removal of residues from permanent crops</longtext>
+    <key>ecopres</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+ <item>
+    <itemName>ECO straw</itemName>
+    <longtext>Energy content output from straw removal</longtext>
+    <key>ecostra</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+ <item>
+   <itemName>ECO sum</itemName>
+    <longtext>Total energy content output from biomass (food, feed, straw, pruning, and permanent crop residues) </longtext>
+    <key>ecobiom</key>
+    <unit>MJ/ha UAA</unit>
+ </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, Gross Nitrogen budget</name>
+  <activitySel>NITF</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText></activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <!--  <defpivot>PR0A</defpivot> -->
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <item>
+    <itemName>Atmospheric Deposition</itemName>
+    <key>ATMOSD</key>
+    <unit>kg N/ha</unit>
+    <longtext>Atmospheric deposition, wet and dry</longtext>
+  </item>
+  <item>
+    <itemName>Biological fixation</itemName>
+    <key>BIOFIX</key>
+    <unit>kg N/ha</unit>
+    <longtext>Biological fixation</longtext>
+  </item>
+  <item>
+    <itemName>Manure nitrogen application</itemName>
+    <key>MANTOT</key>
+    <unit>kg N/ha</unit>
+    <longtext>Manure N application on arable land (MANFER) and on pasture (MANGRA). Emissions from housing and manure storeage systems are subtracted - emissions following application are contained.</longtext>
+    <link>Agri-Env indicators, Gross Nitrogen budget by crop</link>
+  </item>
+  <item>
+    <itemName>Mineral fertiliser application</itemName>
+    <key>MINFER</key>
+    <unit>kg N/ha</unit>
+    <longtext>Mineral fertiliser application</longtext>
+    <link>Agri-Env indicators, Gross Nitrogen budget by crop</link>
+  </item>
+  <item>
+    <itemName>N input with plant residues</itemName>
+    <key>PLANTR</key>
+    <unit>kg N/ha</unit>
+    <longtext>Nitrogen returned with plant residues</longtext>
+  </item>
+  <item>
+    <itemName>Nitrogen uptake into plant biomass</itemName>
+    <key>NUPTK</key>
+    <unit>kg N/ha</unit>
+    <longtext>Total N uptake by plant into harvested material and material returned to the soil</longtext>
+    <link>Agri-Env indicators, Gross Nitrogen budget by crop</link>
+  </item>
+  <item>
+    <itemName>Soil surplus</itemName>
+    <key>LEVL</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL/VAL*VAL[*,UAAR,SURSOI,*,*]</eval>
+    <longtext>Nitrogen surplus from soils, not including emissions before application (housing, storage) but including all emissions from/after application</longtext>
+    <link>Agri-Env indicators, Detailed Nitrogen Surplus</link>
+  </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, Gross Nitrogen budget by crop</name>
+  <activitySel>Crops</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText></activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <item>
+    <itemName>Atmospheric Deposition</itemName>
+    <key>ATMOSD</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL[*,*,LEVL,*,*]*VAL[*,NITF,ATMOSD,*,*]</eval>
+    <longtext>Atmospheric deposition, wet and dry</longtext>
+  </item>
+  <item>
+    <itemName>Biological fixation</itemName>
+    <key>BIOFIX</key>
+    <unit>kg N/ha</unit>
+    <longtext>Biological fixation</longtext>
+  </item>
+  <item>
+    <itemName>Manure nitrogen application</itemName>
+    <key>MANTOT</key>
+    <unit>kg N/ha</unit>
+    <longtext>Manure N application on arable land (MANFER) and on pasture (MANGRA). Emissions from housing and manure storeage systems are subtracted - emissions following application are contained.</longtext>
+    <link>Agri-Env indicators, N-input by crop</link>
+  </item>
+  <item>
+    <itemName>Mineral fertiliser application</itemName>
+    <key>MINFER</key>
+    <unit>kg N/ha</unit>
+    <longtext>Mineral fertiliser application</longtext>
+    <link>Agri-Env indicators, N-input by crop</link>
+  </item>
+  <item>
+    <itemName>N input with plant residues</itemName>
+    <key>PLANTR</key>
+    <unit>kg N/ha</unit>
+    <longtext>Nitrogen returned with plant residues</longtext>
+    <link>Agri-Env indicators, N-input by crop</link>
+  </item>
+  <item>
+    <itemName>Nitrogen uptake into plant biomass</itemName>
+    <key>NUPTK</key>
+    <unit>kg N/ha</unit>
+    <longtext>Total N uptake by plant into harvested material and material returned to the soil</longtext>
+  </item>
+  <item>
+    <itemName>Soil surplus</itemName>
+    <key>SURSOI</key>
+    <unit>kg N/ha</unit>
+    <longtext>Nitrogen surplus from soils, not including emissions before application (housing, storage) but including all emissions from/after application</longtext>
+    <link>Agri-Env indicators, Detailed Nitrogen Surplus</link>
+  </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, Detailed Nitrogen Surplus</name>
+  <activitySel>NITF</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText></activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <!--  <defpivot>PR0A</defpivot> -->
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <item>
+    <itemName>N gas emissions before application</itemName>
+    <key>EXCRET</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL-VAL[*,*,MANTOT,*,*]</eval>
+    <longtext>Emissions of NH3, NOX, N2O, and N2 from housing and manure storage systems</longtext>
+  </item>
+  <item>
+    <itemName>NH3 emissions from soils</itemName>
+    <key>NH3APP</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL+VAL[*,*,NH3GRA,*,*]+VAL[*,*,NH3MIN,*,*]</eval>
+    <longtext>Emissions of NH3 from soils including emissions from applied manure, manure deposited by grazing animals and emissions from mineral fertilisers</longtext>
+    <link>Agri-Env indicators, Detailed Soil N-emissions</link>
+  </item>
+  <item>
+    <itemName>NOX emissions from soils</itemName>
+    <key>NOXAPP</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL+VAL[*,*,NOXGRA,*,*]+VAL[*,*,NOXMIN,*,*]</eval>
+    <longtext>Emissions of NOX from soils including emissions from applied manure, manure deposited by grazing animals and emissions from mineral fertilisers</longtext>
+  </item>
+  <item>
+    <itemName>N2O emissions from soils</itemName>
+    <key>N2OAPP</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL+VAL[*,*,N2OGRA,*,*]+VAL[*,*,N2OMIN,*,*]</eval>
+    <longtext>Emissions of N2O from soils including emissions from applied manure, manure deposited by grazing animals and emissions from mineral fertilisers</longtext>
+  </item>
+  <item>
+    <itemName>Run-off of N from manure and mineral fertiliser</itemName>
+    <key>RUNMAN</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL+VAL[*,*,RUNGRA,*,*]+VAL[*,*,RUNMIN,*,*]</eval>
+    <longtext>Run-off of nitrogen following application of deposition by grazing animals of manure or from applied mineral fertilisers</longtext>
+  </item>
+  <item>
+    <itemName>Denitrification and leaching</itemName>
+    <key>SURSOI</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL[*,UAAR,SURSOI,*,*]-(VAL[*,*,NH3APP,*,*]+VAL[*,*,NOXAPP,*,*]+VAL[*,*,N2OAPP,*,*]+VAL[*,*,RUNMAN,*,*]+VAL[*,*,NH3GRA,*,*]+VAL[*,*,NH3MIN,*,*]+VAL[*,*,NOXGRA,*,*]+VAL[*,*,NOXMIN,*,*]+VAL[*,*,N2OGRA,*,*]+VAL[*,*,N2OMIN,*,*]+VAL[*,*,RUNGRA,*,*]+VAL[*,*,RUNMIN,*,*])</eval>
+    <longtext>Run-off of nitrogen following application of deposition by grazing animals of manure or from applied mineral fertilisers</longtext>
+  </item>
+  <item>
+    <itemName>Total soil surplus</itemName>
+    <key>SURSOI</key>
+    <unit>kg N/ha</unit>
+    <eval>VAL[*,UAAR,SURSOI,*,*]</eval>
+    <longtext>Total soil surplus</longtext>
+    <link>Agri-Env indicators, Gross Nitrogen budget</link>
+  </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, Detailed Soil N-emissions</name>
+  <activitySel>NITF</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText></activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <item>
+    <itemName>NH3 emissions from applied manure</itemName>
+    <key>NH3APP</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NH3 from applied manure</longtext>
+    <link>Agri-Env indicators, Detailed Nitrogen Surplus</link>
+  </item>
+  <item>
+    <itemName>NH3 emissions from deposited manure</itemName>
+    <key>NH3GRA</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NH3 from manure deposited by grazing animals</longtext>
+  </item>
+  <item>
+    <itemName>NH3 emissions from mineral fertiliser</itemName>
+    <key>NH3MIN</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NH3 from applied mineral fertiliser</longtext>
+  </item>
+  <item>
+    <itemName>NOX emissions from applied manure</itemName>
+    <key>NOXAPP</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NOX from applied manure</longtext>
+  </item>
+  <item>
+    <itemName>NOX emissions from deposited manure</itemName>
+    <key>NOXGRA</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NOX from manure deposited by grazing animals</longtext>
+  </item>
+  <item>
+    <itemName>NOX emissions from mineral fertiliser</itemName>
+    <key>NOXMIN</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of NOX from applied mineral fertiliser</longtext>
+  </item>
+  <item>
+    <itemName>N2O emissions from applied manure</itemName>
+    <key>N2OAPP</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of N2O from applied manure</longtext>
+  </item>
+  <item>
+    <itemName>N2O emissions from deposited manure</itemName>
+    <key>N2OGRA</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of N2O from manure deposited by grazing animals</longtext>
+  </item>
+  <item>
+    <itemName>N2O emissions from mineral fertiliser</itemName>
+    <key>N2OMIN</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of N2O from applied mineral fertiliser</longtext>
+  </item>
+  <item>
+    <itemName>RUN emissions from applied manure</itemName>
+    <key>RUNMAN</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of RUN from applied manure</longtext>
+  </item>
+  <item>
+    <itemName>RUN emissions from deposited manure</itemName>
+    <key>RUNGRA</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of RUN from manure deposited by grazing animals</longtext>
+  </item>
+  <item>
+    <itemName>RUN emissions from mineral fertiliser</itemName>
+    <key>RUNMIN</key>
+    <unit>kg N/ha</unit>
+    <longtext>Emissions of RUN from applied mineral fertiliser</longtext>
+  </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Agri-Env indicators, N-input by crop</name>
+  <activitySel>Crops</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <dim5Text>hide</dim5Text>
+  <activityText></activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <!--  <defpivot>PR0A</defpivot> -->
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <item>
+    <itemName>Mineral fertiliser application</itemName>
+    <key>MINFER</key>
+    <unit>kg N/ha</unit>
+    <longtext>Mineral fertiliser application to crops</longtext>
+  </item>
+  <item>
+    <itemName>Manure application</itemName>
+    <key>MANFER</key>
+    <unit>kg N/ha</unit>
+    <longtext>Manure application (net of N losses during housing and manure storage)</longtext>
+  </item>
+  <item>
+    <itemName>Manure during grazing</itemName>
+    <key>MANGRA</key>
+    <unit>kg N/ha</unit>
+    <longtext>Manure deposition by grazing animals</longtext>
+  </item>
+  <item>
+    <itemName>Biological fixation</itemName>
+    <key>BIOFIX</key>
+    <unit>kg N/ha</unit>
+    <longtext>Biological fixation</longtext>
+  </item>
+  <item>
+    <itemName>Atmospheric depositionn</itemName>
+    <key>ATMOSD</key>
+    <unit>kg N/ha</unit>
+    <longtext>Atmospheric deposition</longtext>
+  </item>
+
+</table>
+<table>
+  <theme>HSMU</theme>
+  <clone>Agri-Env indicators, pressures and benefits</clone>
+  <name>Agri-Env indicators, pressures and benefits, NUTS2</name>
+  <regionSel>ALL NUTS2</regionSel>
+  <COO>coo\NUTSII.ZIP</COO>
+  <item>
+    <itemName>Landscape Diversity Shannon Index</itemName>
+    <key>SiLanddiv_ShanDiv</key>
+    <unit>Index 0-1</unit>
+ </item>
+ <item>
+    <itemName>Landscape Dominance (HSMU with UAA>50%)</itemName>
+    <key>SiLanddiv_Dom50</key>
+    <unit>Ratio</unit>
+ </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Economic indicators at HSMU level</name>
+  <dim5Text>hide</dim5Text>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Indicator</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+ <item>
+    <itemName>Total agricultural market revenues</itemName>
+    <key>TOOU</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Total variable production costs</itemName>
+    <key>TOIN</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Gross value added at producer prices</itemName>
+    <key>GVAP</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Premiums</itemName>
+    <key>PRME</key>
+    <unit>Euro/ha</unit>
+ </item>
+ <item>
+    <itemName>Agricultural gross margin inlcuding premiums under CAP pillar I</itemName>
+    <key>MGVA</key>
+    <unit>Euro/ha</unit>
+ </item>
+</table>
+<table>
+  <theme>HSMU</theme>
+  <name>Climate, soil, slope and alitude</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Item</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+  <itemDim>Product</itemDim>
+ <item>
+    <itemName>Average yearly percipitation</itemName>
+    <key>RAIN_AN</key>
+    <unit>mm</unit>
+ </item>
+ <item>
+    <itemName>Average max. monthly temperature</itemName>
+    <key>TMAX_AN</key>
+    <unit>degree Celsius</unit>
+ </item>
+ <item>
+    <itemName>Average min. monthly temperature</itemName>
+    <key>TMIN_AN</key>
+    <unit>degree Celsius</unit>
+ </item>
+ <item>
+    <itemName>Average monthly evaporation</itemName>
+    <key>E0_AN</key>
+ </item>
+ <item>
+    <itemName>Average monthly evapotranspiration</itemName>
+    <key>ET0_AN</key>
+ </item>
+ <item>
+    <itemName>Maximum slope</itemName>
+    <key>SLOP</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Soil organic carbon content</itemName>
+    <key>SOC</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Clay content</itemName>
+    <key>CLAY_INPUT</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>soil PH</itemName>
+    <key>PH</key>
+ </item>
+ <item>
+    <itemName>Packing Density</itemName>
+    <key>PDENS</key>
+ </item>
+ <item>
+    <itemName>Maximum altitude</itemName>
+    <key>ALTI</key>
+    <unit>m</unit>
+ </item>
+</table>
+<table>
+  <theme>DNDC</theme>
+  <name>Results from DNDC meta model, nitrogen</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Item</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+ <item>
+    <itemName>Mineral N input</itemName>
+    <key>NMIN</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>Organic N (gross)</itemName>
+    <key>NMAN</key>
+    <unit>kg N/ha</unit>
+ </item>
+ <item>
+    <itemName>Mineralized N</itemName>
+    <key>MINERALIZEDN</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>N uptake by crops</itemName>
+    <key>NREM</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>Total N losses</itemName>
+    <key>TOTN</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>N2O emissions</itemName>
+    <key>N2O</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>NH3 emissions</itemName>
+    <key>NH3</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>N2 emissions</itemName>
+    <key>N2</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>N leached</itemName>
+    <key>LEACHEDN</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+ <item>
+    <itemName>NO emissions</itemName>
+    <key>NO</key>
+    <unit>kg N per ha and year</unit>
+ </item>
+</table>
+<table>
+  <theme>DNDC</theme>
+  <name>Results from DNDC meta model, water</name>
+  <activitySel>UAAR</activitySel>
+  <regionSel>FromDataCube</regionSel>
+  <activityText>hide</activityText>
+  <regionText>HMSUs</regionText>
+  <productText>Item</productText>
+  <defpivot>0R0S</defpivot>
+  <defview>Map</defview>
+  <itemDim>Product</itemDim>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <COO>coo\hsmu</COO>
+<!--  <COO>coo\HSMU.ZIP</COO> -->
+ <item>
+    <itemName>Water surplus or deficite</itemName>
+    <key>WAT_SURP</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Annual rainfall</itemName>
+    <key>RAIN_AN</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Water use</itemName>
+    <key>WATERUSED</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Water evaporated</itemName>
+    <key>WATEREVAP</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Water harvested</itemName>
+    <key>WATCROP</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Water transpirated</itemName>
+    <key>WATERTRANS</key>
+    <unit>l/m2</unit>
+ </item>
+ <item>
+    <itemName>Water leached</itemName>
+    <key>WATERLEACH</key>
+    <unit>l/m2</unit>
+ </item>
+</table>
+</generated>

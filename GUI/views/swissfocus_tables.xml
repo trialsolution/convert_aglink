@@ -1,0 +1,786 @@
+<generated>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Product balances market model</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Net production</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Human consumption plus losses</itemName>
+    <key>HCON</key>
+    <unit>1000 t</unit>
+    <link>Human consumption</link>
+ </item>
+ <item>
+    <itemName>Human consumption plus losses, quality corrected</itemName>
+    <key>HCON</key>
+    <unit>Utility (=1000 t at utility of calibration point))</unit>
+    <link>Human consumption</link>
+    <eval>VAL/VAL[*,CORR,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Biofuels processing</itemName>
+    <key>BIOF</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Armington quality corrector</itemName>
+    <longtext>If below unity, average quality has increased</longtext>
+    <key>CORR</key>
+    <unit></unit>
+ </item>
+ <item>
+    <itemName>Intervention stock change</itemName>
+    <key>ISCH</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Imports</itemName>
+    <key>IMPORTS</key>
+    <unit>1000 t</unit>
+    <link>Import flows market model</link>
+ </item>
+ <item>
+    <itemName>Exports</itemName>
+    <key>EXPORTS</key>
+    <unit>1000 t</unit>
+    <link>Export flows market model</link>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Market model balances - decomposition</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Balance item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Effects</dim5Text>
+  <dim5Sel>Effects</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+   <defpivot>0PSD</defpivot>
+ <item>
+    <itemName>Production</itemName>
+    <key>PROD</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Net trade</itemName>
+    <key>NTRD</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Human consumption</itemName>
+    <key>HCON</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Feed use</itemName>
+    <key>FEED</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Processing</itemName>
+    <key>PROC</key>
+    <unit>% against calibration point</unit>
+ </item>
+ <item>
+    <itemName>Biofuel input</itemName>
+    <key>BIOF</key>
+    <unit>% against calibration point</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Milk fat and protein</name>
+  <regionSel>swiss</regionSel>
+  <productSel>FatsProt</productSel>
+  <activityText>Activity</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Balance</itemName>
+    <key>PROD</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Price</itemName>
+    <key>PPRI</key>
+    <unit>Euro /  t</unit>
+ </item>
+</table>
+
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Prices market model</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Prices</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <pdf>docs\docu.pdf#Price linkages</pdf>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Market price</itemName>
+    <key>PMRK</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Price Armington 2</itemName>
+    <key>ARM2P</key>
+    <unit>Euro / t</unit>
+    <longtext>Price index of Armington aggregator of imports from different destinations, may be interpreted as average price of imports</longtext>
+ </item>
+ <item>
+    <itemName>Price Armington 1</itemName>
+    <key>ARM1P</key>
+    <unit>Euro / t</unit>
+    <longtext>Price index of Armington aggregator for domestic sales and import aggregate[Armington 2], may be interpreted as average price of quantities consumed at market prices</longtext>
+ </item>
+ <item>
+    <itemName>Consumer price</itemName>
+    <key>CPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing margin</itemName>
+    <key>PROCMARG</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing Aid</itemName>
+    <key>PRCA</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Processing margin Biofuels (relative)</itemName>
+    <key>BIOPROCMARG</key>
+    <unit>Euro/Euro</unit>
+ </item>
+
+</table>
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Prices market model relative to EU15</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Prices</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <pdf>docs\docu.pdf#Price linkages</pdf>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Producer price relative to EU price</itemName>
+    <key>PPRI</key>
+    <eval>VAL/VAL[EU015000,*,*,*,*,*]*100</eval>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Market price</itemName>
+    <key>PMRK</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Market price relative to EU price</itemName>
+    <key>PMRK</key>
+    <eval>VAL/VAL[EU015000,*,*,*,*,*]*100</eval>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Consumer price</itemName>
+    <key>CPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Consumer price relative to EU price</itemName>
+    <key>CPRI</key>
+    <eval>VAL/VAL[EU015000,*,*,*,*,*]*100</eval>
+    <unit>%</unit>
+ </item>
+
+</table>
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Prices market model by country</name>
+  <clone>CH - Prices market model</clone>
+  <defpivot>0PSR</defpivot>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Price support</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Prices</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <COO>RMS.zip</COO>
+  <itemDim>Activity</itemDim>
+  <pdf>docs\docu.pdf#Price linkages</pdf>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Producer price</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Direkt Price Support</itemName>
+    <key>PSED</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Indirekt Support</itemName>
+    <key>PSEI</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Area payments</itemName>
+    <key>AREP</key>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>decoupling degree</itemName>
+    <key>DECP</key>
+    <unit>from 100</unit>
+ </item>
+ <item>
+    <itemName>Producer price without support</itemName>
+    <key>PPRI</key>
+    <unit>Euro / t</unit>
+    <eval>VAL-VAL[*,PSED,*,*,*,*]-VAL[*,PSEI,*,*,*,*]-VAL[*,AREP,*,*,*,*]*(1-VAL[*,DECP,*,*,*,*])</eval>
+ </item>
+ <item>
+    <itemName>producer price margin</itemName>
+    <key>PMRG</key>
+    <unit>from 100</unit>
+ </item>
+ <item>
+    <itemName>Market price</itemName>
+    <key>PMRK</key>
+    <unit>Euro / t</unit>
+ </item>
+</table>
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Welfare market model</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Welfare position</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>hide</dim5Text>
+  <dim5Sel>empty</dim5Sel>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Money metric</itemName>
+    <key>CSSP</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Agricultural profits</itemName>
+    <key>PROFITAGR</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of non-agricultural land use</itemName>
+    <key>ProfitLandUse</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profit of the feed industry</itemName>
+    <key>PROFITFEED</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profits of processing industry</itemName>
+    <key>PROFITPROC</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Profits of dairy industry</itemName>
+    <key>PROFITDAIRY</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff revenues</itemName>
+    <key>TARIFFREV</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Domestic support outlays</itemName>
+    <key>PSES</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Tariff rate quota rents</itemName>
+    <key>TRQRents</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Welfare</itemName>
+    <key>WELFARE</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Import flows, price and tariffs market model, by geograhic aggregates</name>
+  <regionSel>swiss</regionSel>
+  <regionText>Importer</regionText>
+  <productSel>market</productSel>
+  <dim5Sel>Trade blocks geographic</dim5Sel>
+  <activityText>Activity</activityText>
+  <regionText>Importer</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Text>Exporter</dim5Text>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSD</defpivot>
+  <COO>RM.zip</COO>
+   <defview>Table</defview>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Value</itemName>
+    <key>ImportQ</key>
+    <eval>VAL*VAL[*,ImportP,*,*,*,*]*0.001</eval>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Quantities</itemName>
+    <key>ImportQ</key>
+    <unit>1000 t</unit>
+ </item>
+ <item>
+    <itemName>Demand share</itemName>
+    <key>ImportQ</key>
+    <eval>VAL/VAL[*,*,*,*,*,World]</eval>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Specific tariff applied</itemName>
+    <key>TsAppl</key>
+    <pdf>docs\docu.pdf#Tariff computation in the model</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Ad valorem tariff applied</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>TRQ rent per unit</itemName>
+    <key>rent_per_unit</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>TRQ</itemName>
+    <key>TrqNT</key>
+    <unit>1000 t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Export flows, price and tariffs market model, by geograhic aggregates</name>
+  <clone>CH - Import flows, price and tariffs market model, by geograhic aggregates</clone>
+  <regionSel>Regions in market model</regionSel>
+  <dim5Sel>swiss</dim5Sel>
+  <defpivot>0PSR</defpivot>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Tariff Information, bilateral</name>
+  <regionSel>swiss</regionSel>
+  <regionText>Importer</regionText>
+  <productSel>market</productSel>
+  <dim5Sel>Trade blocks detailed</dim5Sel>
+  <dim5Text>Exporter</dim5Text>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <scenText>Scenario</scenText>
+  <defpivot>0PSI</defpivot>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>TRQ open to</itemName>
+    <key>importer</key>
+    <longtext>which importers have the right to benefit from lower tariffs under that tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Bilateral quota</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from lower tariffs for that tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Imports (under pref.)</itemName>
+    <key>ImportsR</key>
+    <unit>1000t</unit>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Ad val. pref</itemName>
+    <key>TAPREF</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities inside of the tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. MFN</itemName>
+    <key>TAMFN</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities imported once the tariff rate quota is filled</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied (*SSG)</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Spec. pref</itemName>
+    <key>TSPREF</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Spec. MFN</itemName>
+    <key>TSMFN</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Quota rents</itemName>
+    <key>RENTB</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Rent per in quota imports</itemName>
+    <key>Rent_per_unit</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Transport cost</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Tariff and transport costs, averages over importers and domestic sales</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>All importers</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+  <defpivot>0PSI</defpivot>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <pdf>docs\docu.pdf#Price linkages</pdf>
+    <unit>Euro / t</unit>
+ </item>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied</itemName>
+    <key>TaAppl</key>
+    <link>Detailed tariff Information, averages over importers and domestic sales</link>
+    <unit>%</unit>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Tansport costs</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Detailed tariff Information, averages over importers and domestic sales</name>
+  <regionSel>swiss</regionSel>
+  <productSel>market</productSel>
+  <activityText>Item</activityText>
+  <regionText>Region</regionText>
+  <yearText>Year</yearText>
+  <productText>Product</productText>
+  <dim5Sel>World</dim5Sel>
+  <dim5Text>hide</dim5Text>
+  <scenText>Scenario</scenText>
+  <itemDim>Activity</itemDim>
+ <item>
+    <itemName>Total imports</itemName>
+    <key>Imports</key>
+    <unit>1000t</unit>
+ </item>
+ <item>
+    <itemName>Total Tariff Rate Quotas (bi- and multilateral)</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <eval>VAL[*,TrqNT,*,*,*,*]+VAL[*,TrqNTB,*,*,*,*]</eval>
+    <longtext>Quantities benefitting from lower tariffs for that tariff rate quota (sum of multilateral and bilateral quotas)</longtext>
+ </item>
+ <item>
+    <itemName>Multilateral Quota</itemName>
+    <key>TrqNT</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from multilateral tariff rate quota</longtext>
+ </item>
+ <item>
+    <itemName>Imports under multilateral tariff rate quotas</itemName>
+    <key>ImportsR</key>
+         <unit>1000t</unit>
+         <longtext>Imports under multilateral quotas = trade flows overfilling bilateral quotas if they exist, i.e. potentially traded under multilateral trq</longtext>
+ </item>
+ <item>
+    <itemName>Bilateral Quotas</itemName>
+    <key>TrqNTB</key>
+    <unit>1000t</unit>
+    <longtext>Quantities benefitting from lower tariffs from bilateral tariff rate quotas</longtext>
+ </item>
+ <item>
+    <itemName>Imports under bilateral quotas</itemName>
+    <key>ImportsRB</key>
+    <unit>1000t</unit>
+         <longtext>Imports under bilateral quotas = full trade flows if bilateral quotas exist, i.e. potentially traded under bilateral trqs (bi is filled up first)</longtext>
+ </item>
+ <item>
+    <itemName>Import price</itemName>
+    <key>ImportP</key>
+    <unit>Euro/t</unit>
+         <longtext>calculated as internal market price plus tariffs minus export subsidies</longtext>
+</item>
+ <item>
+    <itemName>Applied ad valorem equivalent</itemName>
+    <key>ImportP</key>
+    <unit>%</unit>
+    <eval>((VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*])/(VAL[*,fob,*,*,*,*]+VAL[*,TCost,*,*,*,*]))*100</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Applied specific equivalent</itemName>
+    <key>ImportP</key>
+    <unit>Euro/t</unit>
+    <eval>VAL-VAL[*,fob,*,*,*,*]-VAL[*,TCost,*,*,*,*]</eval>
+    <longtext>Difference between import and cif price in relation to cif price, captures also effect of TRQs</longtext>
+ </item>
+ <item>
+    <itemName>Entry prices</itemName>
+    <key>MinBordP</key>
+    <unit>Euro/t</unit>
+     <eval>(VAL[*,MinBordP,*,*,*, ])</eval>
+ </item>
+ <item>
+    <itemName>Ad val. MFN</itemName>
+    <key>TAMFN</key>
+    <unit>%</unit>
+    <longtext>tariff defined in percentage of import value for quantities imported once the tariff rate quotas are filled</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. applied</itemName>
+    <key>TaAppl</key>
+    <unit>%</unit>
+    <longtext>Applied ad-valorem tariff rates</longtext>
+ </item>
+ <item>
+    <itemName>Ad val. pref.</itemName>
+    <key>TaPref</key>
+    <unit>%</unit>
+    <longtext>Preferential rate for ad-valorem tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. MFN</itemName>
+    <key>TSMFN</key>
+    <unit>Euro/t</unit>
+    <longtext>MFN-rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. applied</itemName>
+    <key>TsAppl</key>
+    <unit>Euro/t</unit>
+    <longtext>Applied rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>Spec. pref.</itemName>
+    <key>TsPref</key>
+    <unit>Euro/t</unit>
+    <longtext>Preferential rate of the specific tariff</longtext>
+ </item>
+ <item>
+    <itemName>TRQ rent per unit</itemName>
+    <key>RENT</key>
+    <unit>Euro/t</unit>
+    <eval>(VAL[*,RENT,*,*,*,*]+VAL[*,RENTB,*,*,*,*])/(VAL[*,Imports,*,*,*,*])*1000</eval>
+ </item>
+ <item>
+    <itemName>Cost, insurance and freight (CIF price)</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+    <eval>VAL+VAL[*,TCost,*,*,*,*]</eval>
+ </item>
+ <item>
+    <itemName>Tansport costs</itemName>
+    <key>TCost</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Free on Board (f.o.b.) price</itemName>
+    <key>fob</key>
+    <unit>Euro/t</unit>
+ </item>
+ <item>
+    <itemName>Quota rents (under multilateral quotas)</itemName>
+    <key>RENT</key>
+    <unit>Mio Euro</unit>
+ </item>
+ <item>
+    <itemName>Quota rents (under bilateral quotas)</itemName>
+    <key>RENTB</key>
+    <unit>Mio Euro</unit>
+ </item>
+</table>
+
+<table>
+  <theme>Swiss focus</theme>
+  <name>CH - Detailed tariff Information, averages over importers w/o domestic sales</name>
+  <clone>CH - Detailed tariff Information, averages over importers and domestic sales</clone>
+  <dim5Sel>All importers</dim5Sel>
+</table>
+
+</generated>
